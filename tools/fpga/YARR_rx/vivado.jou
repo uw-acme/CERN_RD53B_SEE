@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jul 26 15:38:14 2022
+# Process ID: 12292
+# Current directory: D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16900 D:\UW\A-MasterResearch-LHC\YARR-rx-recovery-Revise\YARR_rx\YARR_rx.xpr
+# Log file: D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx/vivado.log
+# Journal file: D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx/YARR_rx.xpr
+upgrade_project -migrate_output_products
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1

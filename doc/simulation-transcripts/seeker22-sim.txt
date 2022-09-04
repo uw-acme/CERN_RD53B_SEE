@@ -1,0 +1,292 @@
+do runwave_lane_drop_regression.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:49 on Jul 12,2022
+# vcom -reportprogress 300 -work work ../src/serdes_1_to_468_idelay_ddr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity serdes_1_to_468_idelay_ddr
+# -- Compiling architecture arch_serdes_1_to_468_idelay_ddr of serdes_1_to_468_idelay_ddr
+# End time: 16:55:49 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:49 on Jul 12,2022
+# vcom -reportprogress 300 -work work ../src/delay_controller_wrap.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity delay_controller_wrap
+# -- Compiling architecture arch_delay_controller_wrap of delay_controller_wrap
+# End time: 16:55:50 on Jul 12,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:50 on Jul 12,2022
+# vcom -reportprogress 300 -work work ../src/tef1001_R2_type.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package hw_type_pkg
+# End time: 16:55:50 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:50 on Jul 12,2022
+# vcom -reportprogress 300 -work work ../src/board_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package hw_type_pkg
+# -- Compiling package board_pkg
+# End time: 16:55:50 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:50 on Jul 12,2022
+# vcom -reportprogress 300 -work work ../src/cdr_serdes.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cdr_serdes
+# -- Compiling architecture rtl of cdr_serdes
+# End time: 16:55:50 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:51 on Jul 12,2022
+# vlog -reportprogress 300 -work work ../src/descrambler.v 
+# -- Compiling module descrambler
+# 
+# Top level modules:
+# 	descrambler
+# End time: 16:55:51 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:51 on Jul 12,2022
+# vlog -reportprogress 300 -work work ../src/scrambler.v 
+# -- Compiling module scrambler
+# 
+# Top level modules:
+# 	scrambler
+# End time: 16:55:51 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:51 on Jul 12,2022
+# vcom -reportprogress 300 -work work ../src/gearbox32to66_wip.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity gearbox32to66
+# -- Compiling architecture rtl of gearbox32to66
+# End time: 16:55:51 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:51 on Jul 12,2022
+# vcom -reportprogress 300 -work work ../src/aurora_rx_lane_wip.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package hw_type_pkg
+# -- Loading package board_pkg
+# -- Compiling entity aurora_rx_lane
+# -- Compiling architecture behavioral of aurora_rx_lane
+# End time: 16:55:51 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:51 on Jul 12,2022
+# vcom -reportprogress 300 -work work ../src/rr_arbiter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rr_arbiter
+# -- Compiling architecture behavioral of rr_arbiter
+# End time: 16:55:51 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:51 on Jul 12,2022
+# vlog -reportprogress 300 -work work ../src/seeker1.sv 
+# -- Compiling module seeker1
+# 
+# Top level modules:
+# 	seeker1
+# End time: 16:55:51 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:51 on Jul 12,2022
+# vlog -reportprogress 300 -work work ../src/seeker2.sv 
+# -- Compiling module seeker2
+# 
+# Top level modules:
+# 	seeker2
+# End time: 16:55:51 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:51 on Jul 12,2022
+# vlog -reportprogress 300 -work work ../src/seeker3.sv 
+# -- Compiling module seeker3
+# 
+# Top level modules:
+# 	seeker3
+# End time: 16:55:51 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:52 on Jul 12,2022
+# vlog -reportprogress 300 -work work ../src/seeker6.sv 
+# -- Compiling module seeker6
+# 
+# Top level modules:
+# 	seeker6
+# End time: 16:55:52 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:52 on Jul 12,2022
+# vlog -reportprogress 300 -work work ../src/seeker11.sv 
+# -- Compiling module seeker11
+# 
+# Top level modules:
+# 	seeker11
+# End time: 16:55:52 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:52 on Jul 12,2022
+# vlog -reportprogress 300 -work work ../src/seeker22.sv 
+# -- Compiling module seeker22
+# 
+# Top level modules:
+# 	seeker22
+# End time: 16:55:52 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:52 on Jul 12,2022
+# vlog -reportprogress 300 -work work ../src/seeker33.sv 
+# -- Compiling module seeker33
+# 
+# Top level modules:
+# 	seeker33
+# End time: 16:55:52 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:52 on Jul 12,2022
+# vlog -reportprogress 300 -work work ./sim_aurora_lane_drop_regression.sv 
+# -- Compiling module sim_aurora_lane
+# 
+# Top level modules:
+# 	sim_aurora_lane
+# End time: 16:55:52 on Jul 12,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 16:55:52 on Jul 12,2022, Elapsed time: 0:26:13
+# Errors: 0, Warnings: 1
+# vsim -t 1fs -novopt sim_aurora_lane -L unisim -L secureip -L unifast -L unimacro 
+# Start time: 16:55:52 on Jul 12,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-main/sim/work.sim_aurora_lane
+# Loading sv_std.std
+# Loading work.sim_aurora_lane
+# Refreshing D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-main/sim/work.scrambler
+# Loading work.scrambler
+# Loading std.standard
+# Refreshing D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-main/sim/work.aurora_rx_lane(behavioral)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Refreshing D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-main/sim/work.board_pkg
+# Refreshing D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-main/sim/work.hw_type_pkg
+# Loading work.hw_type_pkg
+# Loading work.board_pkg
+# Loading work.aurora_rx_lane(behavioral)
+# Refreshing D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-main/sim/work.serdes_1_to_468_idelay_ddr(arch_serdes_1_to_468_idelay_ddr)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.serdes_1_to_468_idelay_ddr(arch_serdes_1_to_468_idelay_ddr)
+# Refreshing D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-main/sim/work.delay_controller_wrap(arch_delay_controller_wrap)
+# Loading work.delay_controller_wrap(arch_delay_controller_wrap)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.idelaye2(idelaye2_v)
+# Loading unisim.iserdese2(iserdese2_v)
+# Loading secureip.ISERDESE2_WRAP
+# Loading secureip.B_ISERDESE2
+# Refreshing D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-main/sim/work.gearbox32to66(rtl)
+# Loading work.gearbox32to66(rtl)
+# Refreshing D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-main/sim/work.seeker22
+# Loading work.seeker22
+# Refreshing D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-main/sim/work.descrambler
+# Loading work.descrambler
+# .main_pane.objects.interior.cs.body.tree
+# .main_pane.wave.interior.cs.body.pw.wf
+run -all
+#  offset     : blocks      
+#            0            0
+#            1           26
+#            2           26
+#            3           27
+#            4           27
+#            5           27
+#            6           27
+#            7           27
+#            8           27
+#            9           27
+#           10           27
+#           11           27
+#           12           27
+#           13           28
+#           14           27
+#           15           27
+#           16           26
+#           17           27
+#           18           27
+#           19           28
+#           20           27
+#           21           27
+#           22           26
+#           23           27
+#           24           27
+#           25           27
+#           26           27
+#           27           26
+#           28           26
+#           29           27
+#           30           27
+#           31           27
+#           32           27
+#           33           26
+#           34           27
+#           35           27
+#           36           27
+#           37           27
+#           38           27
+#           39           27
+#           40           27
+#           41           27
+#           42           27
+#           43           27
+#           44           29
+#           45           28
+#           46           27
+#           47           27
+#           48           27
+#           49           27
+#           50           27
+#           51           28
+#           52           27
+#           53           27
+#           54           26
+#           55           27
+#           56           28
+#           57           28
+#           58           27
+#           59           27
+#           60           27
+#           61           28
+#           62           28
+#           63           28
+#           64           27
+#           65           27

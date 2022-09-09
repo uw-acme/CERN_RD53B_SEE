@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Jul 26 15:38:14 2022
+# Process ID: 12292
+# Current directory: D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16900 D:\UW\A-MasterResearch-LHC\YARR-rx-recovery-Revise\YARR_rx\YARR_rx.xpr
+# Log file: D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx/vivado.log
+# Journal file: D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx/YARR_rx.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/User/Documents/YARR-rx-recovery/YARR_rx' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/src/header_seeker.sv', nor could it be found using path 'C:/Users/User/Documents/YARR-rx-recovery/src/header_seeker.sv'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/src/block_sync.sv', nor could it be found using path 'C:/Users/User/Documents/YARR-rx-recovery/src/block_sync.sv'.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-586] The part specified is not available in the install. Changing the part from 'xc7vx690tffg1761-2' to the default part 'xc7k70tfbv676-1' for 'synth_1_kin' run. If you would like to use a different part, please run the command with the -part <part_name> option. The closest matching parts can be identified by running: get_parts xc7vx690tffg1761-2*. If no parts are returned then please re-run the installer and select the appropriate parts.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/AMD/Vivado/2021.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2020.1) has a different revision in the IP Catalog. * This IP has board specific outputs. Current project board 'unset' and the board 'xilinx.com:vc709:part0:1.8' used to customize the IP 'clk_wiz_0' do not match. * Current project part 'xc7k160tfbg484-3' and the part 'xc7vx690tffg1761-2' used to customize the IP 'clk_wiz_0' do not match.
+INFO: [Project 1-230] Project 'YARR_rx.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1492.418 ; gain = 0.000
+upgrade_project -migrate_output_products
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_wiz_0' (customized with software release 2020.1) has a different revision in the IP Catalog. * This IP has board specific outputs. Current project board 'unset' and the board 'xilinx.com:vc709:part0:1.8' used to customize the IP 'clk_wiz_0' do not match. * Current project part 'xc7k160tfbg484-3' and the part 'xc7vx690tffg1761-2' used to customize the IP 'clk_wiz_0' do not match.
+INFO: [Coretcl 2-1819] Migrated 'clk_wiz_0.xci'
+  Source files are located in 'd:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx/YARR_rx.srcs/sources_1/ip/clk_wiz_0'
+  Output files are located in 'd:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx/YARR_rx.gen/sources_1/ip/clk_wiz_0'.
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 26 15:41:24 2022...

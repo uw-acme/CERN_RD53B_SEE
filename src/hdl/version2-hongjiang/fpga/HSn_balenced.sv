@@ -1,4 +1,4 @@
-module HSn_balenced #(parameter N = 7'b1000010, parameter MIN_POS = 0, parameter MAX_POS = 65)
+module HSn_balenced #(parameter N = 7'b0001001, parameter MIN_POS = 0, parameter MAX_POS = 65)
 (
 	input logic rst_i, clk_i,				// system input
 	input logic [193:0] gbox_buffer,		// complete buffer		
@@ -38,7 +38,7 @@ module HSn_balenced #(parameter N = 7'b1000010, parameter MIN_POS = 0, parameter
 																						 .is_synced(is_sync_temp[0]),
 																						 .offset_pos(offset_pos_temp[0]));
 																			 
-		    HSn #(.N(7'b0000010), .MIN_POS(MIN_POS+1), .MAX_POS(MAX_POS))	seekerR (.rst_i, .clk_i,
+		    HSn_balenced #(.N(7'b0000010), .MIN_POS(MIN_POS+1), .MAX_POS(MAX_POS))	seekerR (.rst_i, .clk_i,
 																						 .gbox_buffer, .gbox_cnt, .buffer_dv,
 																						 .is_synced(is_sync_temp[1]),
 																						 .offset_pos(offset_pos_temp[1]));
@@ -46,12 +46,13 @@ module HSn_balenced #(parameter N = 7'b1000010, parameter MIN_POS = 0, parameter
 		//when N is odd, instantiate 2 HSn modules with N' = N / 2 and N'' = (N/2) + 1
 		//where one HSn has range of (MAX_POS-MIN_POS)/2 and another has range of (MAX_POS-MIN_POS)/2 + 1  
 		else if (N[0] == 1'b1) begin
-			HSn #(.N({N[6:1],1'b0}+1), .MIN_POS(MIN_POS), .MAX_POS(MID_POS))  seekerL (.rst_i, .clk_i,
+			//{N[6:1],1'b0}+1
+			HSn_balenced #(.N({1'b0, N[6:1]}+1), .MIN_POS(MIN_POS), .MAX_POS(MID_POS))  seekerL (.rst_i, .clk_i,
 																						 .gbox_buffer, .gbox_cnt, .buffer_dv,
 																						 .is_synced(is_sync_temp[0]),
 																						 .offset_pos(offset_pos_temp[0]));
 																			 
-		    HSn #(.N({N[6:1],1'b0}), .MIN_POS(MID_POS+1), .MAX_POS(MAX_POS))	seekerR (.rst_i, .clk_i,
+		    HSn_balenced #(.N({1'b0, N[6:1]}), .MIN_POS(MID_POS+1), .MAX_POS(MAX_POS))	seekerR (.rst_i, .clk_i,
 																						 .gbox_buffer, .gbox_cnt, .buffer_dv,
 																						 .is_synced(is_sync_temp[1]),
 																						 .offset_pos(offset_pos_temp[1]));
@@ -59,12 +60,12 @@ module HSn_balenced #(parameter N = 7'b1000010, parameter MIN_POS = 0, parameter
 		//when N is even, instantiate 2 HSn modules with N' = N / 2
 		//where each HSn has half of the full range
 		else begin
-			HSn #(.N({1'b0, N[6:1]}), .MIN_POS(MIN_POS), .MAX_POS(MID_POS))   seekerL (.rst_i, .clk_i,
+			HSn_balenced #(.N({1'b0, N[6:1]}), .MIN_POS(MIN_POS), .MAX_POS(MID_POS))   seekerL (.rst_i, .clk_i,
 																						 .gbox_buffer, .gbox_cnt, .buffer_dv,
 																						 .is_synced(is_sync_temp[0]),
 																						 .offset_pos(offset_pos_temp[0]));
 																			 
-			HSn #(.N({1'b0, N[6:1]}), .MIN_POS(MID_POS+1), .MAX_POS(MAX_POS))     seekerR (.rst_i, .clk_i,
+			HSn_balenced #(.N({1'b0, N[6:1]}), .MIN_POS(MID_POS+1), .MAX_POS(MAX_POS))     seekerR (.rst_i, .clk_i,
 																						 .gbox_buffer, .gbox_cnt, .buffer_dv,
 																						 .is_synced(is_sync_temp[1]),
 																						 .offset_pos(offset_pos_temp[1]));

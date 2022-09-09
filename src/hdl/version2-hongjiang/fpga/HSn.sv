@@ -1,4 +1,4 @@
-module HSn #(parameter N = 7'b00001000, parameter MIN_POS = 0, parameter MAX_POS = 65)
+module HSn #(parameter N = 7'b1000010, parameter MIN_POS = 0, parameter MAX_POS = 65)
 (
 	input logic rst_i, clk_i,				// system input
 	input logic [193:0] gbox_buffer,		// complete buffer		

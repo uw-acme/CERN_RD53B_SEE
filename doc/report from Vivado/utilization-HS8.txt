@@ -1,0 +1,59 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Tue Sep  6 17:24:09 2022
+| Host         : LAPTOP-F415E9JE running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical
+| Design       : vc709_top
+| Device       : 7vx690tffg1761-2
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------------------+-----------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                 Instance                |            Module           | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++-----------------------------------------+-----------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| vc709_top                               |                       (top) |       1128 |       1128 |       0 |    0 | 1205 |      0 |      0 |          0 |
+|   (vc709_top)                           |                       (top) |          1 |          1 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   u_lane_original                       |              aurora_rx_lane |       1127 |       1127 |       0 |    0 | 1205 |      0 |      0 |          0 |
+|     (u_lane_original)                   |              aurora_rx_lane |         24 |         24 |       0 |    0 |  209 |      0 |      0 |          0 |
+|     descrambler_cmp                     |                 descrambler |         39 |         39 |       0 |    0 |  122 |      0 |      0 |          0 |
+|     gearbox32to66_cmp                   |               gearbox32to66 |        949 |        949 |       0 |    0 |  767 |      0 |      0 |          0 |
+|       (gearbox32to66_cmp)               |               gearbox32to66 |        269 |        269 |       0 |    0 |  477 |      0 |      0 |          0 |
+|       u_aligner                         |                         HSn |        684 |        684 |       0 |    0 |  290 |      0 |      0 |          0 |
+|         (u_aligner)                     |                         HSn |         72 |         72 |       0 |    0 |    9 |      0 |      0 |          0 |
+|         seekerL                         |         HSn__parameterized0 |         61 |         61 |       0 |    0 |  107 |      0 |      0 |          0 |
+|           (seekerL)                     |         HSn__parameterized0 |          4 |          4 |       0 |    0 |    9 |      0 |      0 |          0 |
+|           seekerL                       |         HSn__parameterized1 |         28 |         28 |       0 |    0 |   49 |      0 |      0 |          0 |
+|             (seekerL)                   |         HSn__parameterized1 |          1 |          1 |       0 |    0 |    9 |      0 |      0 |          0 |
+|             seekerL                     |                 unit_seeker |         17 |         17 |       0 |    0 |   20 |      0 |      0 |          0 |
+|             seekerR                     | unit_seeker__parameterized0 |         10 |         10 |       0 |    0 |   20 |      0 |      0 |          0 |
+|           seekerR                       |         HSn__parameterized2 |         29 |         29 |       0 |    0 |   49 |      0 |      0 |          0 |
+|             (seekerR)                   |         HSn__parameterized2 |          7 |          7 |       0 |    0 |    9 |      0 |      0 |          0 |
+|             seekerL                     | unit_seeker__parameterized1 |         12 |         12 |       0 |    0 |   20 |      0 |      0 |          0 |
+|             seekerR                     | unit_seeker__parameterized2 |         10 |         10 |       0 |    0 |   20 |      0 |      0 |          0 |
+|         seekerR                         |         HSn__parameterized3 |        551 |        551 |       0 |    0 |  174 |      0 |      0 |          0 |
+|           (seekerR)                     |         HSn__parameterized3 |          7 |          7 |       0 |    0 |    9 |      0 |      0 |          0 |
+|           seekerL                       |         HSn__parameterized4 |         39 |         39 |       0 |    0 |   49 |      0 |      0 |          0 |
+|             (seekerL)                   |         HSn__parameterized4 |          1 |          1 |       0 |    0 |    9 |      0 |      0 |          0 |
+|             seekerL                     | unit_seeker__parameterized3 |         13 |         13 |       0 |    0 |   20 |      0 |      0 |          0 |
+|             seekerR                     | unit_seeker__parameterized4 |         25 |         25 |       0 |    0 |   20 |      0 |      0 |          0 |
+|           seekerR                       |         HSn__parameterized5 |        507 |        507 |       0 |    0 |  116 |      0 |      0 |          0 |
+|             (seekerR)                   |         HSn__parameterized5 |          1 |          1 |       0 |    0 |    9 |      0 |      0 |          0 |
+|             seekerL                     | unit_seeker__parameterized5 |         13 |         13 |       0 |    0 |   20 |      0 |      0 |          0 |
+|             seekerR                     | unit_seeker__parameterized6 |        493 |        493 |       0 |    0 |   87 |      0 |      0 |          0 |
+|     xapp1017_serdes_1280.serdes_cmp     |  serdes_1_to_468_idelay_ddr |        116 |        116 |       0 |    0 |  107 |      0 |      0 |          0 |
+|       (xapp1017_serdes_1280.serdes_cmp) |  serdes_1_to_468_idelay_ddr |          7 |          7 |       0 |    0 |    7 |      0 |      0 |          0 |
+|       loop3[0].dc_inst                  |       delay_controller_wrap |        109 |        109 |       0 |    0 |  100 |      0 |      0 |          0 |
+|   u_pll                                 |                   clk_wiz_0 |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|     inst                                |           clk_wiz_0_clk_wiz |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
++-----------------------------------------+-----------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining

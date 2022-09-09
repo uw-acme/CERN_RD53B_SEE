@@ -83,9 +83,9 @@ module vc709_top (
             .rx_data_i_p   (rx_data_i_p         ),
             .rx_data_i_n   (rx_data_i_n         ),
             .rx_polarity_i (rx_polarity         ),
-            .rx_data_o     (rx_data_unbonded    ),
-            .rx_header_o   (rx_header_unbonded  ),
-            .rx_valid_o    (rx_data_valid_unbonded),
+            .rx_data_o     (rx_data_out    ),
+            .rx_header_o   (rx_header_out  ),
+            .rx_valid_o    (rx_valid),
             .rx_stat_o     (rx_status           )
         );
         

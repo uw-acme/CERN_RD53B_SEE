@@ -1,18 +1,18 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-// Date        : Thu Aug  4 11:12:25 2022
+// Date        : Tue Sep  6 16:46:49 2022
 // Host        : LAPTOP-F415E9JE running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               d:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/YARR_rx/YARR_rx.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v
+//               d:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/YARR_rx/YARR_rx.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v
 // Design      : clk_wiz_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7k70tfbv676-1
+// Device      : xc7vx690tffg1761-2
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-//(* NotValidForBitStream *)
+(* NotValidForBitStream *)
 module clk_wiz_0
    (clk_out1,
     clk_out2,
@@ -109,16 +109,16 @@ module clk_wiz_0_clk_wiz
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
-    .CLKFBOUT_MULT_F(4.000000),
+    .CLKFBOUT_MULT_F(8.000000),
     .CLKFBOUT_PHASE(0.000000),
     .CLKFBOUT_USE_FINE_PS("FALSE"),
     .CLKIN1_PERIOD(6.250000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE_F(4.000000),
+    .CLKOUT0_DIVIDE_F(8.000000),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),
-    .CLKOUT1_DIVIDE(1),
+    .CLKOUT1_DIVIDE(2),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT1_USE_FINE_PS("FALSE"),

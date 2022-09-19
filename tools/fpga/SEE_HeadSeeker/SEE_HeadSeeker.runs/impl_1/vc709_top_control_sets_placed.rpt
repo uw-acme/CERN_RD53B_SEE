@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Thu Sep 15 03:59:25 2022
+| Date         : Mon Sep 19 02:03:44 2022
 | Host         : LAPTOP-F415E9JE running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file vc709_top_control_sets_placed.rpt
 | Design       : vc709_top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    22 |
-|    Minimum number of control sets                        |    22 |
+| Total control sets                                       |    65 |
+|    Minimum number of control sets                        |    65 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    78 |
+| Unused register locations in slices containing registers |   163 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,11 +39,11 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    22 |
+| Total control sets |    65 |
 | >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     4 |
-| >= 6 to < 8        |     5 |
-| >= 8 to < 10       |     1 |
+| >= 4 to < 6        |    26 |
+| >= 6 to < 8        |    25 |
+| >= 8 to < 10       |     2 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
@@ -58,43 +58,86 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              42 |           14 |
-| No           | No                    | Yes                    |              51 |           18 |
-| No           | Yes                   | No                     |              10 |            4 |
-| Yes          | No                    | No                     |              95 |           37 |
-| Yes          | No                    | Yes                    |             642 |          165 |
-| Yes          | Yes                   | No                     |             162 |           29 |
+| No           | No                    | No                     |              50 |           24 |
+| No           | No                    | Yes                    |              51 |           16 |
+| No           | Yes                   | No                     |              10 |            5 |
+| Yes          | No                    | No                     |             261 |           87 |
+| Yes          | No                    | Yes                    |             642 |          181 |
+| Yes          | Yes                   | No                     |             415 |          105 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+---------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+----------------+--------------+
-|     Clock Signal     |                                        Enable Signal                                        |                                   Set/Reset Signal                                  | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------------+---------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+----------------+--------------+
-|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/s_state[3]_i_1_n_0         | gpio_switch_IBUF[7]                                                                 |                2 |              4 |         2.00 |
-|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/s_delay_val_int[4]_i_1_n_0 | gpio_switch_IBUF[7]                                                                 |                2 |              5 |         2.50 |
-|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/s_delay_val_eye            | gpio_switch_IBUF[7]                                                                 |                1 |              5 |         5.00 |
-|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/sel                                             | u_lane_original/gearbox32to66_cmp/u_aligner/hdr_cnt[4]_i_1_n_0                      |                1 |              5 |         5.00 |
-|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pdcount[5]_i_2_n_0         | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pdcount[5]_i_1_n_0 |                2 |              6 |         3.00 |
-|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/m_count[5]_i_1_n_0                          | gpio_switch_IBUF[7]                                                                 |                2 |              6 |         3.00 |
-|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/data66_cnt[5]_i_1_n_0                                     | gpio_switch_IBUF[7]                                                                 |                1 |              6 |         6.00 |
-|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/gearbox_cnt__0                                            | gpio_switch_IBUF[7]                                                                 |                2 |              7 |         3.50 |
-|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seeker_pos_idx_c[6]_i_2_n_0                     | u_lane_original/gearbox32to66_cmp/u_aligner/seeker_pos_idx_c[6]_i_1_n_0             |                2 |              7 |         3.50 |
-|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold[7]_i_1_n_0         | gpio_switch_IBUF[7]                                                                 |                2 |              8 |         4.00 |
-|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/E[0]                       |                                                                                     |                7 |             20 |         2.86 |
-|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_data32[31]_i_1_n_0                              | gpio_switch_IBUF[7]                                                                 |               11 |             32 |         2.91 |
-|  u_pll/inst/clk_out1 |                                                                                             |                                                                                     |               14 |             42 |         3.00 |
-|  u_pll/inst/clk_out1 |                                                                                             | gpio_switch_IBUF[7]                                                                 |               22 |             61 |         2.77 |
-|  u_pll/inst/clk_out1 | u_lane_original/descrambled_data_valid                                                      | gpio_switch_IBUF[7]                                                                 |               12 |             66 |         5.50 |
-|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/data66_o[65]_i_1_n_0                                      | gpio_switch_IBUF[7]                                                                 |               11 |             66 |         6.00 |
-|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/data66_buf2[65]_i_1_n_0                                   | gpio_switch_IBUF[7]                                                                 |               13 |             66 |         5.08 |
-|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/E[0]                                                      | gpio_switch_IBUF[7]                                                                 |               15 |             66 |         4.40 |
-|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/data66_valid_i_reg[0]                           | gpio_switch_IBUF[7]                                                                 |               11 |             66 |         6.00 |
-|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/data66_valid_i_reg_0[0]                                   |                                                                                     |               30 |             75 |         2.50 |
-|  u_pll/inst/clk_out1 | u_lane_original/scrambled_data_valid_reg_n_0                                                | gpio_switch_IBUF[7]                                                                 |               17 |            122 |         7.18 |
-|  u_pll/inst/clk_out1 | u_lane_original/serdes_data32_valid                                                         | gpio_switch_IBUF[7]                                                                 |               87 |            261 |         3.00 |
-+----------------------+---------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+------------------+----------------+--------------+
++----------------------+------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |                                                Enable Signal                                               |                                                   Set/Reset Signal                                                  | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
+|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/s_state[3]_i_1_n_0                        | gpio_switch_IBUF[7]                                                                                                 |                2 |              4 |         2.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerL/hdr_cnt                        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_45[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seekerL/seekerR/seekerL/sel                    | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_25[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerR/seekerL/sel                    | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_41[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerR/seekerR/hdr_cnt[4]_i_2__18_n_0 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_43[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seekerL/seekerR/seekerR/hdr_cnt[4]_i_2__12_n_0 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_27[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/hdr_cnt                        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_38[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seekerR/seekerR/seekerR/hdr_cnt[4]_i_2__15_n_0 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_35[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seekerR/seekerL/hdr_cnt                        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_30[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/m_delay_val_int[4]_i_1_n_0                |                                                                                                                     |                2 |              5 |         2.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/seekerL/seekerR/seekerR/hdr_cnt[4]_i_2__1_n_0  | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_3[0]                 |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/seekerL/seekerL/hdr_cnt[4]_i_2_n_0             | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/SR[0]                                   |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/seekerR/seekerR/seekerL/sel                    | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_7[0]                 |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/seekerR/seekerR/seekerR/hdr_cnt[4]_i_2__4_n_0  | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_9[0]                 |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/seekerR/seekerL/hdr_cnt                        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_5[0]                 |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/seekerL/seekerR/seekerL/sel                    | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_0[0]                 |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seekerR/seekerR/seekerL/sel                    | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_33[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seekerL/seekerL/hdr_cnt                        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_23[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerL/seekerR/seekerL/sel                    | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_13[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerL/seekerR/seekerR/hdr_cnt[4]_i_2__7_n_0  | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_16[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/s_delay_val_int[4]_i_1_n_0                | gpio_switch_IBUF[7]                                                                                                 |                2 |              5 |         2.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/s_delay_val_eye[4]_i_1_n_0                | gpio_switch_IBUF[7]                                                                                                 |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerL/seekerL/hdr_cnt                        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_11[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/hdr_cnt                        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/hdr_cnt[4]_i_1__20_n_0                  |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/hdr_cnt                        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_19[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/hdr_cnt                        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_21[0]                |                1 |              5 |         5.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/m_count[5]_i_1_n_0                                         | gpio_switch_IBUF[7]                                                                                                 |                2 |              6 |         3.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pdcount[5]_i_2_n_0                        | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pdcount[5]_i_1_n_0                                 |                2 |              6 |         3.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/data66_cnt[5]_i_1_n_0                                                    | gpio_switch_IBUF[7]                                                                                                 |                1 |              6 |         6.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_4[0]        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_2[0]                 |                4 |              7 |         1.75 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_26[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seekerL/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__10_n_0 |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_14[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerL/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__5_n_0  |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_44[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerR/seekerR/seeker_pos_idx_c[6]_i_1__17_n_0 |                3 |              7 |         2.33 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_22[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seeker_pos_idx_c[6]_i_1__8_n_0          |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/seeker_pos_idx_c               | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/seeker_pos_idx_c[6]_i_1__19_n_0         |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_34[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_32[0]                |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/E[0]                           | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__18_n_0         |                3 |              7 |         2.33 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_1[0]        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg[0]                   |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_24[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seekerL/seekerL/seeker_pos_idx_c[6]_i_1__9_n_0          |                3 |              7 |         2.33 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_17[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_15[0]                |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_10[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/seekerR/seekerR/seekerR/seeker_pos_idx_c[6]_i_1__3_n_0  |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/gearbox_cnt                                                              | gpio_switch_IBUF[7]                                                                                                 |                3 |              7 |         2.33 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_42[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_40[0]                |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_12[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerL/seekerL/seeker_pos_idx_c[6]_i_1__4_n_0          |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_36[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seekerR/seekerR/seekerR/seeker_pos_idx_c[6]_i_1__14_n_0 |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_39[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_37[0]                |                3 |              7 |         2.33 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_8[0]        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/seekerR/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__2_n_0  |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_31[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_29[0]                |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_6[0]        | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__1_n_0          |                4 |              7 |         1.75 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_28[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seekerL/seekerR/seekerR/seeker_pos_idx_c[6]_i_1__11_n_0 |                3 |              7 |         2.33 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_20[0]       | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerR/data66_valid_i_reg_18[0]                |                2 |              7 |         3.50 |
+|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold[7]_i_1_n_0                        | gpio_switch_IBUF[7]                                                                                                 |                2 |              8 |         4.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/data66_valid_o                                                           | u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerL/data66_valid_i_reg                              |                4 |              8 |         2.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/gpio_switch[7]                            |                                                                                                                     |                6 |             20 |         3.33 |
+|  u_pll/inst/clk_out1 | u_lane_original/serdes_data32                                                                              | gpio_switch_IBUF[7]                                                                                                 |               11 |             32 |         2.91 |
+|  u_pll/inst/clk_out1 |                                                                                                            |                                                                                                                     |               24 |             50 |         2.08 |
+|  u_pll/inst/clk_out1 |                                                                                                            | gpio_switch_IBUF[7]                                                                                                 |               21 |             61 |         2.90 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerR/seekerR/E[0]                   | gpio_switch_IBUF[7]                                                                                                 |               13 |             66 |         5.08 |
+|  u_pll/inst/clk_out1 | u_lane_original/descrambled_data_valid                                                                     | gpio_switch_IBUF[7]                                                                                                 |               14 |             66 |         4.71 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/data66_t_valid                                                           | gpio_switch_IBUF[7]                                                                                                 |               15 |             66 |         4.40 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/data66_o[65]_i_1_n_0                                                     | gpio_switch_IBUF[7]                                                                                                 |               13 |             66 |         5.08 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/data66_buf2[65]_i_1_n_0                                                  | gpio_switch_IBUF[7]                                                                                                 |               11 |             66 |         6.00 |
+|  u_pll/inst/clk_out1 | u_lane_original/scrambled_data_valid_reg_n_0                                                               | gpio_switch_IBUF[7]                                                                                                 |               19 |            122 |         6.42 |
+|  u_pll/inst/clk_out1 | u_lane_original/gearbox32to66_cmp/data66_valid_o                                                           |                                                                                                                     |               79 |            236 |         2.99 |
+|  u_pll/inst/clk_out1 | u_lane_original/serdes_data32_valid                                                                        | gpio_switch_IBUF[7]                                                                                                 |               98 |            261 |         2.66 |
++----------------------+------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 
 

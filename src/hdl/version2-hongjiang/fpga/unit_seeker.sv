@@ -40,7 +40,7 @@ module unit_seeker #(parameter INIT_POS = 0, parameter END_POS = 65, parameter P
 			seeker_pos_idx_c <= INIT_POS;
 			hdr_cnt 		 <= '0;
 		end
-		else begin
+		else if (buffer_dv) begin
 			// if an invalid header is seen, update position index, reset header counter
 			if (!(seeker == c_DATA_HEADER || seeker == c_CMD_HEADER)) begin
 				seeker_pos_idx_c <= seeker_pos_idx_n;

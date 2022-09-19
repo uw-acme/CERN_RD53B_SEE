@@ -219,7 +219,7 @@ module sim_aurora_lane();
     // monitors disruptions in lane output data on an average per drop level
     initial begin
         $timeformat(-9, 2);
-        $display(" offset     : blocks      ");
+        $display(", offset     ,: blocks      ");
         total_count = 0;
         forever begin
             wait(rx_valid == 0);
@@ -229,7 +229,7 @@ module sim_aurora_lane();
                 end
             if (offset != offset_last) begin
                     total_count = total_count/samples_max;
-                    $display("%12d %12d", offset_last,  total_count);
+                    $display(",%12d ,%12d", offset_last,  total_count);
                     total_count = 0;
             end
             offset_last = offset;

@@ -1,0 +1,793 @@
+do runwave_lane_drop_regression.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:40 on Sep 19,2022
+# vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/serdes_1_to_468_idelay_ddr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity serdes_1_to_468_idelay_ddr
+# -- Compiling architecture arch_serdes_1_to_468_idelay_ddr of serdes_1_to_468_idelay_ddr
+# End time: 02:00:41 on Sep 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:41 on Sep 19,2022
+# vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/delay_controller_wrap.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity delay_controller_wrap
+# -- Compiling architecture arch_delay_controller_wrap of delay_controller_wrap
+# End time: 02:00:42 on Sep 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:42 on Sep 19,2022
+# vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/tef1001_R2_type.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package hw_type_pkg
+# End time: 02:00:42 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:42 on Sep 19,2022
+# vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/board_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package hw_type_pkg
+# -- Compiling package board_pkg
+# End time: 02:00:42 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:42 on Sep 19,2022
+# vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/cdr_serdes.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cdr_serdes
+# -- Compiling architecture rtl of cdr_serdes
+# End time: 02:00:42 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:42 on Sep 19,2022
+# vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/descrambler.v 
+# -- Compiling module descrambler
+# 
+# Top level modules:
+# 	descrambler
+# End time: 02:00:42 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:42 on Sep 19,2022
+# vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/scrambler.v 
+# -- Compiling module scrambler
+# 
+# Top level modules:
+# 	scrambler
+# End time: 02:00:42 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:42 on Sep 19,2022
+# vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/unit_seeker.sv 
+# -- Compiling module unit_seeker
+# 
+# Top level modules:
+# 	unit_seeker
+# End time: 02:00:42 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:42 on Sep 19,2022
+# vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/HS2.sv 
+# -- Compiling module HS2
+# 
+# Top level modules:
+# 	HS2
+# End time: 02:00:42 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:43 on Sep 19,2022
+# vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv 
+# -- Compiling module HSn_balenced
+# ** Warning: ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv(85): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv(86): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv(112): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv(113): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# 
+# Top level modules:
+# 	--none--
+# End time: 02:00:43 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:43 on Sep 19,2022
+# vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity gearbox32to66
+# -- Compiling architecture rtl of gearbox32to66
+# End time: 02:00:43 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:43 on Sep 19,2022
+# vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package hw_type_pkg
+# -- Loading package board_pkg
+# -- Compiling entity aurora_rx_lane
+# -- Compiling architecture behavioral of aurora_rx_lane
+# End time: 02:00:43 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:43 on Sep 19,2022
+# vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/rr_arbiter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rr_arbiter
+# -- Compiling architecture behavioral of rr_arbiter
+# End time: 02:00:43 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:43 on Sep 19,2022
+# vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/aligner.sv 
+# -- Compiling module aligner
+# 
+# Top level modules:
+# 	aligner
+# End time: 02:00:43 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 02:00:43 on Sep 19,2022
+# vlog -reportprogress 300 -work work ./sim_aurora_lane_drop_regression.sv 
+# -- Compiling module sim_aurora_lane
+# 
+# Top level modules:
+# 	sim_aurora_lane
+# End time: 02:00:43 on Sep 19,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 02:00:50 on Sep 19,2022, Elapsed time: 0:17:38
+# Errors: 0, Warnings: 5
+# vsim -t 1fs -novopt sim_aurora_lane -L unisim -L secureip -L unifast -L unimacro 
+# Start time: 02:00:50 on Sep 19,2022
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.sim_aurora_lane
+# Loading sv_std.std
+# Loading work.sim_aurora_lane
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.scrambler
+# Loading work.scrambler
+# Loading std.standard
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.aurora_rx_lane(behavioral)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.board_pkg
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.hw_type_pkg
+# Loading work.hw_type_pkg
+# Loading work.board_pkg
+# Loading work.aurora_rx_lane(behavioral)
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.serdes_1_to_468_idelay_ddr(arch_serdes_1_to_468_idelay_ddr)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.serdes_1_to_468_idelay_ddr(arch_serdes_1_to_468_idelay_ddr)
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.delay_controller_wrap(arch_delay_controller_wrap)
+# Loading work.delay_controller_wrap(arch_delay_controller_wrap)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.idelaye2(idelaye2_v)
+# Loading unisim.iserdese2(iserdese2_v)
+# Loading secureip.ISERDESE2_WRAP
+# Loading secureip.B_ISERDESE2
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.gearbox32to66(rtl)
+# Loading work.gearbox32to66(rtl)
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.HSn_balenced
+# Loading work.HSn_balenced
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.unit_seeker
+# Loading work.unit_seeker
+# Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.descrambler
+# Loading work.descrambler
+# .main_pane.objects.interior.cs.body.tree
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/N'.
+# Executing ONERROR command at macro ./balenced_wave.do line 143
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/MIN_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 144
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/MAX_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 146
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/MID_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 148
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/pos_sel'.
+# Executing ONERROR command at macro ./balenced_wave.do line 157
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/pre_win'.
+# Executing ONERROR command at macro ./balenced_wave.do line 158
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/is_sync_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 160
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/offset_pos_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 162
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/N'.
+# Executing ONERROR command at macro ./balenced_wave.do line 164
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/MIN_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 166
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/MAX_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 168
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/MID_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 170
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 172
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 174
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 176
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 178
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 180
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 182
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 184
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/pos_sel'.
+# Executing ONERROR command at macro ./balenced_wave.do line 186
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/pre_win'.
+# Executing ONERROR command at macro ./balenced_wave.do line 188
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/is_sync_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 190
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/offset_pos_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 192
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/INIT_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 194
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/END_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 196
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/POS_STEP'.
+# Executing ONERROR command at macro ./balenced_wave.do line 198
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/c_DATA_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 200
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/c_CMD_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 202
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/c_SYNC_MAX'.
+# Executing ONERROR command at macro ./balenced_wave.do line 204
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 206
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 208
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 210
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 212
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 214
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 216
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 218
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 220
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/hdr_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 222
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/seeker'.
+# Executing ONERROR command at macro ./balenced_wave.do line 224
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/seeker_pos_idx_n'.
+# Executing ONERROR command at macro ./balenced_wave.do line 226
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/seeker_pos_idx_c'.
+# Executing ONERROR command at macro ./balenced_wave.do line 228
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/N'.
+# Executing ONERROR command at macro ./balenced_wave.do line 275
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/MIN_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 276
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/MAX_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 278
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/MID_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 280
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/pos_sel'.
+# Executing ONERROR command at macro ./balenced_wave.do line 289
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/pre_win'.
+# Executing ONERROR command at macro ./balenced_wave.do line 290
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/is_sync_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 292
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/offset_pos_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 294
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/N'.
+# Executing ONERROR command at macro ./balenced_wave.do line 296
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/MIN_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 298
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/MAX_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 300
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/MID_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 302
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 304
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 306
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 308
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 310
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 312
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 314
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 316
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/pos_sel'.
+# Executing ONERROR command at macro ./balenced_wave.do line 318
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/pre_win'.
+# Executing ONERROR command at macro ./balenced_wave.do line 320
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/is_sync_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 322
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/offset_pos_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 324
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/INIT_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 326
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/END_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 328
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/POS_STEP'.
+# Executing ONERROR command at macro ./balenced_wave.do line 330
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/c_DATA_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 332
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/c_CMD_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 334
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/c_SYNC_MAX'.
+# Executing ONERROR command at macro ./balenced_wave.do line 336
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 338
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 340
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 342
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 344
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 346
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 348
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 350
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 352
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/hdr_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 354
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/seeker'.
+# Executing ONERROR command at macro ./balenced_wave.do line 356
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/seeker_pos_idx_n'.
+# Executing ONERROR command at macro ./balenced_wave.do line 358
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/seeker_pos_idx_c'.
+# Executing ONERROR command at macro ./balenced_wave.do line 360
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/INIT_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 377
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/END_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 378
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/POS_STEP'.
+# Executing ONERROR command at macro ./balenced_wave.do line 380
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/c_DATA_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 382
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/c_CMD_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 384
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/c_SYNC_MAX'.
+# Executing ONERROR command at macro ./balenced_wave.do line 386
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 388
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 390
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 392
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 394
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 396
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 398
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 400
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 402
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/hdr_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 404
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/seeker'.
+# Executing ONERROR command at macro ./balenced_wave.do line 406
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/seeker_pos_idx_n'.
+# Executing ONERROR command at macro ./balenced_wave.do line 408
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/seeker_pos_idx_c'.
+# Executing ONERROR command at macro ./balenced_wave.do line 410
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/INIT_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 412
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/END_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 414
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/POS_STEP'.
+# Executing ONERROR command at macro ./balenced_wave.do line 416
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/c_DATA_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 418
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/c_CMD_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 420
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/c_SYNC_MAX'.
+# Executing ONERROR command at macro ./balenced_wave.do line 422
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 424
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 426
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 428
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 430
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 432
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 434
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 436
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 438
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/hdr_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 440
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/seeker'.
+# Executing ONERROR command at macro ./balenced_wave.do line 442
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/seeker_pos_idx_n'.
+# Executing ONERROR command at macro ./balenced_wave.do line 444
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/seeker_pos_idx_c'.
+# Executing ONERROR command at macro ./balenced_wave.do line 446
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/INIT_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 448
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/END_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 450
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/POS_STEP'.
+# Executing ONERROR command at macro ./balenced_wave.do line 452
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/c_DATA_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 454
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/c_CMD_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 456
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/c_SYNC_MAX'.
+# Executing ONERROR command at macro ./balenced_wave.do line 458
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 460
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 462
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 464
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 466
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 468
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 470
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 472
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 474
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/hdr_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 476
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/seeker'.
+# Executing ONERROR command at macro ./balenced_wave.do line 478
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/seeker_pos_idx_n'.
+# Executing ONERROR command at macro ./balenced_wave.do line 480
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/seeker_pos_idx_c'.
+# Executing ONERROR command at macro ./balenced_wave.do line 482
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/INIT_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 484
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/END_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 486
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/POS_STEP'.
+# Executing ONERROR command at macro ./balenced_wave.do line 488
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/c_DATA_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 490
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/c_CMD_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 492
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/c_SYNC_MAX'.
+# Executing ONERROR command at macro ./balenced_wave.do line 494
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 496
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 498
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 500
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 502
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 504
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 506
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 508
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 510
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/hdr_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 512
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/seeker'.
+# Executing ONERROR command at macro ./balenced_wave.do line 514
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/seeker_pos_idx_n'.
+# Executing ONERROR command at macro ./balenced_wave.do line 516
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/seeker_pos_idx_c'.
+# Executing ONERROR command at macro ./balenced_wave.do line 518
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/INIT_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 520
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/END_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 522
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/POS_STEP'.
+# Executing ONERROR command at macro ./balenced_wave.do line 524
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/c_DATA_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 526
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/c_CMD_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 528
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/c_SYNC_MAX'.
+# Executing ONERROR command at macro ./balenced_wave.do line 530
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 532
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 534
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 536
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 538
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 540
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 542
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 544
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 546
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/hdr_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 548
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/seeker'.
+# Executing ONERROR command at macro ./balenced_wave.do line 550
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/seeker_pos_idx_n'.
+# Executing ONERROR command at macro ./balenced_wave.do line 552
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerL/seeker_pos_idx_c'.
+# Executing ONERROR command at macro ./balenced_wave.do line 554
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/INIT_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 556
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/END_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 558
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/POS_STEP'.
+# Executing ONERROR command at macro ./balenced_wave.do line 560
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/c_DATA_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 562
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/c_CMD_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 564
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/c_SYNC_MAX'.
+# Executing ONERROR command at macro ./balenced_wave.do line 566
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 568
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 570
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 572
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 574
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 576
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 578
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 580
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 582
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/hdr_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 584
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/seeker'.
+# Executing ONERROR command at macro ./balenced_wave.do line 586
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/seeker_pos_idx_n'.
+# Executing ONERROR command at macro ./balenced_wave.do line 588
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/seeker_pos_idx_c'.
+# Executing ONERROR command at macro ./balenced_wave.do line 590
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/INIT_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 592
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/END_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 594
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/POS_STEP'.
+# Executing ONERROR command at macro ./balenced_wave.do line 596
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/c_DATA_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 598
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/c_CMD_HEADER'.
+# Executing ONERROR command at macro ./balenced_wave.do line 600
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/c_SYNC_MAX'.
+# Executing ONERROR command at macro ./balenced_wave.do line 602
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 604
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 606
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 608
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 610
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 612
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 614
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 616
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 618
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/hdr_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 620
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/seeker'.
+# Executing ONERROR command at macro ./balenced_wave.do line 622
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/seeker_pos_idx_n'.
+# Executing ONERROR command at macro ./balenced_wave.do line 624
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerR/seeker_pos_idx_c'.
+# Executing ONERROR command at macro ./balenced_wave.do line 626
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/N'.
+# Executing ONERROR command at macro ./balenced_wave.do line 628
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/MIN_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 630
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/MAX_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 632
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/MID_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 634
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 636
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 638
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 640
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 642
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 644
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 646
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 648
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/pos_sel'.
+# Executing ONERROR command at macro ./balenced_wave.do line 650
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/pre_win'.
+# Executing ONERROR command at macro ./balenced_wave.do line 652
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/is_sync_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 654
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerR/offset_pos_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 656
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/N'.
+# Executing ONERROR command at macro ./balenced_wave.do line 658
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/MIN_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 660
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/MAX_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 662
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/MID_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 664
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 666
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 668
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 670
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 672
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 674
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 676
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 678
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/pos_sel'.
+# Executing ONERROR command at macro ./balenced_wave.do line 680
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/pre_win'.
+# Executing ONERROR command at macro ./balenced_wave.do line 682
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/is_sync_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 684
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/offset_pos_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 686
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/N'.
+# Executing ONERROR command at macro ./balenced_wave.do line 688
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/MIN_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 690
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/MAX_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 692
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/MID_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 694
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/pos_sel'.
+# Executing ONERROR command at macro ./balenced_wave.do line 703
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/pre_win'.
+# Executing ONERROR command at macro ./balenced_wave.do line 704
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/is_sync_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 706
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/genblk1/seekerL/offset_pos_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 708
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/N'.
+# Executing ONERROR command at macro ./balenced_wave.do line 755
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/MIN_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 756
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/MAX_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 758
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/MID_POS'.
+# Executing ONERROR command at macro ./balenced_wave.do line 760
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/rst_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 762
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/clk_i'.
+# Executing ONERROR command at macro ./balenced_wave.do line 764
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/gbox_buffer'.
+# Executing ONERROR command at macro ./balenced_wave.do line 766
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/gbox_cnt'.
+# Executing ONERROR command at macro ./balenced_wave.do line 768
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/buffer_dv'.
+# Executing ONERROR command at macro ./balenced_wave.do line 770
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/is_synced'.
+# Executing ONERROR command at macro ./balenced_wave.do line 772
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/offset_pos'.
+# Executing ONERROR command at macro ./balenced_wave.do line 774
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/pos_sel'.
+# Executing ONERROR command at macro ./balenced_wave.do line 776
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/pre_win'.
+# Executing ONERROR command at macro ./balenced_wave.do line 778
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/is_sync_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 780
+# ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/genblk1/seekerL/genblk1/seekerR/genblk1/seekerR/genblk1/seekerL/genblk1/seekerL/offset_pos_temp'.
+# Executing ONERROR command at macro ./balenced_wave.do line 782
+run -all
+#  offset     : blocks      
+#            0            0
+#            1           22
+#            2           24
+#            3           23
+#            4           23
+#            5           23
+#            6           23
+#            7           23
+#            8           23
+#            9           23
+#           10           24
+#           11           23
+#           12           23
+#           13           23
+#           14           23
+#           15           23
+#           16           23
+#           17           22
+#           18           22
+#           19           22
+#           20           23
+#           21           23
+#           22           23
+#           23           23
+#           24           22
+#           25           23
+#           26           24
+#           27           23
+#           28           23
+#           29           23
+#           30           23
+#           31           23
+#           32           23
+#           33           22
+#           34           23
+#           35           23
+#           36           22
+#           37           23
+#           38           22
+#           39           23
+#           40           22
+#           41           23
+#           42           22
+#           43           22
+#           44           22
+#           45           22
+#           46           22
+#           47           23
+#           48           22
+#           49           22
+#           50           23
+#           51           22
+#           52           23
+#           53           23
+#           54           22
+#           55           23
+#           56           23
+#           57           22
+#           58           23
+#           59           23
+#           60           22
+#           61           23
+#           62           22
+#           63           22
+#           64           23
+#           65           23

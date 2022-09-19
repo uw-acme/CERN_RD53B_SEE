@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Thu Sep  8 00:33:41 2022
+| Date         : Thu Sep 15 04:00:15 2022
 | Host         : LAPTOP-F415E9JE running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file vc709_top_timing_summary_routed.rpt -pb vc709_top_timing_summary_routed.pb -rpx vc709_top_timing_summary_routed.rpx -warn_on_violation
 | Design       : vc709_top
@@ -141,7 +141,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      0.501        0.000                      0                 6440        0.031        0.000                      0                 6440       -0.876       -1.751                       2                  2893  
+      0.488        0.000                      0                 1910        0.111        0.000                      0                 1910       -0.876       -1.751                       2                  1020  
 
 
 Timing constraints are not met.
@@ -168,7 +168,7 @@ clk                     {0.000 3.125}        6.250           160.000
 Clock                       WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----                       -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
 clk                                                                                                                                                                       1.625        0.000                       0                     1  
-  clk_out1_clk_wiz_0_1        0.501        0.000                      0                 6440        0.031        0.000                      0                 6440        2.725        0.000                       0                  2881  
+  clk_out1_clk_wiz_0_1        0.488        0.000                      0                 1910        0.111        0.000                      0                 1910        2.725        0.000                       0                  1008  
   clk_out2_clk_wiz_0_1                                                                                                                                                   -0.876       -1.751                       2                     8  
   clkfbout_clk_wiz_0_1                                                                                                                                                    4.842        0.000                       0                     3  
 
@@ -228,15 +228,15 @@ High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            1.500         3.125 
 From Clock:  clk_out1_clk_wiz_0_1
   To Clock:  clk_out1_clk_wiz_0_1
 
-Setup :            0  Failing Endpoints,  Worst Slack        0.501ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.031ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        0.488ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.111ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        2.725ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.501ns  (required time - arrival time)
+Slack (MET) :             0.488ns  (required time - arrival time)
   Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/CLKDIV
                             (rising edge-triggered cell ISERDESE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
   Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[4]/D
@@ -244,10 +244,10 @@ Slack (MET) :             0.501ns  (required time - arrival time)
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        5.349ns  (logic 0.468ns (8.749%)  route 4.881ns (91.251%))
+  Data Path Delay:        5.380ns  (logic 0.468ns (8.700%)  route 4.912ns (91.300%))
   Logic Levels:           0  
-  Clock Path Skew:        -0.309ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.681ns = ( 4.569 - 6.250 ) 
+  Clock Path Skew:        -0.313ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.685ns = ( 4.565 - 6.250 ) 
     Source Clock Delay      (SCD):    -2.089ns
     Clock Pessimism Removal (CPR):    -0.716ns
   Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
@@ -267,13 +267,13 @@ Slack (MET) :             0.501ns  (required time - arrival time)
                                                      -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.503    -2.089    u_lane_original/xapp1017_serdes_1280.serdes_cmp/CLK
+                         net (fo=1006, routed)        1.503    -2.089    u_lane_original/xapp1017_serdes_1280.serdes_cmp/clk_out1
     ILOGIC_X0Y164        ISERDESE2                                    r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/CLKDIV
   -------------------------------------------------------------------    -------------------
     ILOGIC_X0Y164        ISERDESE2 (Prop_iserdese2_CLKDIV_Q4)
                                                       0.468    -1.621 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/Q4
-                         net (fo=1, routed)           4.881     3.260    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/D[4]
-    SLICE_X51Y259        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[4]/D
+                         net (fo=1, routed)           4.912     3.291    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/D[4]
+    SLICE_X50Y265        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[4]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_clk_wiz_0_1 rise edge)
@@ -286,29 +286,29 @@ Slack (MET) :             0.501ns  (required time - arrival time)
                                                      -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.194     4.569    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/CLK
-    SLICE_X51Y259        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[4]/C
-                         clock pessimism             -0.716     3.852    
-                         clock uncertainty           -0.060     3.792    
-    SLICE_X51Y259        FDRE (Setup_fdre_C_D)       -0.031     3.761    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[4]
+                         net (fo=1006, routed)        1.190     4.565    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/clk_out1
+    SLICE_X50Y265        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[4]/C
+                         clock pessimism             -0.716     3.848    
+                         clock uncertainty           -0.060     3.788    
+    SLICE_X50Y265        FDRE (Setup_fdre_C_D)       -0.010     3.778    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[4]
   -------------------------------------------------------------------
-                         required time                          3.761    
-                         arrival time                          -3.260    
+                         required time                          3.778    
+                         arrival time                          -3.291    
   -------------------------------------------------------------------
-                         slack                                  0.501    
+                         slack                                  0.488    
 
-Slack (MET) :             0.654ns  (required time - arrival time)
+Slack (MET) :             0.953ns  (required time - arrival time)
   Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/CLKDIV
                             (rising edge-triggered cell ISERDESE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[6]/D
+  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[3]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        5.208ns  (logic 0.468ns (8.986%)  route 4.740ns (91.014%))
+  Data Path Delay:        4.923ns  (logic 0.468ns (9.507%)  route 4.455ns (90.493%))
   Logic Levels:           0  
-  Clock Path Skew:        -0.309ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.681ns = ( 4.569 - 6.250 ) 
+  Clock Path Skew:        -0.313ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.685ns = ( 4.565 - 6.250 ) 
     Source Clock Delay      (SCD):    -2.089ns
     Clock Pessimism Removal (CPR):    -0.716ns
   Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
@@ -328,13 +328,13 @@ Slack (MET) :             0.654ns  (required time - arrival time)
                                                      -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.503    -2.089    u_lane_original/xapp1017_serdes_1280.serdes_cmp/CLK
+                         net (fo=1006, routed)        1.503    -2.089    u_lane_original/xapp1017_serdes_1280.serdes_cmp/clk_out1
     ILOGIC_X0Y164        ISERDESE2                                    r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/CLKDIV
   -------------------------------------------------------------------    -------------------
-    ILOGIC_X0Y164        ISERDESE2 (Prop_iserdese2_CLKDIV_Q2)
-                                                      0.468    -1.621 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/Q2
-                         net (fo=1, routed)           4.740     3.119    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/D[6]
-    SLICE_X51Y259        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[6]/D
+    ILOGIC_X0Y164        ISERDESE2 (Prop_iserdese2_CLKDIV_Q5)
+                                                      0.468    -1.621 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/Q5
+                         net (fo=1, routed)           4.455     2.834    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/D[3]
+    SLICE_X50Y265        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_clk_wiz_0_1 rise edge)
@@ -347,79 +347,18 @@ Slack (MET) :             0.654ns  (required time - arrival time)
                                                      -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.194     4.569    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/CLK
-    SLICE_X51Y259        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[6]/C
-                         clock pessimism             -0.716     3.852    
-                         clock uncertainty           -0.060     3.792    
-    SLICE_X51Y259        FDRE (Setup_fdre_C_D)       -0.019     3.773    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[6]
+                         net (fo=1006, routed)        1.190     4.565    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/clk_out1
+    SLICE_X50Y265        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[3]/C
+                         clock pessimism             -0.716     3.848    
+                         clock uncertainty           -0.060     3.788    
+    SLICE_X50Y265        FDRE (Setup_fdre_C_D)       -0.002     3.786    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[3]
   -------------------------------------------------------------------
-                         required time                          3.773    
-                         arrival time                          -3.119    
+                         required time                          3.786    
+                         arrival time                          -2.834    
   -------------------------------------------------------------------
-                         slack                                  0.654    
+                         slack                                  0.953    
 
-Slack (MET) :             0.735ns  (required time - arrival time)
-  Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/m_delay_val_int_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].idelay_m/CNTVALUEIN[3]
-                            (rising edge-triggered cell IDELAYE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Path Group:             clk_out1_clk_wiz_0_1
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        5.245ns  (logic 0.259ns (4.938%)  route 4.986ns (95.062%))
-  Logic Levels:           0  
-  Clock Path Skew:        -0.133ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.508ns = ( 4.742 - 6.250 ) 
-    Source Clock Delay      (SCD):    -2.092ns
-    Clock Pessimism Removal (CPR):    -0.716ns
-  Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.096ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.937     0.937 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           1.081     2.018    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.500    -2.092    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/CLK
-    SLICE_X50Y301        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/m_delay_val_int_reg[3]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X50Y301        FDRE (Prop_fdre_C_Q)         0.259    -1.833 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/m_delay_val_int_reg[3]/Q
-                         net (fo=8, routed)           4.986     3.153    u_lane_original/xapp1017_serdes_1280.serdes_cmp/CNTVALUEIN[3]
-    IDELAY_X0Y164        IDELAYE2                                     r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].idelay_m/CNTVALUEIN[3]
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      6.250     6.250 r  
-    AK34                                              0.000     6.250 r  clk_p (IN)
-                         net (fo=0)                   0.000     6.250    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.835     7.085 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.986     8.071    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.367     4.742    u_lane_original/xapp1017_serdes_1280.serdes_cmp/CLK
-    IDELAY_X0Y164        IDELAYE2                                     r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].idelay_m/C
-                         clock pessimism             -0.716     4.025    
-                         clock uncertainty           -0.060     3.965    
-    IDELAY_X0Y164        IDELAYE2 (Setup_idelaye2_C_CNTVALUEIN[3])
-                                                     -0.077     3.888    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].idelay_m
-  -------------------------------------------------------------------
-                         required time                          3.888    
-                         arrival time                          -3.153    
-  -------------------------------------------------------------------
-                         slack                                  0.735    
-
-Slack (MET) :             0.909ns  (required time - arrival time)
+Slack (MET) :             1.032ns  (required time - arrival time)
   Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
                             (rising edge-triggered cell ISERDESE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
   Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[3]/D
@@ -427,10 +366,10 @@ Slack (MET) :             0.909ns  (required time - arrival time)
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        4.896ns  (logic 0.511ns (10.437%)  route 4.385ns (89.563%))
+  Data Path Delay:        4.738ns  (logic 0.511ns (10.785%)  route 4.227ns (89.215%))
   Logic Levels:           1  (LUT1=1)
-  Clock Path Skew:        -0.450ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.429ns = ( 4.821 - 6.250 ) 
+  Clock Path Skew:        -0.454ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.433ns = ( 4.817 - 6.250 ) 
     Source Clock Delay      (SCD):    -1.623ns
     Clock Pessimism Removal (CPR):    -0.643ns
   Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
@@ -450,15 +389,15 @@ Slack (MET) :             0.909ns  (required time - arrival time)
                                                      -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.969    -1.623    u_lane_original/xapp1017_serdes_1280.serdes_cmp/CLK
+                         net (fo=1006, routed)        1.969    -1.623    u_lane_original/xapp1017_serdes_1280.serdes_cmp/clk_out1
     ILOGIC_X0Y499        ISERDESE2                                    r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
   -------------------------------------------------------------------    -------------------
     ILOGIC_X0Y499        ISERDESE2 (Prop_iserdese2_CLKDIV_Q5)
                                                       0.468    -1.155 f  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/Q5
-                         net (fo=1, routed)           4.385     3.230    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/p_0_in[3]
-    SLICE_X50Y370        LUT1 (Prop_lut1_I0_O)        0.043     3.273 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta[3]_i_1/O
-                         net (fo=1, routed)           0.000     3.273    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataout[3]
-    SLICE_X50Y370        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[3]/D
+                         net (fo=1, routed)           4.227     3.072    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/p_0_in[3]
+    SLICE_X51Y376        LUT1 (Prop_lut1_I0_O)        0.043     3.115 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta[3]_i_1/O
+                         net (fo=1, routed)           0.000     3.115    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataout[3]
+    SLICE_X51Y376        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_clk_wiz_0_1 rise edge)
@@ -471,31 +410,31 @@ Slack (MET) :             0.909ns  (required time - arrival time)
                                                      -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.446     4.821    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/CLK
-    SLICE_X50Y370        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[3]/C
-                         clock pessimism             -0.643     4.177    
-                         clock uncertainty           -0.060     4.117    
-    SLICE_X50Y370        FDRE (Setup_fdre_C_D)        0.065     4.182    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[3]
+                         net (fo=1006, routed)        1.442     4.817    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/clk_out1
+    SLICE_X51Y376        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[3]/C
+                         clock pessimism             -0.643     4.173    
+                         clock uncertainty           -0.060     4.113    
+    SLICE_X51Y376        FDRE (Setup_fdre_C_D)        0.034     4.147    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[3]
   -------------------------------------------------------------------
-                         required time                          4.182    
-                         arrival time                          -3.273    
+                         required time                          4.147    
+                         arrival time                          -3.115    
   -------------------------------------------------------------------
-                         slack                                  0.909    
+                         slack                                  1.032    
 
-Slack (MET) :             1.307ns  (required time - arrival time)
-  Source:                 u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
+Slack (MET) :             1.563ns  (required time - arrival time)
+  Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
+                            (rising edge-triggered cell ISERDESE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[5]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[4]/S
-                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        4.445ns  (logic 0.576ns (12.958%)  route 3.869ns (87.042%))
-  Logic Levels:           4  (LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.134ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.648ns = ( 4.602 - 6.250 ) 
-    Source Clock Delay      (SCD):    -2.108ns
-    Clock Pessimism Removal (CPR):    -0.593ns
+  Data Path Delay:        4.207ns  (logic 0.511ns (12.146%)  route 3.696ns (87.854%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.454ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.433ns = ( 4.817 - 6.250 ) 
+    Source Clock Delay      (SCD):    -1.623ns
+    Clock Pessimism Removal (CPR):    -0.643ns
   Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.096ns
@@ -513,20 +452,15 @@ Slack (MET) :             1.307ns  (required time - arrival time)
                                                      -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.484    -2.108    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/CLK
-    SLICE_X54Y308        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
+                         net (fo=1006, routed)        1.969    -1.623    u_lane_original/xapp1017_serdes_1280.serdes_cmp/clk_out1
+    ILOGIC_X0Y499        ISERDESE2                                    r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y308        FDRE (Prop_fdre_C_Q)         0.259    -1.849 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/Q
-                         net (fo=65, routed)          2.620     0.771    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer[21]
-    SLICE_X84Y334        LUT6 (Prop_lut6_I1_O)        0.043     0.814 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27/O
-                         net (fo=1, routed)           0.000     0.814    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27_n_0
-    SLICE_X84Y334        MUXF7 (Prop_muxf7_I0_O)      0.107     0.921 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9/O
-                         net (fo=1, routed)           0.328     1.249    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9_n_0
-    SLICE_X88Y333        LUT6 (Prop_lut6_I3_O)        0.124     1.373 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27/O
-                         net (fo=3, routed)           0.444     1.816    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27_n_0
-    SLICE_X90Y333        LUT6 (Prop_lut6_I3_O)        0.043     1.859 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__27/O
-                         net (fo=7, routed)           0.478     2.337    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[4]_0[0]
-    SLICE_X90Y333        FDSE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[4]/S
+    ILOGIC_X0Y499        ISERDESE2 (Prop_iserdese2_CLKDIV_Q3)
+                                                      0.468    -1.155 f  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/Q3
+                         net (fo=1, routed)           3.696     2.541    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/p_0_in[5]
+    SLICE_X51Y376        LUT1 (Prop_lut1_I0_O)        0.043     2.584 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta[5]_i_1/O
+                         net (fo=1, routed)           0.000     2.584    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataout[5]
+    SLICE_X51Y376        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_clk_wiz_0_1 rise edge)
@@ -539,31 +473,31 @@ Slack (MET) :             1.307ns  (required time - arrival time)
                                                      -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.227     4.602    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/CLK
-    SLICE_X90Y333        FDSE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[4]/C
-                         clock pessimism             -0.593     4.008    
-                         clock uncertainty           -0.060     3.948    
-    SLICE_X90Y333        FDSE (Setup_fdse_C_S)       -0.304     3.644    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[4]
+                         net (fo=1006, routed)        1.442     4.817    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/clk_out1
+    SLICE_X51Y376        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[5]/C
+                         clock pessimism             -0.643     4.173    
+                         clock uncertainty           -0.060     4.113    
+    SLICE_X51Y376        FDRE (Setup_fdre_C_D)        0.034     4.147    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[5]
   -------------------------------------------------------------------
-                         required time                          3.644    
-                         arrival time                          -2.337    
+                         required time                          4.147    
+                         arrival time                          -2.584    
   -------------------------------------------------------------------
-                         slack                                  1.307    
+                         slack                                  1.563    
 
-Slack (MET) :             1.307ns  (required time - arrival time)
-  Source:                 u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[5]/R
+Slack (MET) :             1.633ns  (required time - arrival time)
+  Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
+                            (rising edge-triggered cell ISERDESE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[0]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        4.445ns  (logic 0.576ns (12.958%)  route 3.869ns (87.042%))
-  Logic Levels:           4  (LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.134ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.648ns = ( 4.602 - 6.250 ) 
-    Source Clock Delay      (SCD):    -2.108ns
-    Clock Pessimism Removal (CPR):    -0.593ns
+  Data Path Delay:        3.982ns  (logic 0.511ns (12.833%)  route 3.471ns (87.167%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.609ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.558ns = ( 4.692 - 6.250 ) 
+    Source Clock Delay      (SCD):    -1.623ns
+    Clock Pessimism Removal (CPR):    -0.673ns
   Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.096ns
@@ -581,20 +515,15 @@ Slack (MET) :             1.307ns  (required time - arrival time)
                                                      -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.484    -2.108    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/CLK
-    SLICE_X54Y308        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
+                         net (fo=1006, routed)        1.969    -1.623    u_lane_original/xapp1017_serdes_1280.serdes_cmp/clk_out1
+    ILOGIC_X0Y499        ISERDESE2                                    r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y308        FDRE (Prop_fdre_C_Q)         0.259    -1.849 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/Q
-                         net (fo=65, routed)          2.620     0.771    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer[21]
-    SLICE_X84Y334        LUT6 (Prop_lut6_I1_O)        0.043     0.814 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27/O
-                         net (fo=1, routed)           0.000     0.814    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27_n_0
-    SLICE_X84Y334        MUXF7 (Prop_muxf7_I0_O)      0.107     0.921 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9/O
-                         net (fo=1, routed)           0.328     1.249    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9_n_0
-    SLICE_X88Y333        LUT6 (Prop_lut6_I3_O)        0.124     1.373 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27/O
-                         net (fo=3, routed)           0.444     1.816    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27_n_0
-    SLICE_X90Y333        LUT6 (Prop_lut6_I3_O)        0.043     1.859 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__27/O
-                         net (fo=7, routed)           0.478     2.337    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[4]_0[0]
-    SLICE_X90Y333        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[5]/R
+    ILOGIC_X0Y499        ISERDESE2 (Prop_iserdese2_CLKDIV_Q8)
+                                                      0.468    -1.155 f  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/Q8
+                         net (fo=2, routed)           3.471     2.316    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/p_0_in[0]
+    SLICE_X49Y318        LUT1 (Prop_lut1_I0_O)        0.043     2.359 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta[0]_i_1/O
+                         net (fo=1, routed)           0.000     2.359    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataout[0]
+    SLICE_X49Y318        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_clk_wiz_0_1 rise edge)
@@ -607,31 +536,31 @@ Slack (MET) :             1.307ns  (required time - arrival time)
                                                      -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.227     4.602    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/CLK
-    SLICE_X90Y333        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[5]/C
-                         clock pessimism             -0.593     4.008    
-                         clock uncertainty           -0.060     3.948    
-    SLICE_X90Y333        FDRE (Setup_fdre_C_R)       -0.304     3.644    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[5]
+                         net (fo=1006, routed)        1.317     4.692    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/clk_out1
+    SLICE_X49Y318        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[0]/C
+                         clock pessimism             -0.673     4.018    
+                         clock uncertainty           -0.060     3.958    
+    SLICE_X49Y318        FDRE (Setup_fdre_C_D)        0.034     3.992    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[0]
   -------------------------------------------------------------------
-                         required time                          3.644    
-                         arrival time                          -2.337    
+                         required time                          3.992    
+                         arrival time                          -2.359    
   -------------------------------------------------------------------
-                         slack                                  1.307    
+                         slack                                  1.633    
 
-Slack (MET) :             1.307ns  (required time - arrival time)
-  Source:                 u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[6]/R
+Slack (MET) :             1.749ns  (required time - arrival time)
+  Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/CLKDIV
+                            (rising edge-triggered cell ISERDESE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[1]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        4.445ns  (logic 0.576ns (12.958%)  route 3.869ns (87.042%))
-  Logic Levels:           4  (LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.134ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.648ns = ( 4.602 - 6.250 ) 
-    Source Clock Delay      (SCD):    -2.108ns
-    Clock Pessimism Removal (CPR):    -0.593ns
+  Data Path Delay:        4.121ns  (logic 0.468ns (11.357%)  route 3.653ns (88.643%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.691ns = ( 4.559 - 6.250 ) 
+    Source Clock Delay      (SCD):    -2.089ns
+    Clock Pessimism Removal (CPR):    -0.716ns
   Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.096ns
@@ -649,20 +578,13 @@ Slack (MET) :             1.307ns  (required time - arrival time)
                                                      -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.484    -2.108    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/CLK
-    SLICE_X54Y308        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
+                         net (fo=1006, routed)        1.503    -2.089    u_lane_original/xapp1017_serdes_1280.serdes_cmp/clk_out1
+    ILOGIC_X0Y164        ISERDESE2                                    r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/CLKDIV
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y308        FDRE (Prop_fdre_C_Q)         0.259    -1.849 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/Q
-                         net (fo=65, routed)          2.620     0.771    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer[21]
-    SLICE_X84Y334        LUT6 (Prop_lut6_I1_O)        0.043     0.814 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27/O
-                         net (fo=1, routed)           0.000     0.814    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27_n_0
-    SLICE_X84Y334        MUXF7 (Prop_muxf7_I0_O)      0.107     0.921 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9/O
-                         net (fo=1, routed)           0.328     1.249    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9_n_0
-    SLICE_X88Y333        LUT6 (Prop_lut6_I3_O)        0.124     1.373 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27/O
-                         net (fo=3, routed)           0.444     1.816    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27_n_0
-    SLICE_X90Y333        LUT6 (Prop_lut6_I3_O)        0.043     1.859 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__27/O
-                         net (fo=7, routed)           0.478     2.337    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[4]_0[0]
-    SLICE_X90Y333        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[6]/R
+    ILOGIC_X0Y164        ISERDESE2 (Prop_iserdese2_CLKDIV_Q7)
+                                                      0.468    -1.621 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/Q7
+                         net (fo=1, routed)           3.653     2.032    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/D[1]
+    SLICE_X50Y271        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_clk_wiz_0_1 rise edge)
@@ -675,31 +597,31 @@ Slack (MET) :             1.307ns  (required time - arrival time)
                                                      -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.227     4.602    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/CLK
-    SLICE_X90Y333        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[6]/C
-                         clock pessimism             -0.593     4.008    
-                         clock uncertainty           -0.060     3.948    
-    SLICE_X90Y333        FDRE (Setup_fdre_C_R)       -0.304     3.644    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[6]
+                         net (fo=1006, routed)        1.184     4.559    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/clk_out1
+    SLICE_X50Y271        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[1]/C
+                         clock pessimism             -0.716     3.842    
+                         clock uncertainty           -0.060     3.782    
+    SLICE_X50Y271        FDRE (Setup_fdre_C_D)       -0.002     3.780    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[1]
   -------------------------------------------------------------------
-                         required time                          3.644    
-                         arrival time                          -2.337    
+                         required time                          3.780    
+                         arrival time                          -2.032    
   -------------------------------------------------------------------
-                         slack                                  1.307    
+                         slack                                  1.749    
 
-Slack (MET) :             1.309ns  (required time - arrival time)
-  Source:                 u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
+Slack (MET) :             1.936ns  (required time - arrival time)
+  Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
+                            (rising edge-triggered cell ISERDESE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataoutc_reg[7]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[0]/S
-                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        4.443ns  (logic 0.576ns (12.964%)  route 3.867ns (87.036%))
-  Logic Levels:           4  (LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.134ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.648ns = ( 4.602 - 6.250 ) 
-    Source Clock Delay      (SCD):    -2.108ns
-    Clock Pessimism Removal (CPR):    -0.593ns
+  Data Path Delay:        3.677ns  (logic 0.511ns (13.898%)  route 3.166ns (86.102%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.610ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.559ns = ( 4.691 - 6.250 ) 
+    Source Clock Delay      (SCD):    -1.623ns
+    Clock Pessimism Removal (CPR):    -0.673ns
   Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.096ns
@@ -717,20 +639,15 @@ Slack (MET) :             1.309ns  (required time - arrival time)
                                                      -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.484    -2.108    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/CLK
-    SLICE_X54Y308        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
+                         net (fo=1006, routed)        1.969    -1.623    u_lane_original/xapp1017_serdes_1280.serdes_cmp/clk_out1
+    ILOGIC_X0Y499        ISERDESE2                                    r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y308        FDRE (Prop_fdre_C_Q)         0.259    -1.849 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/Q
-                         net (fo=65, routed)          2.620     0.771    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer[21]
-    SLICE_X84Y334        LUT6 (Prop_lut6_I1_O)        0.043     0.814 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27/O
-                         net (fo=1, routed)           0.000     0.814    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27_n_0
-    SLICE_X84Y334        MUXF7 (Prop_muxf7_I0_O)      0.107     0.921 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9/O
-                         net (fo=1, routed)           0.328     1.249    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9_n_0
-    SLICE_X88Y333        LUT6 (Prop_lut6_I3_O)        0.124     1.373 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27/O
-                         net (fo=3, routed)           0.444     1.816    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27_n_0
-    SLICE_X90Y333        LUT6 (Prop_lut6_I3_O)        0.043     1.859 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__27/O
-                         net (fo=7, routed)           0.476     2.335    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[4]_0[0]
-    SLICE_X91Y333        FDSE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[0]/S
+    ILOGIC_X0Y499        ISERDESE2 (Prop_iserdese2_CLKDIV_Q8)
+                                                      0.468    -1.155 f  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/Q8
+                         net (fo=2, routed)           3.166     2.011    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/p_0_in[0]
+    SLICE_X49Y320        LUT5 (Prop_lut5_I0_O)        0.043     2.054 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataoutc[7]_i_1/O
+                         net (fo=1, routed)           0.000     2.054    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataoutc[7]_i_1_n_0
+    SLICE_X49Y320        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataoutc_reg[7]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_clk_wiz_0_1 rise edge)
@@ -743,31 +660,31 @@ Slack (MET) :             1.309ns  (required time - arrival time)
                                                      -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.227     4.602    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/CLK
-    SLICE_X91Y333        FDSE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[0]/C
-                         clock pessimism             -0.593     4.008    
-                         clock uncertainty           -0.060     3.948    
-    SLICE_X91Y333        FDSE (Setup_fdse_C_S)       -0.304     3.644    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[0]
+                         net (fo=1006, routed)        1.316     4.691    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/clk_out1
+    SLICE_X49Y320        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataoutc_reg[7]/C
+                         clock pessimism             -0.673     4.017    
+                         clock uncertainty           -0.060     3.957    
+    SLICE_X49Y320        FDRE (Setup_fdre_C_D)        0.033     3.990    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataoutc_reg[7]
   -------------------------------------------------------------------
-                         required time                          3.644    
-                         arrival time                          -2.335    
+                         required time                          3.990    
+                         arrival time                          -2.054    
   -------------------------------------------------------------------
-                         slack                                  1.309    
+                         slack                                  1.936    
 
-Slack (MET) :             1.309ns  (required time - arrival time)
-  Source:                 u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[1]/R
+Slack (MET) :             2.092ns  (required time - arrival time)
+  Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/CLKDIV
+                            (rising edge-triggered cell ISERDESE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[6]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        4.443ns  (logic 0.576ns (12.964%)  route 3.867ns (87.036%))
-  Logic Levels:           4  (LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.134ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.648ns = ( 4.602 - 6.250 ) 
-    Source Clock Delay      (SCD):    -2.108ns
-    Clock Pessimism Removal (CPR):    -0.593ns
+  Data Path Delay:        3.779ns  (logic 0.468ns (12.383%)  route 3.311ns (87.617%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.691ns = ( 4.559 - 6.250 ) 
+    Source Clock Delay      (SCD):    -2.089ns
+    Clock Pessimism Removal (CPR):    -0.716ns
   Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.096ns
@@ -785,20 +702,13 @@ Slack (MET) :             1.309ns  (required time - arrival time)
                                                      -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.484    -2.108    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/CLK
-    SLICE_X54Y308        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
+                         net (fo=1006, routed)        1.503    -2.089    u_lane_original/xapp1017_serdes_1280.serdes_cmp/clk_out1
+    ILOGIC_X0Y164        ISERDESE2                                    r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/CLKDIV
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y308        FDRE (Prop_fdre_C_Q)         0.259    -1.849 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/Q
-                         net (fo=65, routed)          2.620     0.771    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer[21]
-    SLICE_X84Y334        LUT6 (Prop_lut6_I1_O)        0.043     0.814 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27/O
-                         net (fo=1, routed)           0.000     0.814    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27_n_0
-    SLICE_X84Y334        MUXF7 (Prop_muxf7_I0_O)      0.107     0.921 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9/O
-                         net (fo=1, routed)           0.328     1.249    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9_n_0
-    SLICE_X88Y333        LUT6 (Prop_lut6_I3_O)        0.124     1.373 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27/O
-                         net (fo=3, routed)           0.444     1.816    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27_n_0
-    SLICE_X90Y333        LUT6 (Prop_lut6_I3_O)        0.043     1.859 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__27/O
-                         net (fo=7, routed)           0.476     2.335    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[4]_0[0]
-    SLICE_X91Y333        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[1]/R
+    ILOGIC_X0Y164        ISERDESE2 (Prop_iserdese2_CLKDIV_Q2)
+                                                      0.468    -1.621 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/Q2
+                         net (fo=1, routed)           3.311     1.690    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/D[6]
+    SLICE_X50Y271        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[6]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_clk_wiz_0_1 rise edge)
@@ -811,31 +721,31 @@ Slack (MET) :             1.309ns  (required time - arrival time)
                                                      -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.227     4.602    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/CLK
-    SLICE_X91Y333        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[1]/C
-                         clock pessimism             -0.593     4.008    
-                         clock uncertainty           -0.060     3.948    
-    SLICE_X91Y333        FDRE (Setup_fdre_C_R)       -0.304     3.644    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[1]
+                         net (fo=1006, routed)        1.184     4.559    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/clk_out1
+    SLICE_X50Y271        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[6]/C
+                         clock pessimism             -0.716     3.842    
+                         clock uncertainty           -0.060     3.782    
+    SLICE_X50Y271        FDRE (Setup_fdre_C_D)        0.000     3.782    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/mdataouta_reg[6]
   -------------------------------------------------------------------
-                         required time                          3.644    
-                         arrival time                          -2.335    
+                         required time                          3.782    
+                         arrival time                          -1.690    
   -------------------------------------------------------------------
-                         slack                                  1.309    
+                         slack                                  2.092    
 
-Slack (MET) :             1.309ns  (required time - arrival time)
-  Source:                 u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
+Slack (MET) :             2.094ns  (required time - arrival time)
+  Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
+                            (rising edge-triggered cell ISERDESE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[6]/D
                             (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[2]/S
-                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        4.443ns  (logic 0.576ns (12.964%)  route 3.867ns (87.036%))
-  Logic Levels:           4  (LUT6=3 MUXF7=1)
-  Clock Path Skew:        -0.134ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.648ns = ( 4.602 - 6.250 ) 
-    Source Clock Delay      (SCD):    -2.108ns
-    Clock Pessimism Removal (CPR):    -0.593ns
+  Data Path Delay:        3.676ns  (logic 0.511ns (13.902%)  route 3.165ns (86.098%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.454ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.433ns = ( 4.817 - 6.250 ) 
+    Source Clock Delay      (SCD):    -1.623ns
+    Clock Pessimism Removal (CPR):    -0.643ns
   Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.096ns
@@ -853,20 +763,15 @@ Slack (MET) :             1.309ns  (required time - arrival time)
                                                      -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.484    -2.108    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/CLK
-    SLICE_X54Y308        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/C
+                         net (fo=1006, routed)        1.969    -1.623    u_lane_original/xapp1017_serdes_1280.serdes_cmp/clk_out1
+    ILOGIC_X0Y499        ISERDESE2                                    r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
   -------------------------------------------------------------------    -------------------
-    SLICE_X54Y308        FDRE (Prop_fdre_C_Q)         0.259    -1.849 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer_reg[21]/Q
-                         net (fo=65, routed)          2.620     0.771    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/buffer[21]
-    SLICE_X84Y334        LUT6 (Prop_lut6_I1_O)        0.043     0.814 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27/O
-                         net (fo=1, routed)           0.000     0.814    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_39__27_n_0
-    SLICE_X84Y334        MUXF7 (Prop_muxf7_I0_O)      0.107     0.921 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9/O
-                         net (fo=1, routed)           0.328     1.249    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c_reg[6]_i_19__9_n_0
-    SLICE_X88Y333        LUT6 (Prop_lut6_I3_O)        0.124     1.373 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27/O
-                         net (fo=3, routed)           0.444     1.816    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_6__27_n_0
-    SLICE_X90Y333        LUT6 (Prop_lut6_I3_O)        0.043     1.859 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/seeker_pos_idx_c[6]_i_1__27/O
-                         net (fo=7, routed)           0.476     2.335    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[4]_0[0]
-    SLICE_X91Y333        FDSE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[2]/S
+    ILOGIC_X0Y499        ISERDESE2 (Prop_iserdese2_CLKDIV_Q2)
+                                                      0.468    -1.155 f  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/Q2
+                         net (fo=1, routed)           3.165     2.010    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/p_0_in[6]
+    SLICE_X51Y376        LUT1 (Prop_lut1_I0_O)        0.043     2.053 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta[6]_i_1/O
+                         net (fo=1, routed)           0.000     2.053    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataout[6]
+    SLICE_X51Y376        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[6]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_clk_wiz_0_1 rise edge)
@@ -879,16 +784,79 @@ Slack (MET) :             1.309ns  (required time - arrival time)
                                                      -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        1.227     4.602    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/CLK
-    SLICE_X91Y333        FDSE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[2]/C
-                         clock pessimism             -0.593     4.008    
-                         clock uncertainty           -0.060     3.948    
-    SLICE_X91Y333        FDSE (Setup_fdse_C_S)       -0.304     3.644    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerR/seekerR/seekerL/seekerL/seeker_pos_idx_c_reg[2]
+                         net (fo=1006, routed)        1.442     4.817    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/clk_out1
+    SLICE_X51Y376        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[6]/C
+                         clock pessimism             -0.643     4.173    
+                         clock uncertainty           -0.060     4.113    
+    SLICE_X51Y376        FDRE (Setup_fdre_C_D)        0.034     4.147    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[6]
   -------------------------------------------------------------------
-                         required time                          3.644    
-                         arrival time                          -2.335    
+                         required time                          4.147    
+                         arrival time                          -2.053    
   -------------------------------------------------------------------
-                         slack                                  1.309    
+                         slack                                  2.094    
+
+Slack (MET) :             2.153ns  (required time - arrival time)
+  Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
+                            (rising edge-triggered cell ISERDESE2 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Path Group:             clk_out1_clk_wiz_0_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.250ns  (clk_out1_clk_wiz_0_1 rise@6.250ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        3.616ns  (logic 0.511ns (14.131%)  route 3.105ns (85.869%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.454ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.433ns = ( 4.817 - 6.250 ) 
+    Source Clock Delay      (SCD):    -1.623ns
+    Clock Pessimism Removal (CPR):    -0.643ns
+  Clock Uncertainty:      0.060ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.096ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.937     0.937 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           1.081     2.018    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.128    -5.110 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.425    -3.685    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.093    -3.592 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        1.969    -1.623    u_lane_original/xapp1017_serdes_1280.serdes_cmp/clk_out1
+    ILOGIC_X0Y499        ISERDESE2                                    r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
+  -------------------------------------------------------------------    -------------------
+    ILOGIC_X0Y499        ISERDESE2 (Prop_iserdese2_CLKDIV_Q4)
+                                                      0.468    -1.155 f  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/Q4
+                         net (fo=1, routed)           3.105     1.950    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/p_0_in[4]
+    SLICE_X51Y376        LUT1 (Prop_lut1_I0_O)        0.043     1.993 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta[4]_i_1/O
+                         net (fo=1, routed)           0.000     1.993    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataout[4]
+    SLICE_X51Y376        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      6.250     6.250 r  
+    AK34                                              0.000     6.250 r  clk_p (IN)
+                         net (fo=0)                   0.000     6.250    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.835     7.085 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.986     8.071    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.094     1.977 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.315     3.292    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.083     3.375 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        1.442     4.817    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/clk_out1
+    SLICE_X51Y376        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[4]/C
+                         clock pessimism             -0.643     4.173    
+                         clock uncertainty           -0.060     4.113    
+    SLICE_X51Y376        FDRE (Setup_fdre_C_D)        0.033     4.146    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/sdataouta_reg[4]
+  -------------------------------------------------------------------
+                         required time                          4.146    
+                         arrival time                          -1.993    
+  -------------------------------------------------------------------
+                         slack                                  2.153    
 
 
 
@@ -896,523 +864,16 @@ Slack (MET) :             1.309ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.031ns  (arrival time - required time)
-  Source:                 u_lane_original/descrambler_cmp/unscrambled_data_i_reg[16]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/rx_data_o_reg[16]/D
+Slack (MET) :             0.111ns  (arrival time - required time)
+  Source:                 u_lane_original/gearbox32to66_cmp/data66_buf2_reg[22]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/gearbox32to66_cmp/data66_o_reg[22]/D
                             (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        0.209ns  (logic 0.100ns (47.898%)  route 0.109ns (52.102%))
-  Logic Levels:           0  
-  Clock Path Skew:        0.119ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    -0.534ns
-    Source Clock Delay      (SCD):    -0.432ns
-    Clock Pessimism Removal (CPR):    -0.220ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.676    -0.432    u_lane_original/descrambler_cmp/CLK
-    SLICE_X55Y300        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[16]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X55Y300        FDRE (Prop_fdre_C_Q)         0.100    -0.332 r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[16]/Q
-                         net (fo=1, routed)           0.109    -0.224    u_lane_original/descrambled_data[16]
-    SLICE_X54Y299        FDCE                                         r  u_lane_original/rx_data_o_reg[16]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.803    -0.534    u_lane_original/CLK
-    SLICE_X54Y299        FDCE                                         r  u_lane_original/rx_data_o_reg[16]/C
-                         clock pessimism              0.220    -0.313    
-    SLICE_X54Y299        FDCE (Hold_fdce_C_D)         0.059    -0.254    u_lane_original/rx_data_o_reg[16]
-  -------------------------------------------------------------------
-                         required time                          0.254    
-                         arrival time                          -0.224    
-  -------------------------------------------------------------------
-                         slack                                  0.031    
-
-Slack (MET) :             0.062ns  (arrival time - required time)
-  Source:                 u_lane_original/descrambler_cmp/unscrambled_data_i_reg[8]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/rx_data_o_reg[8]/D
-                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Path Group:             clk_out1_clk_wiz_0_1
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        0.192ns  (logic 0.091ns (47.368%)  route 0.101ns (52.632%))
-  Logic Levels:           0  
-  Clock Path Skew:        0.119ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    -0.534ns
-    Source Clock Delay      (SCD):    -0.432ns
-    Clock Pessimism Removal (CPR):    -0.220ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.676    -0.432    u_lane_original/descrambler_cmp/CLK
-    SLICE_X55Y301        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[8]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X55Y301        FDRE (Prop_fdre_C_Q)         0.091    -0.341 r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[8]/Q
-                         net (fo=1, routed)           0.101    -0.240    u_lane_original/descrambled_data[8]
-    SLICE_X55Y299        FDCE                                         r  u_lane_original/rx_data_o_reg[8]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.803    -0.534    u_lane_original/CLK
-    SLICE_X55Y299        FDCE                                         r  u_lane_original/rx_data_o_reg[8]/C
-                         clock pessimism              0.220    -0.313    
-    SLICE_X55Y299        FDCE (Hold_fdce_C_D)         0.011    -0.302    u_lane_original/rx_data_o_reg[8]
-  -------------------------------------------------------------------
-                         required time                          0.302    
-                         arrival time                          -0.240    
-  -------------------------------------------------------------------
-                         slack                                  0.062    
-
-Slack (MET) :             0.080ns  (arrival time - required time)
-  Source:                 u_lane_original/descrambler_cmp/descrambler_reg[20]/C
-                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/descrambler_cmp/unscrambled_data_i_reg[45]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Path Group:             clk_out1_clk_wiz_0_1
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        0.260ns  (logic 0.128ns (49.235%)  route 0.132ns (50.765%))
+  Data Path Delay:        0.209ns  (logic 0.128ns (61.382%)  route 0.081ns (38.618%))
   Logic Levels:           1  (LUT3=1)
-  Clock Path Skew:        0.119ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    -0.537ns
-    Source Clock Delay      (SCD):    -0.435ns
-    Clock Pessimism Removal (CPR):    -0.220ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.673    -0.435    u_lane_original/descrambler_cmp/CLK
-    SLICE_X57Y301        FDSE                                         r  u_lane_original/descrambler_cmp/descrambler_reg[20]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X57Y301        FDSE (Prop_fdse_C_Q)         0.100    -0.335 r  u_lane_original/descrambler_cmp/descrambler_reg[20]/Q
-                         net (fo=2, routed)           0.132    -0.204    u_lane_original/descrambler_cmp/p_177_in
-    SLICE_X57Y299        LUT3 (Prop_lut3_I0_O)        0.028    -0.176 r  u_lane_original/descrambler_cmp/unscrambled_data_i[45]_i_1/O
-                         net (fo=1, routed)           0.000    -0.176    u_lane_original/descrambler_cmp/unscrambled_data_i0180_out
-    SLICE_X57Y299        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[45]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.800    -0.537    u_lane_original/descrambler_cmp/CLK
-    SLICE_X57Y299        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[45]/C
-                         clock pessimism              0.220    -0.316    
-    SLICE_X57Y299        FDRE (Hold_fdre_C_D)         0.061    -0.255    u_lane_original/descrambler_cmp/unscrambled_data_i_reg[45]
-  -------------------------------------------------------------------
-                         required time                          0.255    
-                         arrival time                          -0.176    
-  -------------------------------------------------------------------
-                         slack                                  0.080    
-
-Slack (MET) :             0.081ns  (arrival time - required time)
-  Source:                 u_lane_original/gearbox32to66_cmp/data66_buf_reg[18]/C
-                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/data66_o_reg[18]/D
-                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Path Group:             clk_out1_clk_wiz_0_1
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        0.286ns  (logic 0.146ns (51.097%)  route 0.140ns (48.903%))
-  Logic Levels:           1  (LUT3=1)
-  Clock Path Skew:        0.118ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    -0.572ns
-    Source Clock Delay      (SCD):    -0.469ns
-    Clock Pessimism Removal (CPR):    -0.220ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.639    -0.469    u_lane_original/gearbox32to66_cmp/CLK
-    SLICE_X64Y301        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_buf_reg[18]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X64Y301        FDCE (Prop_fdce_C_Q)         0.118    -0.351 r  u_lane_original/gearbox32to66_cmp/data66_buf_reg[18]/Q
-                         net (fo=2, routed)           0.140    -0.212    u_lane_original/gearbox32to66_cmp/data66_buf[18]
-    SLICE_X64Y299        LUT3 (Prop_lut3_I2_O)        0.028    -0.184 r  u_lane_original/gearbox32to66_cmp/data66_o[18]_i_1/O
-                         net (fo=1, routed)           0.000    -0.184    u_lane_original/gearbox32to66_cmp/p_1_in[18]
-    SLICE_X64Y299        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[18]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.765    -0.572    u_lane_original/gearbox32to66_cmp/CLK
-    SLICE_X64Y299        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[18]/C
-                         clock pessimism              0.220    -0.351    
-    SLICE_X64Y299        FDCE (Hold_fdce_C_D)         0.087    -0.264    u_lane_original/gearbox32to66_cmp/data66_o_reg[18]
-  -------------------------------------------------------------------
-                         required time                          0.264    
-                         arrival time                          -0.184    
-  -------------------------------------------------------------------
-                         slack                                  0.081    
-
-Slack (MET) :             0.085ns  (arrival time - required time)
-  Source:                 u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/offset_pos_reg[2]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/offset_pos_reg[2]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Path Group:             clk_out1_clk_wiz_0_1
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        0.155ns  (logic 0.100ns (64.712%)  route 0.055ns (35.288%))
-  Logic Levels:           0  
-  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    -0.485ns
-    Source Clock Delay      (SCD):    -0.481ns
-    Clock Pessimism Removal (CPR):    -0.014ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.627    -0.481    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/CLK
-    SLICE_X73Y319        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/offset_pos_reg[2]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X73Y319        FDRE (Prop_fdre_C_Q)         0.100    -0.381 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/offset_pos_reg[2]/Q
-                         net (fo=1, routed)           0.055    -0.327    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/offset_pos_temp[1]_46[2]
-    SLICE_X72Y319        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/offset_pos_reg[2]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.852    -0.485    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/CLK
-    SLICE_X72Y319        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/offset_pos_reg[2]/C
-                         clock pessimism              0.014    -0.470    
-    SLICE_X72Y319        FDRE (Hold_fdre_C_D)         0.059    -0.411    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/offset_pos_reg[2]
-  -------------------------------------------------------------------
-                         required time                          0.411    
-                         arrival time                          -0.327    
-  -------------------------------------------------------------------
-                         slack                                  0.085    
-
-Slack (MET) :             0.085ns  (arrival time - required time)
-  Source:                 u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/seekerL/offset_pos_reg[4]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/offset_pos_reg[4]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Path Group:             clk_out1_clk_wiz_0_1
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        0.183ns  (logic 0.128ns (70.125%)  route 0.055ns (29.875%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    -0.477ns
-    Source Clock Delay      (SCD):    -0.474ns
-    Clock Pessimism Removal (CPR):    -0.013ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.634    -0.474    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/seekerL/CLK
-    SLICE_X61Y336        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/seekerL/offset_pos_reg[4]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X61Y336        FDRE (Prop_fdre_C_Q)         0.100    -0.374 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/seekerL/offset_pos_reg[4]/Q
-                         net (fo=1, routed)           0.055    -0.320    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/offset_pos_reg[6]_3[4]
-    SLICE_X60Y336        LUT5 (Prop_lut5_I1_O)        0.028    -0.292 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/offset_pos[4]_i_1__7/O
-                         net (fo=1, routed)           0.000    -0.292    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/D[4]
-    SLICE_X60Y336        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/offset_pos_reg[4]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.860    -0.477    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/CLK
-    SLICE_X60Y336        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/offset_pos_reg[4]/C
-                         clock pessimism              0.013    -0.463    
-    SLICE_X60Y336        FDRE (Hold_fdre_C_D)         0.087    -0.376    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/offset_pos_reg[4]
-  -------------------------------------------------------------------
-                         required time                          0.376    
-                         arrival time                          -0.292    
-  -------------------------------------------------------------------
-                         slack                                  0.085    
-
-Slack (MET) :             0.086ns  (arrival time - required time)
-  Source:                 u_lane_original/scrambled_data66_reg[37]/C
-                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/descrambler_cmp/unscrambled_data_i_reg[37]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Path Group:             clk_out1_clk_wiz_0_1
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        0.267ns  (logic 0.157ns (58.908%)  route 0.110ns (41.092%))
-  Logic Levels:           1  (LUT3=1)
-  Clock Path Skew:        0.121ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    -0.537ns
-    Source Clock Delay      (SCD):    -0.437ns
-    Clock Pessimism Removal (CPR):    -0.220ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.671    -0.437    u_lane_original/CLK
-    SLICE_X59Y300        FDCE                                         r  u_lane_original/scrambled_data66_reg[37]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X59Y300        FDCE (Prop_fdce_C_Q)         0.091    -0.346 r  u_lane_original/scrambled_data66_reg[37]/Q
-                         net (fo=2, routed)           0.110    -0.237    u_lane_original/descrambler_cmp/Q[37]
-    SLICE_X57Y299        LUT3 (Prop_lut3_I1_O)        0.066    -0.171 r  u_lane_original/descrambler_cmp/unscrambled_data_i[37]_i_1/O
-                         net (fo=1, routed)           0.000    -0.171    u_lane_original/descrambler_cmp/unscrambled_data_i0148_out
-    SLICE_X57Y299        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[37]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.800    -0.537    u_lane_original/descrambler_cmp/CLK
-    SLICE_X57Y299        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[37]/C
-                         clock pessimism              0.220    -0.316    
-    SLICE_X57Y299        FDRE (Hold_fdre_C_D)         0.060    -0.256    u_lane_original/descrambler_cmp/unscrambled_data_i_reg[37]
-  -------------------------------------------------------------------
-                         required time                          0.256    
-                         arrival time                          -0.171    
-  -------------------------------------------------------------------
-                         slack                                  0.086    
-
-Slack (MET) :             0.086ns  (arrival time - required time)
-  Source:                 u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/offset_pos_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerL/seekerL/offset_pos_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Path Group:             clk_out1_clk_wiz_0_1
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        0.184ns  (logic 0.128ns (69.743%)  route 0.056ns (30.257%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    -0.478ns
-    Source Clock Delay      (SCD):    -0.475ns
-    Clock Pessimism Removal (CPR):    -0.013ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.633    -0.475    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/CLK
-    SLICE_X69Y336        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/offset_pos_reg[3]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X69Y336        FDRE (Prop_fdre_C_Q)         0.100    -0.375 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerL/seekerL/seekerR/offset_pos_reg[3]/Q
-                         net (fo=1, routed)           0.056    -0.320    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/offset_pos_reg[6]_7[3]
-    SLICE_X68Y336        LUT5 (Prop_lut5_I0_O)        0.028    -0.292 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerL/offset_pos[3]_i_1__1__0/O
-                         net (fo=1, routed)           0.000    -0.292    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerL/seekerL/offset_pos_reg[6]_4[3]
-    SLICE_X68Y336        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerL/seekerL/offset_pos_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.859    -0.478    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerL/seekerL/CLK
-    SLICE_X68Y336        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerL/seekerL/offset_pos_reg[3]/C
-                         clock pessimism              0.013    -0.464    
-    SLICE_X68Y336        FDRE (Hold_fdre_C_D)         0.087    -0.377    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerL/seekerL/offset_pos_reg[3]
-  -------------------------------------------------------------------
-                         required time                          0.377    
-                         arrival time                          -0.292    
-  -------------------------------------------------------------------
-                         slack                                  0.086    
-
-Slack (MET) :             0.086ns  (arrival time - required time)
-  Source:                 u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerR/seekerL/seekerL/offset_pos_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerR/seekerL/offset_pos_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Path Group:             clk_out1_clk_wiz_0_1
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        0.184ns  (logic 0.128ns (69.743%)  route 0.056ns (30.257%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    -0.477ns
-    Source Clock Delay      (SCD):    -0.475ns
-    Clock Pessimism Removal (CPR):    -0.012ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.633    -0.475    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerR/seekerL/seekerL/CLK
-    SLICE_X75Y338        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerR/seekerL/seekerL/offset_pos_reg[3]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X75Y338        FDRE (Prop_fdre_C_Q)         0.100    -0.375 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerR/seekerL/seekerL/offset_pos_reg[3]/Q
-                         net (fo=1, routed)           0.056    -0.320    u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/offset_pos_reg[6]_25[3]
-    SLICE_X74Y338        LUT5 (Prop_lut5_I1_O)        0.028    -0.292 r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerR/seekerL/offset_pos[3]_i_1__1/O
-                         net (fo=1, routed)           0.000    -0.292    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerR/seekerL/offset_pos_reg[6]_4[3]
-    SLICE_X74Y338        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerR/seekerL/offset_pos_reg[3]/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                      0.000     0.000 r  
-    AK34                                              0.000     0.000 r  clk_p (IN)
-                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
-    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
-                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
-    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.860    -0.477    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerR/seekerL/CLK
-    SLICE_X74Y338        FDRE                                         r  u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerR/seekerL/offset_pos_reg[3]/C
-                         clock pessimism              0.012    -0.464    
-    SLICE_X74Y338        FDRE (Hold_fdre_C_D)         0.087    -0.377    u_lane_original/gearbox32to66_cmp/u_aligner/seekerL/seekerR/seekerR/seekerL/seekerR/seekerL/offset_pos_reg[3]
-  -------------------------------------------------------------------
-                         required time                          0.377    
-                         arrival time                          -0.292    
-  -------------------------------------------------------------------
-                         slack                                  0.086    
-
-Slack (MET) :             0.086ns  (arrival time - required time)
-  Source:                 u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold_reg[3]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Destination:            u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold_reg[4]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
-  Path Group:             clk_out1_clk_wiz_0_1
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
-  Data Path Delay:        0.184ns  (logic 0.128ns (69.743%)  route 0.056ns (30.257%))
-  Logic Levels:           1  (LUT5=1)
   Clock Path Skew:        0.011ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    -0.392ns
     Source Clock Delay      (SCD):    -0.391ns
@@ -1430,14 +891,14 @@ Slack (MET) :             0.086ns  (arrival time - required time)
                                                      -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.717    -0.391    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/CLK
-    SLICE_X45Y303        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold_reg[3]/C
+                         net (fo=1006, routed)        0.717    -0.391    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X45Y306        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_buf2_reg[22]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X45Y303        FDRE (Prop_fdre_C_Q)         0.100    -0.291 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold_reg[3]/Q
-                         net (fo=1, routed)           0.056    -0.236    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/p_0_in1_in[4]
-    SLICE_X44Y303        LUT5 (Prop_lut5_I0_O)        0.028    -0.208 r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold[4]_i_1/O
-                         net (fo=1, routed)           0.000    -0.208    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold[4]_i_1_n_0
-    SLICE_X44Y303        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold_reg[4]/D
+    SLICE_X45Y306        FDCE (Prop_fdce_C_Q)         0.100    -0.291 r  u_lane_original/gearbox32to66_cmp/data66_buf2_reg[22]/Q
+                         net (fo=1, routed)           0.081    -0.211    u_lane_original/gearbox32to66_cmp/data66_buf2__0[22]
+    SLICE_X44Y306        LUT3 (Prop_lut3_I1_O)        0.028    -0.183 r  u_lane_original/gearbox32to66_cmp/data66_o[22]_i_1/O
+                         net (fo=1, routed)           0.000    -0.183    u_lane_original/gearbox32to66_cmp/p_1_in[22]
+    SLICE_X44Y306        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[22]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_clk_wiz_0_1 rise edge)
@@ -1450,15 +911,520 @@ Slack (MET) :             0.086ns  (arrival time - required time)
                                                      -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
-                         net (fo=2879, routed)        0.945    -0.392    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/CLK
-    SLICE_X44Y303        FDRE                                         r  u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold_reg[4]/C
+                         net (fo=1006, routed)        0.945    -0.392    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X44Y306        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[22]/C
                          clock pessimism              0.011    -0.380    
-    SLICE_X44Y303        FDRE (Hold_fdre_C_D)         0.087    -0.293    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop3[0].dc_inst/pd_hold_reg[4]
+    SLICE_X44Y306        FDCE (Hold_fdce_C_D)         0.087    -0.293    u_lane_original/gearbox32to66_cmp/data66_o_reg[22]
   -------------------------------------------------------------------
                          required time                          0.293    
-                         arrival time                          -0.208    
+                         arrival time                          -0.183    
   -------------------------------------------------------------------
-                         slack                                  0.086    
+                         slack                                  0.111    
+
+Slack (MET) :             0.111ns  (arrival time - required time)
+  Source:                 u_lane_original/gearbox32to66_cmp/data66_buf2_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/gearbox32to66_cmp/data66_o_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Path Group:             clk_out1_clk_wiz_0_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.209ns  (logic 0.128ns (61.382%)  route 0.081ns (38.618%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.393ns
+    Source Clock Delay      (SCD):    -0.391ns
+    Clock Pessimism Removal (CPR):    -0.012ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.717    -0.391    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X43Y307        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_buf2_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y307        FDCE (Prop_fdce_C_Q)         0.100    -0.291 r  u_lane_original/gearbox32to66_cmp/data66_buf2_reg[4]/Q
+                         net (fo=1, routed)           0.081    -0.211    u_lane_original/gearbox32to66_cmp/data66_buf2__0[4]
+    SLICE_X42Y307        LUT3 (Prop_lut3_I1_O)        0.028    -0.183 r  u_lane_original/gearbox32to66_cmp/data66_o[4]_i_1/O
+                         net (fo=1, routed)           0.000    -0.183    u_lane_original/gearbox32to66_cmp/p_1_in[4]
+    SLICE_X42Y307        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.944    -0.393    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X42Y307        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[4]/C
+                         clock pessimism              0.012    -0.380    
+    SLICE_X42Y307        FDCE (Hold_fdce_C_D)         0.087    -0.293    u_lane_original/gearbox32to66_cmp/data66_o_reg[4]
+  -------------------------------------------------------------------
+                         required time                          0.293    
+                         arrival time                          -0.183    
+  -------------------------------------------------------------------
+                         slack                                  0.111    
+
+Slack (MET) :             0.111ns  (arrival time - required time)
+  Source:                 u_lane_original/gearbox32to66_cmp/data66_buf2_reg[64]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/gearbox32to66_cmp/data66_o_reg[64]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Path Group:             clk_out1_clk_wiz_0_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.209ns  (logic 0.128ns (61.382%)  route 0.081ns (38.618%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.393ns
+    Source Clock Delay      (SCD):    -0.392ns
+    Clock Pessimism Removal (CPR):    -0.011ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.716    -0.392    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X45Y309        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_buf2_reg[64]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X45Y309        FDCE (Prop_fdce_C_Q)         0.100    -0.292 r  u_lane_original/gearbox32to66_cmp/data66_buf2_reg[64]/Q
+                         net (fo=1, routed)           0.081    -0.212    u_lane_original/gearbox32to66_cmp/data66_buf2__0[64]
+    SLICE_X44Y309        LUT3 (Prop_lut3_I1_O)        0.028    -0.184 r  u_lane_original/gearbox32to66_cmp/data66_o[64]_i_1/O
+                         net (fo=1, routed)           0.000    -0.184    u_lane_original/gearbox32to66_cmp/p_1_in[64]
+    SLICE_X44Y309        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[64]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.944    -0.393    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X44Y309        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[64]/C
+                         clock pessimism              0.011    -0.381    
+    SLICE_X44Y309        FDCE (Hold_fdce_C_D)         0.087    -0.294    u_lane_original/gearbox32to66_cmp/data66_o_reg[64]
+  -------------------------------------------------------------------
+                         required time                          0.294    
+                         arrival time                          -0.184    
+  -------------------------------------------------------------------
+                         slack                                  0.111    
+
+Slack (MET) :             0.112ns  (arrival time - required time)
+  Source:                 u_lane_original/descrambler_cmp/descrambler_reg[20]/C
+                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/descrambler_cmp/unscrambled_data_i_reg[26]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Path Group:             clk_out1_clk_wiz_0_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.233ns  (logic 0.128ns (54.969%)  route 0.105ns (45.031%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.392ns
+    Source Clock Delay      (SCD):    -0.390ns
+    Clock Pessimism Removal (CPR):    -0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.718    -0.390    u_lane_original/descrambler_cmp/clk_out1
+    SLICE_X39Y305        FDSE                                         r  u_lane_original/descrambler_cmp/descrambler_reg[20]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y305        FDSE (Prop_fdse_C_Q)         0.100    -0.290 r  u_lane_original/descrambler_cmp/descrambler_reg[20]/Q
+                         net (fo=2, routed)           0.105    -0.186    u_lane_original/descrambler_cmp/p_177_in
+    SLICE_X40Y305        LUT3 (Prop_lut3_I2_O)        0.028    -0.158 r  u_lane_original/descrambler_cmp/unscrambled_data_i[26]_i_1/O
+                         net (fo=1, routed)           0.000    -0.158    u_lane_original/descrambler_cmp/unscrambled_data_i0104_out
+    SLICE_X40Y305        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.945    -0.392    u_lane_original/descrambler_cmp/clk_out1
+    SLICE_X40Y305        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[26]/C
+                         clock pessimism              0.035    -0.356    
+    SLICE_X40Y305        FDRE (Hold_fdre_C_D)         0.087    -0.269    u_lane_original/descrambler_cmp/unscrambled_data_i_reg[26]
+  -------------------------------------------------------------------
+                         required time                          0.269    
+                         arrival time                          -0.158    
+  -------------------------------------------------------------------
+                         slack                                  0.112    
+
+Slack (MET) :             0.116ns  (arrival time - required time)
+  Source:                 u_lane_original/scrambled_data66_reg[30]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/descrambler_cmp/unscrambled_data_i_reg[30]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Path Group:             clk_out1_clk_wiz_0_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.238ns  (logic 0.128ns (53.772%)  route 0.110ns (46.228%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.035ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.391ns
+    Source Clock Delay      (SCD):    -0.390ns
+    Clock Pessimism Removal (CPR):    -0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.718    -0.390    u_lane_original/clk_out1
+    SLICE_X35Y306        FDCE                                         r  u_lane_original/scrambled_data66_reg[30]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y306        FDCE (Prop_fdce_C_Q)         0.100    -0.290 r  u_lane_original/scrambled_data66_reg[30]/Q
+                         net (fo=2, routed)           0.110    -0.180    u_lane_original/descrambler_cmp/Q[30]
+    SLICE_X36Y305        LUT3 (Prop_lut3_I1_O)        0.028    -0.152 r  u_lane_original/descrambler_cmp/unscrambled_data_i[30]_i_1/O
+                         net (fo=1, routed)           0.000    -0.152    u_lane_original/descrambler_cmp/unscrambled_data_i0120_out
+    SLICE_X36Y305        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.946    -0.391    u_lane_original/descrambler_cmp/clk_out1
+    SLICE_X36Y305        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[30]/C
+                         clock pessimism              0.035    -0.355    
+    SLICE_X36Y305        FDRE (Hold_fdre_C_D)         0.087    -0.268    u_lane_original/descrambler_cmp/unscrambled_data_i_reg[30]
+  -------------------------------------------------------------------
+                         required time                          0.268    
+                         arrival time                          -0.152    
+  -------------------------------------------------------------------
+                         slack                                  0.116    
+
+Slack (MET) :             0.118ns  (arrival time - required time)
+  Source:                 u_lane_original/gearbox32to66_cmp/buffer194_reg[14]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/gearbox32to66_cmp/buffer194_reg[46]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Path Group:             clk_out1_clk_wiz_0_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.162ns  (logic 0.100ns (61.661%)  route 0.062ns (38.339%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.397ns
+    Source Clock Delay      (SCD):    -0.395ns
+    Clock Pessimism Removal (CPR):    -0.001ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.713    -0.395    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X47Y312        FDCE                                         r  u_lane_original/gearbox32to66_cmp/buffer194_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y312        FDCE (Prop_fdce_C_Q)         0.100    -0.295 r  u_lane_original/gearbox32to66_cmp/buffer194_reg[14]/Q
+                         net (fo=3, routed)           0.062    -0.233    u_lane_original/gearbox32to66_cmp/buffer194[14]
+    SLICE_X47Y312        FDCE                                         r  u_lane_original/gearbox32to66_cmp/buffer194_reg[46]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.940    -0.397    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X47Y312        FDCE                                         r  u_lane_original/gearbox32to66_cmp/buffer194_reg[46]/C
+                         clock pessimism              0.001    -0.395    
+    SLICE_X47Y312        FDCE (Hold_fdce_C_D)         0.044    -0.351    u_lane_original/gearbox32to66_cmp/buffer194_reg[46]
+  -------------------------------------------------------------------
+                         required time                          0.351    
+                         arrival time                          -0.233    
+  -------------------------------------------------------------------
+                         slack                                  0.118    
+
+Slack (MET) :             0.124ns  (arrival time - required time)
+  Source:                 u_lane_original/gearbox32to66_cmp/data66_t_reg[9]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/gearbox32to66_cmp/data66_buf_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Path Group:             clk_out1_clk_wiz_0_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.205ns  (logic 0.100ns (48.768%)  route 0.105ns (51.232%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.394ns
+    Source Clock Delay      (SCD):    -0.392ns
+    Clock Pessimism Removal (CPR):    -0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.716    -0.392    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X39Y311        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_t_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y311        FDCE (Prop_fdce_C_Q)         0.100    -0.292 r  u_lane_original/gearbox32to66_cmp/data66_t_reg[9]/Q
+                         net (fo=1, routed)           0.105    -0.187    u_lane_original/gearbox32to66_cmp/data66_t[9]
+    SLICE_X41Y310        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_buf_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.943    -0.394    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X41Y310        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_buf_reg[9]/C
+                         clock pessimism              0.035    -0.358    
+    SLICE_X41Y310        FDCE (Hold_fdce_C_D)         0.047    -0.311    u_lane_original/gearbox32to66_cmp/data66_buf_reg[9]
+  -------------------------------------------------------------------
+                         required time                          0.311    
+                         arrival time                          -0.187    
+  -------------------------------------------------------------------
+                         slack                                  0.124    
+
+Slack (MET) :             0.127ns  (arrival time - required time)
+  Source:                 u_lane_original/gearbox32to66_cmp/data66_o_reg[14]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/scrambled_data66_reg[14]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Path Group:             clk_out1_clk_wiz_0_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.201ns  (logic 0.100ns (49.678%)  route 0.101ns (50.322%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.390ns
+    Source Clock Delay      (SCD):    -0.391ns
+    Clock Pessimism Removal (CPR):    -0.013ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.717    -0.391    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X35Y308        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y308        FDCE (Prop_fdce_C_Q)         0.100    -0.291 r  u_lane_original/gearbox32to66_cmp/data66_o_reg[14]/Q
+                         net (fo=1, routed)           0.101    -0.190    u_lane_original/gearbox_data66[14]
+    SLICE_X34Y306        FDCE                                         r  u_lane_original/scrambled_data66_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.947    -0.390    u_lane_original/clk_out1
+    SLICE_X34Y306        FDCE                                         r  u_lane_original/scrambled_data66_reg[14]/C
+                         clock pessimism              0.013    -0.376    
+    SLICE_X34Y306        FDCE (Hold_fdce_C_D)         0.059    -0.317    u_lane_original/scrambled_data66_reg[14]
+  -------------------------------------------------------------------
+                         required time                          0.317    
+                         arrival time                          -0.190    
+  -------------------------------------------------------------------
+                         slack                                  0.127    
+
+Slack (MET) :             0.128ns  (arrival time - required time)
+  Source:                 u_lane_original/descrambler_cmp/unscrambled_data_i_reg[29]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/rx_data_o_reg[29]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Path Group:             clk_out1_clk_wiz_0_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.201ns  (logic 0.100ns (49.678%)  route 0.101ns (50.322%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.391ns
+    Source Clock Delay      (SCD):    -0.390ns
+    Clock Pessimism Removal (CPR):    -0.014ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.718    -0.390    u_lane_original/descrambler_cmp/clk_out1
+    SLICE_X37Y306        FDRE                                         r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[29]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y306        FDRE (Prop_fdre_C_Q)         0.100    -0.290 r  u_lane_original/descrambler_cmp/unscrambled_data_i_reg[29]/Q
+                         net (fo=1, routed)           0.101    -0.189    u_lane_original/descrambled_data[29]
+    SLICE_X36Y304        FDCE                                         r  u_lane_original/rx_data_o_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.946    -0.391    u_lane_original/clk_out1
+    SLICE_X36Y304        FDCE                                         r  u_lane_original/rx_data_o_reg[29]/C
+                         clock pessimism              0.014    -0.376    
+    SLICE_X36Y304        FDCE (Hold_fdce_C_D)         0.059    -0.317    u_lane_original/rx_data_o_reg[29]
+  -------------------------------------------------------------------
+                         required time                          0.317    
+                         arrival time                          -0.189    
+  -------------------------------------------------------------------
+                         slack                                  0.128    
+
+Slack (MET) :             0.130ns  (arrival time - required time)
+  Source:                 u_lane_original/gearbox32to66_cmp/data66_buf_reg[37]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Destination:            u_lane_original/gearbox32to66_cmp/data66_o_reg[37]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@3.125ns period=6.250ns})
+  Path Group:             clk_out1_clk_wiz_0_1
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Data Path Delay:        0.216ns  (logic 0.130ns (60.314%)  route 0.086ns (39.686%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.011ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.392ns
+    Source Clock Delay      (SCD):    -0.391ns
+    Clock Pessimism Removal (CPR):    -0.011ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.420     0.420 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.503     0.923    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.607    -1.684 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.550    -1.134    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.108 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.717    -0.391    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X38Y309        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_buf_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y309        FDCE (Prop_fdce_C_Q)         0.100    -0.291 r  u_lane_original/gearbox32to66_cmp/data66_buf_reg[37]/Q
+                         net (fo=2, routed)           0.086    -0.206    u_lane_original/gearbox32to66_cmp/data66_buf[37]
+    SLICE_X39Y309        LUT3 (Prop_lut3_I2_O)        0.030    -0.176 r  u_lane_original/gearbox32to66_cmp/data66_o[37]_i_1/O
+                         net (fo=1, routed)           0.000    -0.176    u_lane_original/gearbox32to66_cmp/p_1_in[37]
+    SLICE_X39Y309        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[37]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_clk_wiz_0_1 rise edge)
+                                                      0.000     0.000 r  
+    AK34                                              0.000     0.000 r  clk_p (IN)
+                         net (fo=0)                   0.000     0.000    u_pll/inst/clk_in1_p
+    AK34                 IBUFDS (Prop_ibufds_I_O)     0.501     0.501 r  u_pll/inst/clkin1_ibufgds/O
+                         net (fo=1, routed)           0.553     1.054    u_pll/inst/clk_in1_clk_wiz_0
+    MMCME2_ADV_X0Y4      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.035    -1.981 r  u_pll/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.614    -1.367    u_pll/inst/clk_out1_clk_wiz_0
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.030    -1.337 r  u_pll/inst/clkout1_buf/O
+                         net (fo=1006, routed)        0.945    -0.392    u_lane_original/gearbox32to66_cmp/clk_out1
+    SLICE_X39Y309        FDCE                                         r  u_lane_original/gearbox32to66_cmp/data66_o_reg[37]/C
+                         clock pessimism              0.011    -0.380    
+    SLICE_X39Y309        FDCE (Hold_fdce_C_D)         0.075    -0.305    u_lane_original/gearbox32to66_cmp/data66_o_reg[37]
+  -------------------------------------------------------------------
+                         required time                          0.305    
+                         arrival time                          -0.176    
+  -------------------------------------------------------------------
+                         slack                                  0.130    
 
 
 
@@ -1478,31 +1444,31 @@ Min Period        n/a     BUFG/I              n/a            1.408         6.250
 Min Period        n/a     ISERDESE2/CLKDIV    n/a            1.249         6.250       5.001      ILOGIC_X0Y164    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_m/CLKDIV
 Min Period        n/a     ISERDESE2/CLKDIV    n/a            1.249         6.250       5.001      ILOGIC_X0Y499    u_lane_original/xapp1017_serdes_1280.serdes_cmp/loop0[0].iserdes_s/CLKDIV
 Min Period        n/a     MMCME2_ADV/CLKOUT0  n/a            1.071         6.250       5.179      MMCME2_ADV_X0Y4  u_pll/inst/mmcm_adv_inst/CLKOUT0
-Min Period        n/a     FDCE/C              n/a            0.750         6.250       5.500      SLICE_X52Y302    u_lane_original/rx_data_o_reg[27]/C
-Min Period        n/a     FDCE/C              n/a            0.750         6.250       5.500      SLICE_X56Y298    u_lane_original/rx_data_o_reg[32]/C
-Min Period        n/a     FDCE/C              n/a            0.750         6.250       5.500      SLICE_X56Y298    u_lane_original/rx_data_o_reg[33]/C
-Min Period        n/a     FDCE/C              n/a            0.750         6.250       5.500      SLICE_X57Y298    u_lane_original/rx_data_o_reg[38]/C
+Min Period        n/a     FDCE/C              n/a            0.750         6.250       5.500      SLICE_X37Y304    u_lane_original/rx_data_o_reg[14]/C
+Min Period        n/a     FDCE/C              n/a            0.750         6.250       5.500      SLICE_X37Y304    u_lane_original/rx_data_o_reg[15]/C
+Min Period        n/a     FDCE/C              n/a            0.750         6.250       5.500      SLICE_X39Y304    u_lane_original/rx_data_o_reg[20]/C
+Min Period        n/a     FDCE/C              n/a            0.750         6.250       5.500      SLICE_X39Y304    u_lane_original/rx_data_o_reg[21]/C
 Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       6.250       207.110    MMCME2_ADV_X0Y4  u_pll/inst/mmcm_adv_inst/CLKOUT0
-Low Pulse Width   Slow    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X52Y302    u_lane_original/rx_data_o_reg[27]/C
-Low Pulse Width   Fast    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X52Y302    u_lane_original/rx_data_o_reg[27]/C
-Low Pulse Width   Slow    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X56Y298    u_lane_original/rx_data_o_reg[32]/C
-Low Pulse Width   Fast    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X56Y298    u_lane_original/rx_data_o_reg[32]/C
-Low Pulse Width   Slow    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X56Y298    u_lane_original/rx_data_o_reg[33]/C
-Low Pulse Width   Fast    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X56Y298    u_lane_original/rx_data_o_reg[33]/C
-Low Pulse Width   Slow    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X57Y298    u_lane_original/rx_data_o_reg[38]/C
-Low Pulse Width   Fast    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X57Y298    u_lane_original/rx_data_o_reg[38]/C
-Low Pulse Width   Slow    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X57Y298    u_lane_original/rx_data_o_reg[39]/C
-Low Pulse Width   Fast    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X57Y298    u_lane_original/rx_data_o_reg[39]/C
-High Pulse Width  Slow    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X61Y303    u_lane_original/descrambled_data_valid_reg/C
-High Pulse Width  Fast    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X61Y303    u_lane_original/descrambled_data_valid_reg/C
-High Pulse Width  Slow    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X61Y303    u_lane_original/gearbox_data66_valid_d_reg/C
-High Pulse Width  Fast    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X61Y303    u_lane_original/gearbox_data66_valid_d_reg/C
-High Pulse Width  Slow    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X53Y302    u_lane_original/rx_data_o_reg[0]/C
-High Pulse Width  Fast    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X53Y302    u_lane_original/rx_data_o_reg[0]/C
-High Pulse Width  Slow    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X52Y300    u_lane_original/rx_data_o_reg[10]/C
-High Pulse Width  Fast    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X52Y300    u_lane_original/rx_data_o_reg[10]/C
-High Pulse Width  Slow    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X52Y300    u_lane_original/rx_data_o_reg[11]/C
-High Pulse Width  Fast    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X52Y300    u_lane_original/rx_data_o_reg[11]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X37Y304    u_lane_original/rx_data_o_reg[14]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X37Y304    u_lane_original/rx_data_o_reg[14]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X37Y304    u_lane_original/rx_data_o_reg[15]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X37Y304    u_lane_original/rx_data_o_reg[15]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X39Y304    u_lane_original/rx_data_o_reg[20]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X39Y304    u_lane_original/rx_data_o_reg[20]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X39Y304    u_lane_original/rx_data_o_reg[21]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X39Y304    u_lane_original/rx_data_o_reg[21]/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X42Y304    u_lane_original/rx_data_o_reg[2]/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.400         3.125       2.725      SLICE_X42Y304    u_lane_original/rx_data_o_reg[2]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X45Y305    u_lane_original/descrambled_data_valid_reg/C
+High Pulse Width  Fast    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X45Y305    u_lane_original/descrambled_data_valid_reg/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X45Y305    u_lane_original/gearbox_data66_valid_d_reg/C
+High Pulse Width  Fast    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X45Y305    u_lane_original/gearbox_data66_valid_d_reg/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X40Y303    u_lane_original/rx_data_o_reg[0]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X40Y303    u_lane_original/rx_data_o_reg[0]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X37Y304    u_lane_original/rx_data_o_reg[10]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X37Y304    u_lane_original/rx_data_o_reg[10]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X37Y304    u_lane_original/rx_data_o_reg[11]/C
+High Pulse Width  Fast    FDCE/C              n/a            0.350         3.125       2.775      SLICE_X37Y304    u_lane_original/rx_data_o_reg[11]/C
 
 
 

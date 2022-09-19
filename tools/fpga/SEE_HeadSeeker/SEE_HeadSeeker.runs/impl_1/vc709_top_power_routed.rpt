@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Thu Sep  8 00:33:40 2022
+| Date             : Thu Sep 15 04:00:15 2022
 | Host             : LAPTOP-F415E9JE running 64-bit major release  (build 9200)
 | Command          : report_power -file vc709_top_power_routed.rpt -pb vc709_top_power_summary_routed.pb -rpx vc709_top_power_routed.rpx
 | Design           : vc709_top
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.535        |
+| Total On-Chip Power (W)  | 0.489        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.208        |
-| Device Static (W)        | 0.328        |
+| Dynamic (W)              | 0.162        |
+| Device Static (W)        | 0.327        |
 | Effective TJA (C/W)      | 1.1          |
 | Max Ambient (C)          | 84.4         |
 | Junction Temperature (C) | 25.6         |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.033 |        6 |       --- |             --- |
-| Slice Logic    |     0.024 |     8336 |       --- |             --- |
-|   LUT as Logic |     0.020 |     4125 |    433200 |            0.95 |
-|   Others       |     0.004 |      176 |       --- |             --- |
-|   Register     |    <0.001 |     2875 |    866400 |            0.33 |
-|   F7/F8 Muxes  |    <0.001 |      333 |    433200 |            0.08 |
+| Clocks         |     0.024 |        6 |       --- |             --- |
+| Slice Logic    |     0.005 |     2083 |       --- |             --- |
+|   Others       |     0.004 |       14 |       --- |             --- |
+|   LUT as Logic |     0.001 |      831 |    433200 |            0.19 |
+|   Register     |    <0.001 |     1002 |    866400 |            0.12 |
+|   F7/F8 Muxes  |    <0.001 |        8 |    433200 |           <0.01 |
 |   CARRY4       |    <0.001 |        2 |    108300 |           <0.01 |
-| Signals        |     0.018 |     5990 |       --- |             --- |
+| Signals        |     0.002 |     1673 |       --- |             --- |
 | MMCM           |     0.124 |        1 |        20 |            5.00 |
 | I/O            |     0.008 |       13 |       850 |            1.53 |
-| Static Power   |     0.328 |          |           |                 |
-| Total          |     0.535 |          |           |                 |
+| Static Power   |     0.327 |          |           |                 |
+| Total          |     0.489 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.265 |       0.075 |      0.190 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.220 |       0.030 |      0.190 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.126 |       0.073 |      0.053 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -149,11 +149,12 @@ Table of Contents
 +-------------------------------------+-----------+
 | Name                                | Power (W) |
 +-------------------------------------+-----------+
-| vc709_top                           |     0.208 |
-|   u_lane_original                   |     0.071 |
-|     gearbox32to66_cmp               |     0.052 |
-|       u_aligner                     |     0.049 |
-|     xapp1017_serdes_1280.serdes_cmp |     0.016 |
+| vc709_top                           |     0.162 |
+|   u_lane_original                   |     0.026 |
+|     descrambler_cmp                 |     0.001 |
+|     gearbox32to66_cmp               |     0.006 |
+|       u_aligner                     |     0.001 |
+|     xapp1017_serdes_1280.serdes_cmp |     0.017 |
 |       loop3[0].dc_inst              |     0.002 |
 |   u_pll                             |     0.129 |
 |     inst                            |     0.129 |

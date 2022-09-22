@@ -10,7 +10,7 @@ cModel Technology
 dD:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Upgrade/sim
 valigner
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1663578043
+Z1 !s110 1663721554
 !i10b 1
 !s100 H_@o_P[8=G4QiiHS1D[SM0
 IT^YaLo;J2]5WKeD2EFg8]3
@@ -18,22 +18,22 @@ Z2 VDg1SIo80bB@j0V0VzS_@n1
 !s105 aligner_sv_unit
 S1
 Z3 dD:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim
-w1658880436
+Z4 w1663631779
 8../../src/hdl/version2-hongjiang/fpga/aligner.sv
 F../../src/hdl/version2-hongjiang/fpga/aligner.sv
 L0 4
-Z4 OL;L;10.5c;63
+Z5 OL;L;10.5c;63
 r1
 !s85 0
 31
-Z5 !s108 1663578043.000000
+Z6 !s108 1663721554.000000
 !s107 ../../src/hdl/version2-hongjiang/fpga/aligner.sv|
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/aligner.sv|
 !i113 0
-Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z7 tCvgOpt 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
 Eaurora_rx_lane
-Z8 w1661820882
+R4
 Z9 DPx4 work 11 hw_type_pkg 0 22 jNeD::VSJNjdlPXCLHcg02
 Z10 DPx4 work 9 board_pkg 0 22 84Y>VM3kg3?<YXjo^XFm90
 Z11 DPx6 unisim 11 vcomponents 0 22 ZL2FV>[`]A:Pfnj`4=0k41
@@ -51,7 +51,7 @@ Z17 OL;C;10.5c;63
 32
 R1
 !i10b 1
-R5
+R6
 Z18 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd|
 Z19 !s107 ../../src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd|
 !i113 0
@@ -73,7 +73,7 @@ VJFYK>_ZEiC^D>Z<>HBTVG2
 !s100 ^__IAUh;^?[KY@==ziz<[0
 R17
 !i10b 1
-R5
+R6
 R18
 R19
 !i113 0
@@ -85,8 +85,8 @@ R12
 R13
 R14
 32
-Z22 !s110 1663578042
-Z23 w1655831651
+Z22 !s110 1663721552
+R4
 R3
 8../../src/hdl/version2-hongjiang/fpga/board_pkg.vhd
 F../../src/hdl/version2-hongjiang/fpga/board_pkg.vhd
@@ -96,30 +96,30 @@ V84Y>VM3kg3?<YXjo^XFm90
 !s100 1TWN73ajJ9LFY4o=Ok=eK1
 R17
 !i10b 1
-Z24 !s108 1663578042.000000
+Z23 !s108 1663721552.000000
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/board_pkg.vhd|
 !s107 ../../src/hdl/version2-hongjiang/fpga/board_pkg.vhd|
 !i113 0
 R20
 R21
 Ecdr_serdes
-R23
+R4
 R11
 R12
 R13
 R14
 R3
-Z25 8../../src/hdl/version2-hongjiang/fpga/cdr_serdes.vhd
-Z26 F../../src/hdl/version2-hongjiang/fpga/cdr_serdes.vhd
+Z24 8../../src/hdl/version2-hongjiang/fpga/cdr_serdes.vhd
+Z25 F../../src/hdl/version2-hongjiang/fpga/cdr_serdes.vhd
 l0
 L9
 VX5eUzYP64ehG5mzDH0jo<3
 !s100 5jS``HGNSn2dnLz0RZ?KI3
 R17
 32
-R22
+Z26 !s110 1663721553
 !i10b 1
-R24
+R23
 Z27 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/cdr_serdes.vhd|
 Z28 !s107 ../../src/hdl/version2-hongjiang/fpga/cdr_serdes.vhd|
 !i113 0
@@ -137,16 +137,16 @@ V?TAU<H`81l6g;QJ_F<S;]1
 !s100 _?<Vd`[K:<I>4b6TIE8_E3
 R17
 32
-R22
+R26
 !i10b 1
-R24
+R23
 R27
 R28
 !i113 0
 R20
 R21
 Edelay_controller_wrap
-R23
+R4
 R12
 R11
 Z29 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
@@ -164,9 +164,9 @@ R17
 32
 R22
 !i10b 1
-Z33 !s108 1663578041.000000
-Z34 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/delay_controller_wrap.vhd|
-Z35 !s107 ../../src/hdl/version2-hongjiang/fpga/delay_controller_wrap.vhd|
+R23
+Z33 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/delay_controller_wrap.vhd|
+Z34 !s107 ../../src/hdl/version2-hongjiang/fpga/delay_controller_wrap.vhd|
 !i113 0
 R20
 R21
@@ -186,9 +186,9 @@ VN<FXnZAH^;oRE<VjL6C`<3
 !s100 UZ4h;72`?kF:8K92AVlbi2
 R17
 !i10b 1
+R23
 R33
 R34
-R35
 !i113 0
 R20
 R21
@@ -201,19 +201,19 @@ r1
 !s100 <gCYl_G5d:8XZSRTBfIP_1
 IZkV=BLVcGWcVj]VUOaMdk2
 R3
-R23
+R4
 8../../src/hdl/version2-hongjiang/fpga/descrambler.v
 F../../src/hdl/version2-hongjiang/fpga/descrambler.v
 L0 5
-R4
-R24
+R5
+Z35 !s108 1663721553.000000
 !s107 ../../src/hdl/version2-hongjiang/fpga/descrambler.v|
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/descrambler.v|
 !i113 0
-R6
 R7
+R8
 Egearbox32to66
-Z36 w1663575093
+Z36 w1663721540
 R12
 R13
 R14
@@ -226,9 +226,9 @@ V`N8mW8<;Sf2o8bkc`OnzY1
 !s100 Fd080hRVkkzlbgnd[n@=f0
 R17
 32
-R1
+R26
 !i10b 1
-R5
+R35
 Z39 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd|
 Z40 !s107 ../../src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd|
 !i113 0
@@ -240,14 +240,14 @@ R13
 R14
 DEx4 work 13 gearbox32to66 0 22 `N8mW8<;Sf2o8bkc`OnzY1
 32
-R1
+R26
 l70
 L29
-Vk=dhae0hXidU_J@K_FU[K2
-!s100 E:Cb@NAj<PS1HzVQB4^@b3
+VGI6l3Od;ghI1DSc=GMdd:2
+!s100 KU9F9Z^D]8XVf7N?zNknj0
 R17
 !i10b 1
-R5
+R35
 R39
 R40
 !i113 0
@@ -255,7 +255,7 @@ R20
 R21
 vHS2
 R0
-R22
+R26
 !i10b 1
 !s100 lOQ6;n:>3iMiKa_Q`9YFM1
 I^HU:c[@GaliP:A3a@kXle3
@@ -263,20 +263,20 @@ R2
 !s105 HS2_sv_unit
 S1
 R3
-w1661925992
+R4
 8../../src/hdl/version2-hongjiang/fpga/HS2.sv
 F../../src/hdl/version2-hongjiang/fpga/HS2.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
-R24
+R35
 !s107 ../../src/hdl/version2-hongjiang/fpga/HS2.sv|
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/HS2.sv|
 !i113 0
-R6
 R7
+R8
 n@h@s2
 vHSn
 R0
@@ -292,7 +292,7 @@ w1662622094
 8../../src/hdl/version2-hongjiang/fpga/HSn.sv
 F../../src/hdl/version2-hongjiang/fpga/HSn.sv
 L0 1
-R4
+R5
 r1
 !s85 0
 31
@@ -300,32 +300,33 @@ r1
 !s107 ../../src/hdl/version2-hongjiang/fpga/HSn.sv|
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/HSn.sv|
 !i113 0
-R6
 R7
+R8
 n@h@sn
 vHSn_balenced
 R0
-R2
-r1
-!s85 0
-31
+R26
 !i10b 1
-!s100 VRJVFW[Q74z<OhZmjNGMH1
-I8g[E<77c8X]4MHQ[[YJE63
+!s100 [XTQeB`EnNEd_E6ANf6iO0
+IA9C4T`U?RMg8nmC0Me75F1
+R2
 !s105 HSn_balenced_sv_unit
 S1
 R3
-w1663578012
+w1663720478
 8../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv
 F../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv
 L0 1
-R4
 R5
+r1
+!s85 0
+31
+R35
 !s107 ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv|
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv|
 !i113 0
-R6
 R7
+R8
 n@h@sn_balenced
 Phw_type_pkg
 R12
@@ -333,7 +334,7 @@ R13
 R14
 32
 R22
-R23
+R4
 R3
 8../../src/hdl/version2-hongjiang/fpga/tef1001_R2_type.vhd
 F../../src/hdl/version2-hongjiang/fpga/tef1001_R2_type.vhd
@@ -343,14 +344,14 @@ VjNeD::VSJNjdlPXCLHcg02
 !s100 PVdCfULa9oOT_j4nQOjbA3
 R17
 !i10b 1
-R24
+R23
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/tef1001_R2_type.vhd|
 !s107 ../../src/hdl/version2-hongjiang/fpga/tef1001_R2_type.vhd|
 !i113 0
 R20
 R21
 Err_arbiter
-R23
+R4
 R12
 R13
 R14
@@ -365,7 +366,7 @@ R17
 32
 R1
 !i10b 1
-R5
+R6
 Z43 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/rr_arbiter.vhd|
 Z44 !s107 ../../src/hdl/version2-hongjiang/fpga/rr_arbiter.vhd|
 !i113 0
@@ -384,7 +385,7 @@ R17
 32
 R1
 !i10b 1
-R5
+R6
 R43
 R44
 !i113 0
@@ -399,17 +400,17 @@ r1
 !s100 d:ZQUK<C_F[YL6kf737Ke3
 IP>T>amP8R9i;RZWXT[X;03
 R3
-R23
+R4
 8../../src/hdl/version2-hongjiang/fpga/scrambler.v
 F../../src/hdl/version2-hongjiang/fpga/scrambler.v
 L0 5
-R4
-R24
+R5
+R35
 !s107 ../../src/hdl/version2-hongjiang/fpga/scrambler.v|
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/scrambler.v|
 !i113 0
-R6
 R7
+R8
 vseeker1
 R0
 Z45 !s110 1663574817
@@ -424,7 +425,7 @@ w1656574825
 8../../src/hdl/version2-hongjiang/fpga/seeker1.sv
 F../../src/hdl/version2-hongjiang/fpga/seeker1.sv
 L0 4
-R4
+R5
 r1
 !s85 0
 31
@@ -432,8 +433,8 @@ Z46 !s108 1663574817.000000
 !s107 ../../src/hdl/version2-hongjiang/fpga/seeker1.sv|
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/seeker1.sv|
 !i113 0
-R6
 R7
+R8
 vseeker11
 R0
 Z47 !s110 1662023297
@@ -444,20 +445,20 @@ R2
 !s105 seeker11_sv_unit
 S1
 Z48 dD:/UW/A-MasterResearch-LHC/YARR-rx-recovery-Revise/sim
-R23
+Z49 w1655831651
 8../src/seeker11.sv
 F../src/seeker11.sv
 L0 4
-R4
+R5
 r1
 !s85 0
 31
-Z49 !s108 1662023297.000000
+Z50 !s108 1662023297.000000
 !s107 ../src/seeker11.sv|
 !s90 -reportprogress|300|-work|work|../src/seeker11.sv|
 !i113 0
-R6
 R7
+R8
 vseeker2
 R0
 R45
@@ -472,7 +473,7 @@ w1656575049
 8../../src/hdl/version2-hongjiang/fpga/seeker2.sv
 F../../src/hdl/version2-hongjiang/fpga/seeker2.sv
 L0 4
-R4
+R5
 r1
 !s85 0
 31
@@ -480,8 +481,8 @@ R46
 !s107 ../../src/hdl/version2-hongjiang/fpga/seeker2.sv|
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/seeker2.sv|
 !i113 0
-R6
 R7
+R8
 vseeker22
 R0
 R47
@@ -492,20 +493,20 @@ R2
 !s105 seeker22_sv_unit
 S1
 R48
-R23
+R49
 8../src/seeker22.sv
 F../src/seeker22.sv
 L0 4
-R4
+R5
 r1
 !s85 0
 31
-R49
+R50
 !s107 ../src/seeker22.sv|
 !s90 -reportprogress|300|-work|work|../src/seeker22.sv|
 !i113 0
-R6
 R7
+R8
 vseeker3
 R0
 !s110 1662023296
@@ -516,11 +517,11 @@ R2
 !s105 seeker3_sv_unit
 S1
 R48
-R23
+R49
 8../src/seeker3.sv
 F../src/seeker3.sv
 L0 4
-R4
+R5
 r1
 !s85 0
 31
@@ -528,8 +529,8 @@ r1
 !s107 ../src/seeker3.sv|
 !s90 -reportprogress|300|-work|work|../src/seeker3.sv|
 !i113 0
-R6
 R7
+R8
 vseeker33
 R0
 R47
@@ -540,20 +541,20 @@ R2
 !s105 seeker33_sv_unit
 S1
 R48
-R23
+R49
 8../src/seeker33.sv
 F../src/seeker33.sv
 L0 4
-R4
+R5
 r1
 !s85 0
 31
-R49
+R50
 !s107 ../src/seeker33.sv|
 !s90 -reportprogress|300|-work|work|../src/seeker33.sv|
 !i113 0
-R6
 R7
+R8
 vseeker6
 R0
 R47
@@ -564,22 +565,22 @@ R2
 !s105 seeker6_sv_unit
 S1
 R48
-R23
+R49
 8../src/seeker6.sv
 F../src/seeker6.sv
 L0 4
-R4
+R5
 r1
 !s85 0
 31
-R49
+R50
 !s107 ../src/seeker6.sv|
 !s90 -reportprogress|300|-work|work|../src/seeker6.sv|
 !i113 0
-R6
 R7
+R8
 Eserdes_1_to_468_idelay_ddr
-R23
+R4
 R12
 R11
 R29
@@ -587,17 +588,17 @@ R30
 R13
 R14
 R3
-Z50 8../../src/hdl/version2-hongjiang/fpga/serdes_1_to_468_idelay_ddr.vhd
-Z51 F../../src/hdl/version2-hongjiang/fpga/serdes_1_to_468_idelay_ddr.vhd
+Z51 8../../src/hdl/version2-hongjiang/fpga/serdes_1_to_468_idelay_ddr.vhd
+Z52 F../../src/hdl/version2-hongjiang/fpga/serdes_1_to_468_idelay_ddr.vhd
 l0
 L65
 VTI0TR_FI@g]?D;m=:PGZ93
 !s100 2lXH5g_bi:^>jeS0djf932
 R17
 32
-Z52 !s110 1663578041
+R22
 !i10b 1
-Z53 !s108 1663578040.000000
+Z53 !s108 1663721551.000000
 Z54 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/serdes_1_to_468_idelay_ddr.vhd|
 Z55 !s107 ../../src/hdl/version2-hongjiang/fpga/serdes_1_to_468_idelay_ddr.vhd|
 !i113 0
@@ -612,7 +613,7 @@ R13
 R14
 DEx4 work 26 serdes_1_to_468_idelay_ddr 0 22 TI0TR_FI@g]?D;m=:PGZ93
 32
-R52
+R22
 l170
 L96
 VUH]1liX8cLjLG3B7BPVfH2
@@ -632,22 +633,22 @@ r1
 !s85 0
 31
 !i10b 1
-!s100 eCAgWlOH3bH]L8_ZRWzEZ0
-IUJdGdD8PzJCe[lLOia^8<0
+!s100 @nC5@jggBU5U3`GmMkBF42
+IPC^:z9::=BEU=1Gl2`Wod0
 !s105 sim_aurora_lane_drop_regression_sv_unit
 S1
 R3
-w1662414073
+w1663631784
 8./sim_aurora_lane_drop_regression.sv
 F./sim_aurora_lane_drop_regression.sv
 L0 3
-R4
 R5
+R6
 !s107 ./sim_aurora_lane_drop_regression.sv|
 !s90 -reportprogress|300|-work|work|./sim_aurora_lane_drop_regression.sv|
 !i113 0
-R6
 R7
+R8
 vunit_seeker
 R0
 R2
@@ -660,14 +661,14 @@ I?:7Mj^?HgRn9aBQ_5WJ<_0
 !s105 unit_seeker_sv_unit
 S1
 R3
-w1663574983
+R4
 8../../src/hdl/version2-hongjiang/fpga/unit_seeker.sv
 F../../src/hdl/version2-hongjiang/fpga/unit_seeker.sv
 L0 1
-R4
-R24
+R5
+R35
 !s107 ../../src/hdl/version2-hongjiang/fpga/unit_seeker.sv|
 !s90 -reportprogress|300|-work|work|../../src/hdl/version2-hongjiang/fpga/unit_seeker.sv|
 !i113 0
-R6
 R7
+R8

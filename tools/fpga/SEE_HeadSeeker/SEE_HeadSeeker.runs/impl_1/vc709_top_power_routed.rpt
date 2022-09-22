@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Mon Sep 19 02:04:41 2022
+| Date             : Wed Sep 21 17:43:37 2022
 | Host             : LAPTOP-F415E9JE running 64-bit major release  (build 9200)
 | Command          : report_power -file vc709_top_power_routed.rpt -pb vc709_top_power_summary_routed.pb -rpx vc709_top_power_routed.rpx
 | Design           : vc709_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.494        |
+| Total On-Chip Power (W)  | 0.496        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.167        |
+| Dynamic (W)              | 0.169        |
 | Device Static (W)        | 0.327        |
 | Effective TJA (C/W)      | 1.1          |
 | Max Ambient (C)          | 84.4         |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.026 |        6 |       --- |             --- |
-| Slice Logic    |     0.006 |     3718 |       --- |             --- |
-|   Others       |     0.004 |       61 |       --- |             --- |
-|   LUT as Logic |     0.002 |     1670 |    433200 |            0.39 |
-|   Register     |    <0.001 |     1429 |    866400 |            0.16 |
-|   F7/F8 Muxes  |    <0.001 |      196 |    433200 |            0.05 |
+| Clocks         |     0.027 |        6 |       --- |             --- |
+| Slice Logic    |     0.007 |     4640 |       --- |             --- |
+|   Others       |     0.004 |       78 |       --- |             --- |
+|   LUT as Logic |     0.003 |     2207 |    433200 |            0.51 |
+|   F7/F8 Muxes  |    <0.001 |      260 |    433200 |            0.06 |
+|   Register     |    <0.001 |     1662 |    866400 |            0.19 |
 |   CARRY4       |    <0.001 |        2 |    108300 |           <0.01 |
-| Signals        |     0.003 |     2636 |       --- |             --- |
+| Signals        |     0.003 |     3296 |       --- |             --- |
 | MMCM           |     0.124 |        1 |        20 |            5.00 |
 | I/O            |     0.008 |       13 |       850 |            1.53 |
 | Static Power   |     0.327 |          |           |                 |
-| Total          |     0.494 |          |           |                 |
+| Total          |     0.496 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.224 |       0.034 |      0.190 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.226 |       0.036 |      0.190 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.126 |       0.073 |      0.053 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -149,10 +149,10 @@ Table of Contents
 +-------------------------------------+-----------+
 | Name                                | Power (W) |
 +-------------------------------------+-----------+
-| vc709_top                           |     0.167 |
-|   u_lane_original                   |     0.030 |
-|     gearbox32to66_cmp               |     0.011 |
-|       u_aligner                     |     0.006 |
+| vc709_top                           |     0.169 |
+|   u_lane_original                   |     0.032 |
+|     gearbox32to66_cmp               |     0.013 |
+|       u_aligner                     |     0.008 |
 |     xapp1017_serdes_1280.serdes_cmp |     0.016 |
 |       loop3[0].dc_inst              |     0.002 |
 |   u_pll                             |     0.129 |

@@ -1,0 +1,106 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Wed Sep 21 17:17:34 2022
+| Host         : LAPTOP-F415E9JE running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_percentages
+| Design       : vc709_top
+| Device       : 7vx690tffg1761-2
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------------------+-----------------------------+------------+------------+----------+----------+-------------+----------+----------+------------+
+|                 Instance                |            Module           | Total LUTs | Logic LUTs |  LUTRAMs |   SRLs   |     FFs     |  RAMB36  |  RAMB18  | DSP Blocks |
++-----------------------------------------+-----------------------------+------------+------------+----------+----------+-------------+----------+----------+------------+
+| vc709_top                               |                       (top) | 868(0.20%) | 868(0.20%) | 0(0.00%) | 0(0.00%) | 1023(0.12%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|   (vc709_top)                           |                       (top) |   1(0.01%) |   1(0.01%) | 0(0.00%) | 0(0.00%) |    0(0.00%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|   u_lane_original                       |              aurora_rx_lane | 867(0.20%) | 867(0.20%) | 0(0.00%) | 0(0.00%) | 1023(0.12%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|     (u_lane_original)                   |              aurora_rx_lane |  25(0.01%) |  25(0.01%) | 0(0.00%) | 0(0.00%) |  209(0.02%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|     descrambler_cmp                     |                 descrambler |  39(0.01%) |  39(0.01%) | 0(0.00%) | 0(0.00%) |  122(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|     gearbox32to66_cmp                   |               gearbox32to66 | 685(0.16%) | 685(0.16%) | 0(0.00%) | 0(0.00%) |  585(0.07%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|       (gearbox32to66_cmp)               |               gearbox32to66 | 266(0.06%) | 266(0.06%) | 0(0.00%) | 0(0.00%) |  477(0.06%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|       u_aligner                         |                HSn_balenced | 419(0.10%) | 419(0.10%) | 0(0.00%) | 0(0.00%) |  108(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|         (u_aligner)                     |                HSn_balenced |   0(0.00%) |   0(0.00%) | 0(0.00%) | 0(0.00%) |    1(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|         seekerL                         |                 unit_seeker | 338(0.08%) | 338(0.08%) | 0(0.00%) | 0(0.00%) |   87(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|         seekerR                         | unit_seeker__parameterized0 |  82(0.02%) |  82(0.02%) | 0(0.00%) | 0(0.00%) |   20(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|     xapp1017_serdes_1280.serdes_cmp     |  serdes_1_to_468_idelay_ddr | 119(0.03%) | 119(0.03%) | 0(0.00%) | 0(0.00%) |  107(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|       (xapp1017_serdes_1280.serdes_cmp) |  serdes_1_to_468_idelay_ddr |   7(0.01%) |   7(0.01%) | 0(0.00%) | 0(0.00%) |    7(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|       loop3[0].dc_inst                  |       delay_controller_wrap | 112(0.03%) | 112(0.03%) | 0(0.00%) | 0(0.00%) |  100(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|   u_pll                                 |                   clk_wiz_0 |   0(0.00%) |   0(0.00%) | 0(0.00%) | 0(0.00%) |    0(0.00%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|     inst                                |           clk_wiz_0_clk_wiz |   0(0.00%) |   0(0.00%) | 0(0.00%) | 0(0.00%) |    0(0.00%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
++-----------------------------------------+-----------------------------+------------+------------+----------+----------+-------------+----------+----------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2926.090 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.599 . Memory (MB): peak = 2926.090 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.599 . Memory (MB): peak = 2926.090 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2926.090 ; gain = 8.797
+report_utilization -name utilization_1
+report_utilization -hierarchical -hierarchical_percentages
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Wed Sep 21 17:18:40 2022
+| Host         : LAPTOP-F415E9JE running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_percentages
+| Design       : vc709_top
+| Device       : 7vx690tffg1761-2
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-----------------------------------------+------------------------------+------------+------------+----------+----------+-------------+----------+----------+------------+
+|                 Instance                |            Module            | Total LUTs | Logic LUTs |  LUTRAMs |   SRLs   |     FFs     |  RAMB36  |  RAMB18  | DSP Blocks |
++-----------------------------------------+------------------------------+------------+------------+----------+----------+-------------+----------+----------+------------+
+| vc709_top                               |                        (top) | 873(0.20%) | 873(0.20%) | 0(0.00%) | 0(0.00%) | 1030(0.12%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|   (vc709_top)                           |                        (top) |   1(0.01%) |   1(0.01%) | 0(0.00%) | 0(0.00%) |    0(0.00%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|   u_lane_original                       |               aurora_rx_lane | 872(0.20%) | 872(0.20%) | 0(0.00%) | 0(0.00%) | 1030(0.12%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|     (u_lane_original)                   |               aurora_rx_lane |  48(0.01%) |  48(0.01%) | 0(0.00%) | 0(0.00%) |  209(0.02%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|     descrambler_cmp                     |                  descrambler |  39(0.01%) |  39(0.01%) | 0(0.00%) | 0(0.00%) |  122(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|     gearbox32to66_cmp                   |                gearbox32to66 | 667(0.15%) | 667(0.15%) | 0(0.00%) | 0(0.00%) |  592(0.07%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|       (gearbox32to66_cmp)               |                gearbox32to66 | 269(0.06%) | 269(0.06%) | 0(0.00%) | 0(0.00%) |  477(0.06%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|       u_aligner                         |                 HSn_balenced | 403(0.09%) | 403(0.09%) | 0(0.00%) | 0(0.00%) |  115(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|         (u_aligner)                     |                 HSn_balenced |   0(0.00%) |   0(0.00%) | 0(0.00%) | 0(0.00%) |    1(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|         seekerL                         |                  unit_seeker |   5(0.01%) |   5(0.01%) | 0(0.00%) | 0(0.00%) |    8(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|         seekerR                         | HSn_balenced__parameterized0 | 400(0.09%) | 400(0.09%) | 0(0.00%) | 0(0.00%) |  106(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|           (seekerR)                     | HSn_balenced__parameterized0 |   1(0.01%) |   1(0.01%) | 0(0.00%) | 0(0.00%) |    1(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|           seekerL                       |  unit_seeker__parameterized0 | 385(0.09%) | 385(0.09%) | 0(0.00%) | 0(0.00%) |   85(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|           seekerR                       |  unit_seeker__parameterized1 |  16(0.01%) |  16(0.01%) | 0(0.00%) | 0(0.00%) |   20(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|     xapp1017_serdes_1280.serdes_cmp     |   serdes_1_to_468_idelay_ddr | 119(0.03%) | 119(0.03%) | 0(0.00%) | 0(0.00%) |  107(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|       (xapp1017_serdes_1280.serdes_cmp) |   serdes_1_to_468_idelay_ddr |   7(0.01%) |   7(0.01%) | 0(0.00%) | 0(0.00%) |    7(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|       loop3[0].dc_inst                  |        delay_controller_wrap | 112(0.03%) | 112(0.03%) | 0(0.00%) | 0(0.00%) |  100(0.01%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|   u_pll                                 |                    clk_wiz_0 |   0(0.00%) |   0(0.00%) | 0(0.00%) | 0(0.00%) |    0(0.00%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
+|     inst                                |            clk_wiz_0_clk_wiz |   0(0.00%) |   0(0.00%) | 0(0.00%) | 0(0.00%) |    0(0.00%) | 0(0.00%) | 0(0.00%) |   0(0.00%) |
++-----------------------------------------+------------------------------+------------+------------+----------+----------+-------------+----------+----------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining

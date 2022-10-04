@@ -31,8 +31,10 @@ module unit_seeker #(parameter INIT_POS = 0, parameter END_POS = 65, parameter P
 	
 	// could be transform to 'assign'?
 	always_comb begin
-		// update index for next seeker position.
-		seeker_pos_idx_n = seeker_pos_idx_c >= (END_POS) ? INIT_POS : seeker_pos_idx_c + POS_STEP;
+		// update index for next seeker position.(continue sequence)
+		 seeker_pos_idx_n = seeker_pos_idx_c >= (END_POS) ? INIT_POS : seeker_pos_idx_c + POS_STEP;
+		// update index for next seeker position.(equal diff sequence)
+		//seeker_pos_idx_n = (seeker_pos_idx_c + POS_STEP) > (END_POS) ? INIT_POS : seeker_pos_idx_c + POS_STEP;
 	end
 	
 	always_ff @(posedge clk_i) begin
@@ -55,7 +57,7 @@ module unit_seeker #(parameter INIT_POS = 0, parameter END_POS = 65, parameter P
 	end
 	
 	always_ff @(posedge clk_i) begin
-		if (buffer_dv) begin
+		if (buffer_dv) begin // TODO: may be remove buffer valid check for output 
 			offset_pos <= seeker_pos_idx_c;
 			is_synced  <= hdr_cnt[4];
 		end

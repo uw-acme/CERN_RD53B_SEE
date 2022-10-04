@@ -17,15 +17,15 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx69
 INFO: [Device 21-403] Loading part xc7vx690tffg1761-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 25804
+INFO: [Synth 8-7075] Helper process launched with PID 26080
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1271.461 ; gain = 22.609
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1272.016 ; gain = 23.348
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'vc709_top' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/YARR_rx/YARR_rx.srcs/sources_1/new/vc709_top.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [D:/AMD/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53753]
 INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (1#1) [D:/AMD/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53753]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/SEE_HeadSeeker/SEE_HeadSeeker.runs/synth_1/.Xil/Vivado-24196-LAPTOP-F415E9JE/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/SEE_HeadSeeker/SEE_HeadSeeker.runs/synth_1/.Xil/Vivado-24196-LAPTOP-F415E9JE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/SEE_HeadSeeker/SEE_HeadSeeker.runs/synth_1/.Xil/Vivado-29080-LAPTOP-F415E9JE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/SEE_HeadSeeker/SEE_HeadSeeker.runs/synth_1/.Xil/Vivado-29080-LAPTOP-F415E9JE/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'aurora_rx_lane' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd:41]
 	Parameter S bound to: 8 - type: integer 
 	Parameter D bound to: 1 - type: integer 
@@ -77,671 +77,376 @@ INFO: [Synth 8-638] synthesizing module 'gearbox32to66' [D:/UW/A-MasterResearch-
 INFO: [Synth 8-3491] module 'HSn_balenced' declared at 'D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1' bound to instance 'u_aligner' of component 'HSn_balenced' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd:72]
 INFO: [Synth 8-6157] synthesizing module 'HSn_balenced' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized0' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0100001 
+	Parameter N bound to: 17 - type: integer 
 	Parameter MIN_POS bound to: 0 - type: integer 
 	Parameter MAX_POS bound to: 32 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized1' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 17 - type: integer 
+	Parameter N bound to: 9 - type: integer 
 	Parameter MIN_POS bound to: 0 - type: integer 
 	Parameter MAX_POS bound to: 16 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized2' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 9 - type: integer 
+	Parameter N bound to: 5 - type: integer 
 	Parameter MIN_POS bound to: 0 - type: integer 
 	Parameter MAX_POS bound to: 8 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized3' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 5 - type: integer 
-	Parameter MIN_POS bound to: 0 - type: integer 
-	Parameter MAX_POS bound to: 4 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized4' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 3 - type: integer 
 	Parameter MIN_POS bound to: 0 - type: integer 
-	Parameter MAX_POS bound to: 2 - type: integer 
+	Parameter MAX_POS bound to: 4 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 	Parameter INIT_POS bound to: 0 - type: integer 
 	Parameter END_POS bound to: 0 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker' (5#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized5' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized4' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
 	Parameter MIN_POS bound to: 1 - type: integer 
-	Parameter MAX_POS bound to: 2 - type: integer 
+	Parameter MAX_POS bound to: 4 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized0' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 	Parameter INIT_POS bound to: 1 - type: integer 
-	Parameter END_POS bound to: 1 - type: integer 
+	Parameter END_POS bound to: 2 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized0' (5#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized1' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 2 - type: integer 
-	Parameter END_POS bound to: 2 - type: integer 
+	Parameter INIT_POS bound to: 3 - type: integer 
+	Parameter END_POS bound to: 4 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized1' (5#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized5' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized4' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized6' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized3' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized5' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 3 - type: integer 
-	Parameter MAX_POS bound to: 4 - type: integer 
+	Parameter MIN_POS bound to: 5 - type: integer 
+	Parameter MAX_POS bound to: 8 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized2' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 3 - type: integer 
-	Parameter END_POS bound to: 3 - type: integer 
+	Parameter INIT_POS bound to: 5 - type: integer 
+	Parameter END_POS bound to: 6 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized2' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized3' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 4 - type: integer 
-	Parameter END_POS bound to: 4 - type: integer 
+	Parameter INIT_POS bound to: 7 - type: integer 
+	Parameter END_POS bound to: 8 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized3' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized6' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized3' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized7' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized5' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized2' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized6' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 5 - type: integer 
-	Parameter MAX_POS bound to: 8 - type: integer 
+	Parameter MIN_POS bound to: 9 - type: integer 
+	Parameter MAX_POS bound to: 16 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized8' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized7' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 5 - type: integer 
-	Parameter MAX_POS bound to: 6 - type: integer 
+	Parameter MIN_POS bound to: 9 - type: integer 
+	Parameter MAX_POS bound to: 12 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized4' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 5 - type: integer 
-	Parameter END_POS bound to: 5 - type: integer 
+	Parameter INIT_POS bound to: 9 - type: integer 
+	Parameter END_POS bound to: 10 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized4' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized5' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 6 - type: integer 
-	Parameter END_POS bound to: 6 - type: integer 
+	Parameter INIT_POS bound to: 11 - type: integer 
+	Parameter END_POS bound to: 12 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized5' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized8' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized9' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized7' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized8' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 7 - type: integer 
-	Parameter MAX_POS bound to: 8 - type: integer 
+	Parameter MIN_POS bound to: 13 - type: integer 
+	Parameter MAX_POS bound to: 16 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized6' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 7 - type: integer 
-	Parameter END_POS bound to: 7 - type: integer 
+	Parameter INIT_POS bound to: 13 - type: integer 
+	Parameter END_POS bound to: 14 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized6' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized7' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 8 - type: integer 
-	Parameter END_POS bound to: 8 - type: integer 
+	Parameter INIT_POS bound to: 15 - type: integer 
+	Parameter END_POS bound to: 16 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized7' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized9' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized7' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized2' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized10' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized8' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized6' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized1' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized9' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0001000 
-	Parameter MIN_POS bound to: 9 - type: integer 
-	Parameter MAX_POS bound to: 16 - type: integer 
+	Parameter MIN_POS bound to: 17 - type: integer 
+	Parameter MAX_POS bound to: 32 - type: integer 
+	Parameter IS_TOP_ALIGNER bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized10' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+	Parameter N bound to: 7'b0000100 
+	Parameter MIN_POS bound to: 17 - type: integer 
+	Parameter MAX_POS bound to: 24 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized11' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 9 - type: integer 
-	Parameter MAX_POS bound to: 12 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized12' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 9 - type: integer 
-	Parameter MAX_POS bound to: 10 - type: integer 
+	Parameter MIN_POS bound to: 17 - type: integer 
+	Parameter MAX_POS bound to: 20 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized8' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 9 - type: integer 
-	Parameter END_POS bound to: 9 - type: integer 
+	Parameter INIT_POS bound to: 17 - type: integer 
+	Parameter END_POS bound to: 18 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized8' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized9' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 10 - type: integer 
-	Parameter END_POS bound to: 10 - type: integer 
+	Parameter INIT_POS bound to: 19 - type: integer 
+	Parameter END_POS bound to: 20 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized9' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized12' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized13' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized11' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized12' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 11 - type: integer 
-	Parameter MAX_POS bound to: 12 - type: integer 
+	Parameter MIN_POS bound to: 21 - type: integer 
+	Parameter MAX_POS bound to: 24 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized10' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 11 - type: integer 
-	Parameter END_POS bound to: 11 - type: integer 
+	Parameter INIT_POS bound to: 21 - type: integer 
+	Parameter END_POS bound to: 22 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized10' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized11' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 12 - type: integer 
-	Parameter END_POS bound to: 12 - type: integer 
+	Parameter INIT_POS bound to: 23 - type: integer 
+	Parameter END_POS bound to: 24 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized11' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized13' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized11' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized14' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized12' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized10' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized13' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 13 - type: integer 
-	Parameter MAX_POS bound to: 16 - type: integer 
+	Parameter MIN_POS bound to: 25 - type: integer 
+	Parameter MAX_POS bound to: 32 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized15' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized14' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 13 - type: integer 
-	Parameter MAX_POS bound to: 14 - type: integer 
+	Parameter MIN_POS bound to: 25 - type: integer 
+	Parameter MAX_POS bound to: 28 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized12' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 13 - type: integer 
-	Parameter END_POS bound to: 13 - type: integer 
+	Parameter INIT_POS bound to: 25 - type: integer 
+	Parameter END_POS bound to: 26 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized12' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized13' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 14 - type: integer 
-	Parameter END_POS bound to: 14 - type: integer 
+	Parameter INIT_POS bound to: 27 - type: integer 
+	Parameter END_POS bound to: 28 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized13' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized15' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized16' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized14' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized15' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 15 - type: integer 
-	Parameter MAX_POS bound to: 16 - type: integer 
+	Parameter MIN_POS bound to: 29 - type: integer 
+	Parameter MAX_POS bound to: 32 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized14' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 15 - type: integer 
-	Parameter END_POS bound to: 15 - type: integer 
+	Parameter INIT_POS bound to: 29 - type: integer 
+	Parameter END_POS bound to: 30 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized14' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized15' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 16 - type: integer 
-	Parameter END_POS bound to: 16 - type: integer 
+	Parameter INIT_POS bound to: 31 - type: integer 
+	Parameter END_POS bound to: 32 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized15' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized16' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized14' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized10' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized1' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized17' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized15' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized13' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized9' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized0' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized16' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0010000 
-	Parameter MIN_POS bound to: 17 - type: integer 
-	Parameter MAX_POS bound to: 32 - type: integer 
+	Parameter MIN_POS bound to: 33 - type: integer 
+	Parameter MAX_POS bound to: 65 - type: integer 
+	Parameter IS_TOP_ALIGNER bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized17' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+	Parameter N bound to: 7'b0001000 
+	Parameter MIN_POS bound to: 33 - type: integer 
+	Parameter MAX_POS bound to: 49 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized18' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0001000 
-	Parameter MIN_POS bound to: 17 - type: integer 
-	Parameter MAX_POS bound to: 24 - type: integer 
+	Parameter N bound to: 7'b0000100 
+	Parameter MIN_POS bound to: 33 - type: integer 
+	Parameter MAX_POS bound to: 41 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized19' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 17 - type: integer 
-	Parameter MAX_POS bound to: 20 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized20' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 17 - type: integer 
-	Parameter MAX_POS bound to: 18 - type: integer 
+	Parameter MIN_POS bound to: 33 - type: integer 
+	Parameter MAX_POS bound to: 37 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized16' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 17 - type: integer 
-	Parameter END_POS bound to: 17 - type: integer 
+	Parameter INIT_POS bound to: 33 - type: integer 
+	Parameter END_POS bound to: 35 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized16' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized17' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 18 - type: integer 
-	Parameter END_POS bound to: 18 - type: integer 
+	Parameter INIT_POS bound to: 36 - type: integer 
+	Parameter END_POS bound to: 37 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized17' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized20' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized21' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized19' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized20' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 19 - type: integer 
-	Parameter MAX_POS bound to: 20 - type: integer 
+	Parameter MIN_POS bound to: 38 - type: integer 
+	Parameter MAX_POS bound to: 41 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized18' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 19 - type: integer 
-	Parameter END_POS bound to: 19 - type: integer 
+	Parameter INIT_POS bound to: 38 - type: integer 
+	Parameter END_POS bound to: 39 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized18' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized19' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 20 - type: integer 
-	Parameter END_POS bound to: 20 - type: integer 
+	Parameter INIT_POS bound to: 40 - type: integer 
+	Parameter END_POS bound to: 41 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized19' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized21' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized19' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized22' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized20' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized18' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized21' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 21 - type: integer 
-	Parameter MAX_POS bound to: 24 - type: integer 
+	Parameter MIN_POS bound to: 42 - type: integer 
+	Parameter MAX_POS bound to: 49 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized23' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized22' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 21 - type: integer 
-	Parameter MAX_POS bound to: 22 - type: integer 
+	Parameter MIN_POS bound to: 42 - type: integer 
+	Parameter MAX_POS bound to: 45 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized20' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 21 - type: integer 
-	Parameter END_POS bound to: 21 - type: integer 
+	Parameter INIT_POS bound to: 42 - type: integer 
+	Parameter END_POS bound to: 43 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized20' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized21' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 22 - type: integer 
-	Parameter END_POS bound to: 22 - type: integer 
+	Parameter INIT_POS bound to: 44 - type: integer 
+	Parameter END_POS bound to: 45 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized21' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized23' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized24' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized22' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized23' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 23 - type: integer 
-	Parameter MAX_POS bound to: 24 - type: integer 
+	Parameter MIN_POS bound to: 46 - type: integer 
+	Parameter MAX_POS bound to: 49 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized22' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 23 - type: integer 
-	Parameter END_POS bound to: 23 - type: integer 
+	Parameter INIT_POS bound to: 46 - type: integer 
+	Parameter END_POS bound to: 47 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized22' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized23' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 24 - type: integer 
-	Parameter END_POS bound to: 24 - type: integer 
+	Parameter INIT_POS bound to: 48 - type: integer 
+	Parameter END_POS bound to: 49 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized23' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized24' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized22' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized18' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized25' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized23' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized21' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized17' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized24' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0001000 
-	Parameter MIN_POS bound to: 25 - type: integer 
-	Parameter MAX_POS bound to: 32 - type: integer 
+	Parameter MIN_POS bound to: 50 - type: integer 
+	Parameter MAX_POS bound to: 65 - type: integer 
+	Parameter IS_TOP_ALIGNER bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized25' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+	Parameter N bound to: 7'b0000100 
+	Parameter MIN_POS bound to: 50 - type: integer 
+	Parameter MAX_POS bound to: 57 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized26' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 25 - type: integer 
-	Parameter MAX_POS bound to: 28 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized27' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 25 - type: integer 
-	Parameter MAX_POS bound to: 26 - type: integer 
+	Parameter MIN_POS bound to: 50 - type: integer 
+	Parameter MAX_POS bound to: 53 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized24' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 25 - type: integer 
-	Parameter END_POS bound to: 25 - type: integer 
+	Parameter INIT_POS bound to: 50 - type: integer 
+	Parameter END_POS bound to: 51 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized24' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized25' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 26 - type: integer 
-	Parameter END_POS bound to: 26 - type: integer 
+	Parameter INIT_POS bound to: 52 - type: integer 
+	Parameter END_POS bound to: 53 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized25' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized27' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized28' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized26' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized27' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 27 - type: integer 
-	Parameter MAX_POS bound to: 28 - type: integer 
+	Parameter MIN_POS bound to: 54 - type: integer 
+	Parameter MAX_POS bound to: 57 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized26' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 27 - type: integer 
-	Parameter END_POS bound to: 27 - type: integer 
+	Parameter INIT_POS bound to: 54 - type: integer 
+	Parameter END_POS bound to: 55 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized26' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized27' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 28 - type: integer 
-	Parameter END_POS bound to: 28 - type: integer 
+	Parameter INIT_POS bound to: 56 - type: integer 
+	Parameter END_POS bound to: 57 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized27' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized28' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized26' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized29' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized27' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized25' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized28' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 29 - type: integer 
-	Parameter MAX_POS bound to: 32 - type: integer 
+	Parameter MIN_POS bound to: 58 - type: integer 
+	Parameter MAX_POS bound to: 65 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized30' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized29' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 29 - type: integer 
-	Parameter MAX_POS bound to: 30 - type: integer 
+	Parameter MIN_POS bound to: 58 - type: integer 
+	Parameter MAX_POS bound to: 61 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized28' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 29 - type: integer 
-	Parameter END_POS bound to: 29 - type: integer 
+	Parameter INIT_POS bound to: 58 - type: integer 
+	Parameter END_POS bound to: 59 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized28' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized29' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 30 - type: integer 
-	Parameter END_POS bound to: 30 - type: integer 
+	Parameter INIT_POS bound to: 60 - type: integer 
+	Parameter END_POS bound to: 61 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized29' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized30' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized31' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized29' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized30' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 31 - type: integer 
-	Parameter MAX_POS bound to: 32 - type: integer 
+	Parameter MIN_POS bound to: 62 - type: integer 
+	Parameter MAX_POS bound to: 65 - type: integer 
 	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized30' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 31 - type: integer 
-	Parameter END_POS bound to: 31 - type: integer 
+	Parameter INIT_POS bound to: 62 - type: integer 
+	Parameter END_POS bound to: 63 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized30' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized31' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 32 - type: integer 
-	Parameter END_POS bound to: 32 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized31' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized31' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized29' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized25' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized17' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized0' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized32' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0100001 
-	Parameter MIN_POS bound to: 33 - type: integer 
-	Parameter MAX_POS bound to: 65 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized33' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 17 - type: integer 
-	Parameter MIN_POS bound to: 33 - type: integer 
-	Parameter MAX_POS bound to: 49 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized34' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 9 - type: integer 
-	Parameter MIN_POS bound to: 33 - type: integer 
-	Parameter MAX_POS bound to: 41 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized35' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 5 - type: integer 
-	Parameter MIN_POS bound to: 33 - type: integer 
-	Parameter MAX_POS bound to: 37 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized36' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 3 - type: integer 
-	Parameter MIN_POS bound to: 33 - type: integer 
-	Parameter MAX_POS bound to: 35 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized32' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 33 - type: integer 
-	Parameter END_POS bound to: 33 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized32' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized37' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 34 - type: integer 
-	Parameter MAX_POS bound to: 35 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized33' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 34 - type: integer 
-	Parameter END_POS bound to: 34 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized33' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized34' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 35 - type: integer 
-	Parameter END_POS bound to: 35 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized34' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized37' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized36' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized38' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 36 - type: integer 
-	Parameter MAX_POS bound to: 37 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized35' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 36 - type: integer 
-	Parameter END_POS bound to: 36 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized35' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized36' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 37 - type: integer 
-	Parameter END_POS bound to: 37 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized36' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized38' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized35' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized39' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 38 - type: integer 
-	Parameter MAX_POS bound to: 41 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized40' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 38 - type: integer 
-	Parameter MAX_POS bound to: 39 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized37' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 38 - type: integer 
-	Parameter END_POS bound to: 38 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized37' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized38' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 39 - type: integer 
-	Parameter END_POS bound to: 39 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized38' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized40' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized41' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 40 - type: integer 
-	Parameter MAX_POS bound to: 41 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized39' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 40 - type: integer 
-	Parameter END_POS bound to: 40 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized39' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized40' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 41 - type: integer 
-	Parameter END_POS bound to: 41 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized40' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized41' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized39' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized34' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized42' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0001000 
-	Parameter MIN_POS bound to: 42 - type: integer 
-	Parameter MAX_POS bound to: 49 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized43' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 42 - type: integer 
-	Parameter MAX_POS bound to: 45 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized44' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 42 - type: integer 
-	Parameter MAX_POS bound to: 43 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized41' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 42 - type: integer 
-	Parameter END_POS bound to: 42 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized41' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized42' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 43 - type: integer 
-	Parameter END_POS bound to: 43 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized42' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized44' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized45' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 44 - type: integer 
-	Parameter MAX_POS bound to: 45 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized43' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 44 - type: integer 
-	Parameter END_POS bound to: 44 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized43' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized44' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 45 - type: integer 
-	Parameter END_POS bound to: 45 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized44' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized45' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized43' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized46' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 46 - type: integer 
-	Parameter MAX_POS bound to: 49 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized47' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 46 - type: integer 
-	Parameter MAX_POS bound to: 47 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized45' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 46 - type: integer 
-	Parameter END_POS bound to: 46 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized45' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized46' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-	Parameter INIT_POS bound to: 47 - type: integer 
-	Parameter END_POS bound to: 47 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized46' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized47' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 48 - type: integer 
-	Parameter MAX_POS bound to: 49 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter INIT_POS bound to: 48 - type: integer 
-	Parameter END_POS bound to: 48 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized47' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 49 - type: integer 
-	Parameter END_POS bound to: 49 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized48' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized48' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized46' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized42' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized33' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-	Parameter N bound to: 7'b0010000 
-	Parameter MIN_POS bound to: 50 - type: integer 
-	Parameter MAX_POS bound to: 65 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter N bound to: 7'b0001000 
-	Parameter MIN_POS bound to: 50 - type: integer 
-	Parameter MAX_POS bound to: 57 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 50 - type: integer 
-	Parameter MAX_POS bound to: 53 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 50 - type: integer 
-	Parameter MAX_POS bound to: 51 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter INIT_POS bound to: 50 - type: integer 
-	Parameter END_POS bound to: 50 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter INIT_POS bound to: 51 - type: integer 
-	Parameter END_POS bound to: 51 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 52 - type: integer 
-	Parameter MAX_POS bound to: 53 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter INIT_POS bound to: 52 - type: integer 
-	Parameter END_POS bound to: 52 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter INIT_POS bound to: 53 - type: integer 
-	Parameter END_POS bound to: 53 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 54 - type: integer 
-	Parameter MAX_POS bound to: 57 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 54 - type: integer 
-	Parameter MAX_POS bound to: 55 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter INIT_POS bound to: 54 - type: integer 
-	Parameter END_POS bound to: 54 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter INIT_POS bound to: 55 - type: integer 
-	Parameter END_POS bound to: 55 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 56 - type: integer 
-	Parameter MAX_POS bound to: 57 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter INIT_POS bound to: 56 - type: integer 
-	Parameter END_POS bound to: 56 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter INIT_POS bound to: 57 - type: integer 
-	Parameter END_POS bound to: 57 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter N bound to: 7'b0001000 
-	Parameter MIN_POS bound to: 58 - type: integer 
-	Parameter MAX_POS bound to: 65 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 58 - type: integer 
-	Parameter MAX_POS bound to: 61 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 58 - type: integer 
-	Parameter MAX_POS bound to: 59 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter INIT_POS bound to: 58 - type: integer 
-	Parameter END_POS bound to: 58 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter INIT_POS bound to: 59 - type: integer 
-	Parameter END_POS bound to: 59 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 60 - type: integer 
-	Parameter MAX_POS bound to: 61 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter INIT_POS bound to: 60 - type: integer 
-	Parameter END_POS bound to: 60 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter INIT_POS bound to: 61 - type: integer 
-	Parameter END_POS bound to: 61 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 62 - type: integer 
-	Parameter MAX_POS bound to: 65 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 62 - type: integer 
-	Parameter MAX_POS bound to: 63 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-	Parameter INIT_POS bound to: 62 - type: integer 
-	Parameter END_POS bound to: 62 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter INIT_POS bound to: 63 - type: integer 
-	Parameter END_POS bound to: 63 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 64 - type: integer 
-	Parameter MAX_POS bound to: 65 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
 	Parameter INIT_POS bound to: 64 - type: integer 
-	Parameter END_POS bound to: 64 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-	Parameter INIT_POS bound to: 65 - type: integer 
 	Parameter END_POS bound to: 65 - type: integer 
 	Parameter POS_STEP bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized31' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized30' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized28' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized24' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized16' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
 INFO: [Synth 8-256] done synthesizing module 'gearbox32to66' (7#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd:29]
 INFO: [Synth 8-3491] module 'descrambler' declared at 'D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/descrambler.v:5' bound to instance 'descrambler_cmp' of component 'descrambler' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd:497]
+INFO: [Synth 8-6157] synthesizing module 'descrambler' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/descrambler.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'descrambler' (8#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/descrambler.v:5]
 INFO: [Synth 8-256] done synthesizing module 'aurora_rx_lane' (9#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd:41]
+INFO: [Synth 8-6155] done synthesizing module 'vc709_top' (10#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/YARR_rx/YARR_rx.srcs/sources_1/new/vc709_top.sv:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1413.473 ; gain = 164.621
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1374.117 ; gain = 125.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1434.375 ; gain = 185.523
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1394.984 ; gain = 146.316
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1434.375 ; gain = 185.523
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1394.984 ; gain = 146.316
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.552 . Memory (MB): peak = 1434.375 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.288 . Memory (MB): peak = 1394.984 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -763,20 +468,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/vc709_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1592.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1524.801 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1592.406 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1524.801 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1761-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -787,11 +492,11 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk_p. (constraint file  d:/UW/A-
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_p. (constraint file  d:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/YARR_rx/YARR_rx.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 7).
 Applied set_property KEEP_HIERARCHY = SOFT for u_pll. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'sync_cnt_reg' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd:453]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -799,9 +504,9 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input    8 Bit       Adders := 3     
-	   2 Input    7 Bit       Adders := 65    
+	   2 Input    7 Bit       Adders := 32    
 	   2 Input    6 Bit       Adders := 3     
-	   2 Input    5 Bit       Adders := 72    
+	   2 Input    5 Bit       Adders := 39    
 	   3 Input    5 Bit       Adders := 2     
 	   2 Input    4 Bit       Adders := 2     
 	   2 Input    3 Bit       Adders := 2     
@@ -815,25 +520,25 @@ Detailed RTL Component Info :
 	                2 Bit    Wide XORs := 1     
 +---Registers : 
 	              194 Bit    Registers := 1     
-	               67 Bit    Registers := 66    
+	               67 Bit    Registers := 33    
 	               66 Bit    Registers := 5     
 	               64 Bit    Registers := 2     
 	               58 Bit    Registers := 1     
 	               33 Bit    Registers := 1     
 	               32 Bit    Registers := 5     
 	                8 Bit    Registers := 10    
-	                7 Bit    Registers := 132   
+	                7 Bit    Registers := 66    
 	                6 Bit    Registers := 3     
-	                5 Bit    Registers := 73    
+	                5 Bit    Registers := 40    
 	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 8     
-	                1 Bit    Registers := 159   
+	                1 Bit    Registers := 93    
 +---Muxes : 
 	   2 Input   66 Bit        Muxes := 2     
 	   2 Input   32 Bit        Muxes := 4     
 	   2 Input    8 Bit        Muxes := 3     
 	   3 Input    8 Bit        Muxes := 2     
-	   2 Input    7 Bit        Muxes := 66    
+	   2 Input    7 Bit        Muxes := 33    
 	   2 Input    6 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 14    
 	   3 Input    5 Bit        Muxes := 1     
@@ -842,7 +547,7 @@ Detailed RTL Component Info :
 	  12 Input    2 Bit        Muxes := 4     
 	   3 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 161   
+	   2 Input    1 Bit        Muxes := 95    
 	   3 Input    1 Bit        Muxes := 2     
 	   6 Input    1 Bit        Muxes := 8     
 	   5 Input    1 Bit        Muxes := 1     
@@ -978,31 +683,30 @@ INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/offset_pos_reg[3]' (FDE) 
 INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/offset_pos_reg[4]' (FDE) to 'seekerL/seekerL/offset_pos_reg[6]'
 INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/offset_pos_reg[5]' (FDE) to 'seekerL/seekerL/offset_pos_reg[6]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seekerL/seekerL /\offset_pos_reg[6] )
-INFO: [Synth 8-4471] merging register 'seekerR/buffer_reg[66:0]' into 'seekerL/buffer_reg[66:0]' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:24]
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (minusOp_inferred/\gearbox_cnt_reg[0] )
 INFO: [Synth 8-3886] merging instance 'i_2/data66_cnt_reg[6]' (FDCE) to 'i_2/data66_cnt_reg[7]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\data66_cnt_reg[7] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:35 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:41 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:13 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:45 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:15 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:28 ; elapsed = 00:01:51 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:19 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1020,37 +724,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:31 ; elapsed = 00:01:55 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:22 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:31 ; elapsed = 00:01:55 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:22 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:56 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:56 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:56 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:56 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1072,43 +776,43 @@ Report Cell Usage:
 |3     |IDELAYCTRL |     1|
 |4     |IDELAYE2   |     2|
 |5     |ISERDESE2  |     2|
-|6     |LUT1       |   149|
-|7     |LUT2       |   254|
-|8     |LUT3       |   662|
-|9     |LUT4       |   249|
-|10    |LUT5       |  1610|
-|11    |LUT6       |  1861|
-|12    |MUXF7      |   389|
+|6     |LUT1       |    83|
+|7     |LUT2       |   146|
+|8     |LUT3       |   452|
+|9     |LUT4       |   139|
+|10    |LUT5       |   899|
+|11    |LUT6       |  1157|
+|12    |MUXF7      |   196|
 |13    |FDCE       |   690|
 |14    |FDPE       |     3|
-|15    |FDRE       |  1406|
-|16    |FDSE       |   256|
+|15    |FDRE       |   812|
+|16    |FDSE       |   157|
 |17    |IBUF       |     3|
 |18    |OBUF       |     5|
 |19    |OBUFT      |     3|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:56 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 201 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:48 . Memory (MB): peak = 1592.406 ; gain = 185.523
-Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:57 . Memory (MB): peak = 1592.406 ; gain = 343.555
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:17 . Memory (MB): peak = 1524.801 ; gain = 146.316
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.186 . Memory (MB): peak = 1592.406 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 395 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1524.801 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 202 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1592.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1524.801 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: f51ad4b3
+Synth Design complete, checksum: b2280337
 INFO: [Common 17-83] Releasing license: Synthesis
-258 Infos, 104 Warnings, 1 Critical Warnings and 0 Errors encountered.
+193 Infos, 104 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:02:07 . Memory (MB): peak = 1592.406 ; gain = 343.555
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:32 . Memory (MB): peak = 1524.801 ; gain = 276.133
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/SEE_HeadSeeker/SEE_HeadSeeker.runs/synth_1/vc709_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vc709_top_utilization_synth.rpt -pb vc709_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct  4 00:17:53 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  4 01:16:28 2022...

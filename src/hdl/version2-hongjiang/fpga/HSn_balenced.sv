@@ -1,4 +1,4 @@
-module HSn_balenced #(parameter N = 7'b0100001, parameter MIN_POS = 0, parameter MAX_POS = 65, parameter IS_TOP_ALIGNER = 1'b1)
+module HSn_balenced #(parameter N = 7'b1000010, parameter MIN_POS = 0, parameter MAX_POS = 65, parameter IS_TOP_ALIGNER = 1'b1)
 (
 	input logic rst_i, clk_i,				// system input
 	input logic [193:0] gbox_buffer,		// complete buffer		

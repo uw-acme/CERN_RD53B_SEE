@@ -20,8 +20,8 @@ vlog -work work ../../src/hdl/version2-hongjiang/fpga/descrambler.v
 vlog -work work ../../src/hdl/version2-hongjiang/fpga/scrambler.v
 vlog -work work ../../src/hdl/version2-hongjiang/fpga/unit_seeker.sv
 vlog -work work ../../src/hdl/version2-hongjiang/fpga/HS2.sv
-#vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn.sv
-vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv
+vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn.sv
+#vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv
 vcom -work work ../../src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd
 vcom -work work ../../src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd
 #vcom -work work ../../src/hdl/version2-hongjiang/fpga/gearbox32to66.vhd
@@ -58,5 +58,7 @@ view wave
 #do unit_seeker_wave.do
 #do HS2_wave.do
 #do HSn_wave.do
-do balenced_wave.do
+#do balenced_wave.do
+do equal_diff_11_wave.do
+
 #run -all

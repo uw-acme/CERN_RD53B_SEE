@@ -1,7 +1,23 @@
+# Reading D:/ModelSim/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.5c Jul 21 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+cd D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim
+# reading modelsim.ini
 do runwave_lane_drop_regression.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:31 on Sep 20,2022
+# Start time: 02:09:15 on Sep 22,2022
 # vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/serdes_1_to_468_idelay_ddr.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -10,10 +26,10 @@ do runwave_lane_drop_regression.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity serdes_1_to_468_idelay_ddr
 # -- Compiling architecture arch_serdes_1_to_468_idelay_ddr of serdes_1_to_468_idelay_ddr
-# End time: 17:52:32 on Sep 20,2022, Elapsed time: 0:00:01
+# End time: 02:09:16 on Sep 22,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:32 on Sep 20,2022
+# Start time: 02:09:16 on Sep 22,2022
 # vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/delay_controller_wrap.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -22,20 +38,20 @@ do runwave_lane_drop_regression.do
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity delay_controller_wrap
 # -- Compiling architecture arch_delay_controller_wrap of delay_controller_wrap
-# End time: 17:52:32 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:17 on Sep 22,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:32 on Sep 20,2022
+# Start time: 02:09:17 on Sep 22,2022
 # vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/tef1001_R2_type.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package hw_type_pkg
-# End time: 17:52:32 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:17 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:32 on Sep 20,2022
+# Start time: 02:09:17 on Sep 22,2022
 # vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/board_pkg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -43,10 +59,10 @@ do runwave_lane_drop_regression.do
 # -- Loading package NUMERIC_STD
 # -- Loading package hw_type_pkg
 # -- Compiling package board_pkg
-# End time: 17:52:32 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:17 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:32 on Sep 20,2022
+# Start time: 02:09:17 on Sep 22,2022
 # vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/cdr_serdes.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -54,46 +70,46 @@ do runwave_lane_drop_regression.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity cdr_serdes
 # -- Compiling architecture rtl of cdr_serdes
-# End time: 17:52:33 on Sep 20,2022, Elapsed time: 0:00:01
+# End time: 02:09:18 on Sep 22,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:33 on Sep 20,2022
+# Start time: 02:09:18 on Sep 22,2022
 # vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/descrambler.v 
 # -- Compiling module descrambler
 # 
 # Top level modules:
 # 	descrambler
-# End time: 17:52:33 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:18 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:33 on Sep 20,2022
+# Start time: 02:09:18 on Sep 22,2022
 # vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/scrambler.v 
 # -- Compiling module scrambler
 # 
 # Top level modules:
 # 	scrambler
-# End time: 17:52:33 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:18 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:33 on Sep 20,2022
+# Start time: 02:09:19 on Sep 22,2022
 # vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/unit_seeker.sv 
 # -- Compiling module unit_seeker
 # 
 # Top level modules:
 # 	unit_seeker
-# End time: 17:52:33 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:19 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:33 on Sep 20,2022
+# Start time: 02:09:19 on Sep 22,2022
 # vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/HS2.sv 
 # -- Compiling module HS2
 # 
 # Top level modules:
 # 	HS2
-# End time: 17:52:33 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:19 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:33 on Sep 20,2022
+# Start time: 02:09:19 on Sep 22,2022
 # vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv 
 # -- Compiling module HSn_balenced
 # ** Warning: ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv(93): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
@@ -103,10 +119,10 @@ do runwave_lane_drop_regression.do
 # 
 # Top level modules:
 # 	--none--
-# End time: 17:52:33 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:19 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 4
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:33 on Sep 20,2022
+# Start time: 02:09:19 on Sep 22,2022
 # vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -114,10 +130,10 @@ do runwave_lane_drop_regression.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity gearbox32to66
 # -- Compiling architecture rtl of gearbox32to66
-# End time: 17:52:33 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:19 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:34 on Sep 20,2022
+# Start time: 02:09:19 on Sep 22,2022
 # vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -127,10 +143,10 @@ do runwave_lane_drop_regression.do
 # -- Loading package board_pkg
 # -- Compiling entity aurora_rx_lane
 # -- Compiling architecture behavioral of aurora_rx_lane
-# End time: 17:52:34 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:20 on Sep 22,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vcom 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:34 on Sep 20,2022
+# Start time: 02:09:20 on Sep 22,2022
 # vcom -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/rr_arbiter.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -138,30 +154,28 @@ do runwave_lane_drop_regression.do
 # -- Loading package NUMERIC_STD
 # -- Compiling entity rr_arbiter
 # -- Compiling architecture behavioral of rr_arbiter
-# End time: 17:52:34 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:20 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:34 on Sep 20,2022
+# Start time: 02:09:20 on Sep 22,2022
 # vlog -reportprogress 300 -work work ../../src/hdl/version2-hongjiang/fpga/aligner.sv 
 # -- Compiling module aligner
 # 
 # Top level modules:
 # 	aligner
-# End time: 17:52:34 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:20 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:52:34 on Sep 20,2022
+# Start time: 02:09:20 on Sep 22,2022
 # vlog -reportprogress 300 -work work ./sim_aurora_lane_drop_regression.sv 
 # -- Compiling module sim_aurora_lane
 # 
 # Top level modules:
 # 	sim_aurora_lane
-# End time: 17:52:34 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 02:09:20 on Sep 22,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# End time: 17:52:36 on Sep 20,2022, Elapsed time: 0:17:40
-# Errors: 1254, Warnings: 5
 # vsim -t 1fs -novopt sim_aurora_lane -L unisim -L secureip -L unifast -L unimacro 
-# Start time: 17:52:36 on Sep 20,2022
+# Start time: 02:09:21 on Sep 22,2022
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.sim_aurora_lane
 # Loading sv_std.std
@@ -197,6 +211,13 @@ do runwave_lane_drop_regression.do
 # Loading work.unit_seeker
 # Refreshing D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/sim/work.descrambler
 # Loading work.descrambler
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:proc:11: ::QStructure::sort .main_pane.structure 0 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 0 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 0 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 0 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
 # .main_pane.objects.interior.cs.body.tree
 # .main_pane.wave.interior.cs.body.pw.wf
 # ** Error: (vish-4014) No objects found matching '/sim_aurora_lane/u_aurora_rx_lane/gearbox32to66_cmp/u_aligner/offset_pos_temp'.
@@ -1082,69 +1103,68 @@ do runwave_lane_drop_regression.do
 run -all
 # , offset     ,: blocks      
 # ,           0 ,           0
-# ,           1 ,          22
-# ,           2 ,          25
-# ,           3 ,          26
-# ,           4 ,          28
-# ,           5 ,          30
-# ,           6 ,          33
-# ,           7 ,          34
-# ,           8 ,          37
-# ,           9 ,          38
-# ,          10 ,          42
-# ,          11 ,          42
-# ,          12 ,          46
-# ,          13 ,          48
-# ,          14 ,          48
-# ,          15 ,          51
-# ,          16 ,          53
-# ,          17 ,          55
-# ,          18 ,          55
-# ,          19 ,          58
-# ,          20 ,          61
-# ,          21 ,          64
-# ,          22 ,          65
-# ,          23 ,          66
-# ,          24 ,          68
-# ,          25 ,          71
-# ,          26 ,          73
-# ,          27 ,          74
-# ,          28 ,          76
-# ,          29 ,          79
-# ,          30 ,          80
-# ,          31 ,          83
-# ,          32 ,          85
-# ,          33 ,          86
-# ,          34 ,          89
-# ,          35 ,          92
-# ,          36 ,          93
-# ,          37 ,          94
-# ,          38 ,          96
-run -continue
-# ,          39 ,          99
-# ,          40 ,         101
-# ,          41 ,         104
-# ,          42 ,         107
-# ,          43 ,         108
-# ,          44 ,         109
-# ,          45 ,         112
-# ,          46 ,         110
-# ,          47 ,         115
-# ,          48 ,         116
-# ,          49 ,         119
-# ,          50 ,         121
-# ,          51 ,         124
-# ,          52 ,         125
-# ,          53 ,         129
-# ,          54 ,         131
-# ,          55 ,         130
-# ,          56 ,         135
-# ,          57 ,         135
-# ,          58 ,         137
-# ,          59 ,         141
-# ,          60 ,         143
-# ,          61 ,         142
-# ,          62 ,         145
-# ,          63 ,         148
-# ,          64 ,         152
-# ,          65 ,         148
+# ,           1 ,          21
+# ,           2 ,          23
+# ,           3 ,          23
+# ,           4 ,          24
+# ,           5 ,          26
+# ,           6 ,          27
+# ,           7 ,          28
+# ,           8 ,          29
+# ,           9 ,          30
+# ,          10 ,          31
+# ,          11 ,          32
+# ,          12 ,          33
+# ,          13 ,          33
+# ,          14 ,          35
+# ,          15 ,          35
+# ,          16 ,          37
+# ,          17 ,          38
+# ,          18 ,          39
+# ,          19 ,          41
+# ,          20 ,          41
+# ,          21 ,          42
+# ,          22 ,          42
+# ,          23 ,          43
+# ,          24 ,          45
+# ,          25 ,          48
+# ,          26 ,          46
+# ,          27 ,          47
+# ,          28 ,          48
+# ,          29 ,          50
+# ,          30 ,          52
+# ,          31 ,          51
+# ,          32 ,          54
+# ,          33 ,          53
+# ,          34 ,          55
+# ,          35 ,          55
+# ,          36 ,          56
+# ,          37 ,          59
+# ,          38 ,          58
+# ,          39 ,          59
+# ,          40 ,          60
+# ,          41 ,          63
+# ,          42 ,          63
+# ,          43 ,          63
+# ,          44 ,          66
+# ,          45 ,          67
+# ,          46 ,          67
+# ,          47 ,          68
+# ,          48 ,          69
+# ,          49 ,          71
+# ,          50 ,          70
+# ,          51 ,          72
+# ,          52 ,          72
+# ,          53 ,          74
+# ,          54 ,          76
+# ,          55 ,          78
+# ,          56 ,          76
+# ,          57 ,          78
+# ,          58 ,          79
+# ,          59 ,          78
+# ,          60 ,          82
+# ,          61 ,          82
+# ,          62 ,          86
+# ,          63 ,          87
+# ,          64 ,          86
+# ,          65 ,          85

@@ -17,15 +17,15 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx69
 INFO: [Device 21-403] Loading part xc7vx690tffg1761-2
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 26080
+INFO: [Synth 8-7075] Helper process launched with PID 34020
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1272.016 ; gain = 23.348
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1270.246 ; gain = 21.121
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'vc709_top' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/YARR_rx/YARR_rx.srcs/sources_1/new/vc709_top.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [D:/AMD/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53753]
 INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (1#1) [D:/AMD/Vivado/2021.1/scripts/rt/data/unisim_comp.v:53753]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/SEE_HeadSeeker/SEE_HeadSeeker.runs/synth_1/.Xil/Vivado-29080-LAPTOP-F415E9JE/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/SEE_HeadSeeker/SEE_HeadSeeker.runs/synth_1/.Xil/Vivado-29080-LAPTOP-F415E9JE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/SEE_HeadSeeker/SEE_HeadSeeker.runs/synth_1/.Xil/Vivado-31560-LAPTOP-F415E9JE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/SEE_HeadSeeker/SEE_HeadSeeker.runs/synth_1/.Xil/Vivado-31560-LAPTOP-F415E9JE/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'aurora_rx_lane' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd:41]
 	Parameter S bound to: 8 - type: integer 
 	Parameter D bound to: 1 - type: integer 
@@ -74,379 +74,55 @@ INFO: [Synth 8-113] binding component instance 'iserdes_s' to cell 'ISERDESE2' [
 INFO: [Synth 8-256] done synthesizing module 'serdes_1_to_468_idelay_ddr' (4#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/serdes_1_to_468_idelay_ddr.vhd:96]
 INFO: [Synth 8-3491] module 'gearbox32to66' declared at 'D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd:13' bound to instance 'gearbox32to66_cmp' of component 'gearbox32to66' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd:437]
 INFO: [Synth 8-638] synthesizing module 'gearbox32to66' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd:29]
-INFO: [Synth 8-3491] module 'HSn_balenced' declared at 'D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1' bound to instance 'u_aligner' of component 'HSn_balenced' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd:72]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized0' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'HSn_buffer_fix_top' declared at 'D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_buffer_fix_top.sv:1' bound to instance 'u_aligner' of component 'HSn_buffer_fix_top' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd:72]
+INFO: [Synth 8-6157] synthesizing module 'HSn_buffer_fix_top' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_buffer_fix_top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_buffer_fix' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_buffer_fix.sv:1]
+	Parameter N bound to: 7'b0000011 
 	Parameter MIN_POS bound to: 0 - type: integer 
-	Parameter MAX_POS bound to: 32 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized1' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 9 - type: integer 
-	Parameter MIN_POS bound to: 0 - type: integer 
-	Parameter MAX_POS bound to: 16 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized2' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 5 - type: integer 
-	Parameter MIN_POS bound to: 0 - type: integer 
-	Parameter MAX_POS bound to: 8 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized3' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 3 - type: integer 
-	Parameter MIN_POS bound to: 0 - type: integer 
-	Parameter MAX_POS bound to: 4 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
+	Parameter MAX_POS bound to: 65 - type: integer 
+	Parameter STEP bound to: 7'b0000011 
+INFO: [Synth 8-6157] synthesizing module 'unit_seeker_buffer_fix' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker_buffer_fix.sv:1]
 	Parameter INIT_POS bound to: 0 - type: integer 
-	Parameter END_POS bound to: 0 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker' (5#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized4' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
+	Parameter END_POS bound to: 65 - type: integer 
+	Parameter POS_STEP bound to: 7'b0000011 
+INFO: [Synth 8-6155] done synthesizing module 'unit_seeker_buffer_fix' (5#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker_buffer_fix.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'HSn_buffer_fix__parameterized0' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_buffer_fix.sv:1]
 	Parameter N bound to: 7'b0000010 
 	Parameter MIN_POS bound to: 1 - type: integer 
-	Parameter MAX_POS bound to: 4 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized0' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
+	Parameter MAX_POS bound to: 65 - type: integer 
+	Parameter STEP bound to: 7'b0000011 
+INFO: [Synth 8-6157] synthesizing module 'unit_seeker_buffer_fix__parameterized0' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker_buffer_fix.sv:1]
 	Parameter INIT_POS bound to: 1 - type: integer 
-	Parameter END_POS bound to: 2 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized0' (5#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized1' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 3 - type: integer 
-	Parameter END_POS bound to: 4 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized1' (5#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized4' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized3' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized5' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 5 - type: integer 
-	Parameter MAX_POS bound to: 8 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized2' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 5 - type: integer 
-	Parameter END_POS bound to: 6 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized2' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized3' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 7 - type: integer 
-	Parameter END_POS bound to: 8 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized3' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized5' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized2' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized6' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 9 - type: integer 
-	Parameter MAX_POS bound to: 16 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized7' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 9 - type: integer 
-	Parameter MAX_POS bound to: 12 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized4' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 9 - type: integer 
-	Parameter END_POS bound to: 10 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized4' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized5' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 11 - type: integer 
-	Parameter END_POS bound to: 12 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized5' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized7' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized8' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 13 - type: integer 
-	Parameter MAX_POS bound to: 16 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized6' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 13 - type: integer 
-	Parameter END_POS bound to: 14 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized6' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized7' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 15 - type: integer 
-	Parameter END_POS bound to: 16 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized7' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized8' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized6' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized1' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized9' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0001000 
-	Parameter MIN_POS bound to: 17 - type: integer 
-	Parameter MAX_POS bound to: 32 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized10' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 17 - type: integer 
-	Parameter MAX_POS bound to: 24 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized11' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 17 - type: integer 
-	Parameter MAX_POS bound to: 20 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized8' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 17 - type: integer 
-	Parameter END_POS bound to: 18 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized8' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized9' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 19 - type: integer 
-	Parameter END_POS bound to: 20 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized9' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized11' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized12' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 21 - type: integer 
-	Parameter MAX_POS bound to: 24 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized10' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 21 - type: integer 
-	Parameter END_POS bound to: 22 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized10' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized11' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 23 - type: integer 
-	Parameter END_POS bound to: 24 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized11' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized12' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized10' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized13' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 25 - type: integer 
-	Parameter MAX_POS bound to: 32 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized14' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 25 - type: integer 
-	Parameter MAX_POS bound to: 28 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized12' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 25 - type: integer 
-	Parameter END_POS bound to: 26 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized12' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized13' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 27 - type: integer 
-	Parameter END_POS bound to: 28 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized13' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized14' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized15' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 29 - type: integer 
-	Parameter MAX_POS bound to: 32 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized14' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 29 - type: integer 
-	Parameter END_POS bound to: 30 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized14' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized15' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 31 - type: integer 
-	Parameter END_POS bound to: 32 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized15' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized15' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized13' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized9' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized0' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized16' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0010000 
-	Parameter MIN_POS bound to: 33 - type: integer 
-	Parameter MAX_POS bound to: 65 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized17' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0001000 
-	Parameter MIN_POS bound to: 33 - type: integer 
-	Parameter MAX_POS bound to: 49 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized18' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 33 - type: integer 
-	Parameter MAX_POS bound to: 41 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized19' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 33 - type: integer 
-	Parameter MAX_POS bound to: 37 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized16' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 33 - type: integer 
-	Parameter END_POS bound to: 35 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized16' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized17' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 36 - type: integer 
-	Parameter END_POS bound to: 37 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized17' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized19' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized20' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 38 - type: integer 
-	Parameter MAX_POS bound to: 41 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized18' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 38 - type: integer 
-	Parameter END_POS bound to: 39 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized18' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized19' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 40 - type: integer 
-	Parameter END_POS bound to: 41 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized19' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized20' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized18' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized21' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 42 - type: integer 
-	Parameter MAX_POS bound to: 49 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized22' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 42 - type: integer 
-	Parameter MAX_POS bound to: 45 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized20' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 42 - type: integer 
-	Parameter END_POS bound to: 43 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized20' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized21' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 44 - type: integer 
-	Parameter END_POS bound to: 45 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized21' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized22' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized23' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 46 - type: integer 
-	Parameter MAX_POS bound to: 49 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized22' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 46 - type: integer 
-	Parameter END_POS bound to: 47 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized22' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized23' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 48 - type: integer 
-	Parameter END_POS bound to: 49 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized23' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized23' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized21' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized17' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized24' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0001000 
-	Parameter MIN_POS bound to: 50 - type: integer 
-	Parameter MAX_POS bound to: 65 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized25' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 50 - type: integer 
-	Parameter MAX_POS bound to: 57 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized26' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 50 - type: integer 
-	Parameter MAX_POS bound to: 53 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized24' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 50 - type: integer 
-	Parameter END_POS bound to: 51 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized24' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized25' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 52 - type: integer 
-	Parameter END_POS bound to: 53 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized25' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized26' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized27' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 54 - type: integer 
-	Parameter MAX_POS bound to: 57 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized26' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 54 - type: integer 
-	Parameter END_POS bound to: 55 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized26' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized27' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 56 - type: integer 
-	Parameter END_POS bound to: 57 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized27' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized27' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized25' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized28' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000100 
-	Parameter MIN_POS bound to: 58 - type: integer 
-	Parameter MAX_POS bound to: 65 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized29' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 58 - type: integer 
-	Parameter MAX_POS bound to: 61 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized28' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 58 - type: integer 
-	Parameter END_POS bound to: 59 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized28' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized29' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 60 - type: integer 
-	Parameter END_POS bound to: 61 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized29' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized29' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'HSn_balenced__parameterized30' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-	Parameter N bound to: 7'b0000010 
-	Parameter MIN_POS bound to: 62 - type: integer 
-	Parameter MAX_POS bound to: 65 - type: integer 
-	Parameter IS_TOP_ALIGNER bound to: 1'b0 
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized30' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 62 - type: integer 
-	Parameter END_POS bound to: 63 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized30' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'unit_seeker__parameterized31' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-	Parameter INIT_POS bound to: 64 - type: integer 
 	Parameter END_POS bound to: 65 - type: integer 
-	Parameter POS_STEP bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'unit_seeker__parameterized31' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized30' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized28' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized24' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced__parameterized16' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-6155] done synthesizing module 'HSn_balenced' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_balenced.sv:1]
-INFO: [Synth 8-256] done synthesizing module 'gearbox32to66' (7#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd:29]
+	Parameter POS_STEP bound to: 7'b0000011 
+INFO: [Synth 8-6155] done synthesizing module 'unit_seeker_buffer_fix__parameterized0' (5#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker_buffer_fix.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'unit_seeker_buffer_fix__parameterized1' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker_buffer_fix.sv:1]
+	Parameter INIT_POS bound to: 2 - type: integer 
+	Parameter END_POS bound to: 65 - type: integer 
+	Parameter POS_STEP bound to: 7'b0000011 
+INFO: [Synth 8-6155] done synthesizing module 'unit_seeker_buffer_fix__parameterized1' (5#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker_buffer_fix.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_buffer_fix__parameterized0' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_buffer_fix.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_buffer_fix' (6#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_buffer_fix.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'HSn_buffer_fix_top' (7#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/HSn_buffer_fix_top.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'gearbox32to66' (8#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd:29]
 INFO: [Synth 8-3491] module 'descrambler' declared at 'D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/descrambler.v:5' bound to instance 'descrambler_cmp' of component 'descrambler' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd:497]
 INFO: [Synth 8-6157] synthesizing module 'descrambler' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/descrambler.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'descrambler' (8#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/descrambler.v:5]
-INFO: [Synth 8-256] done synthesizing module 'aurora_rx_lane' (9#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd:41]
-INFO: [Synth 8-6155] done synthesizing module 'vc709_top' (10#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/YARR_rx/YARR_rx.srcs/sources_1/new/vc709_top.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'descrambler' (9#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/descrambler.v:5]
+INFO: [Synth 8-256] done synthesizing module 'aurora_rx_lane' (10#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd:41]
+INFO: [Synth 8-6155] done synthesizing module 'vc709_top' (11#1) [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/YARR_rx/YARR_rx.srcs/sources_1/new/vc709_top.sv:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1374.117 ; gain = 125.449
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1335.113 ; gain = 85.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1394.984 ; gain = 146.316
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1335.113 ; gain = 85.988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1394.984 ; gain = 146.316
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1335.113 ; gain = 85.988
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.288 . Memory (MB): peak = 1394.984 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1335.113 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -468,20 +144,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/vc709_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1524.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1478.074 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1524.801 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1478.074 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1478.074 ; gain = 228.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7vx690tffg1761-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1478.074 ; gain = 228.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -492,21 +168,21 @@ Applied set_property IO_BUFFER_TYPE = NONE for clk_p. (constraint file  d:/UW/A-
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_p. (constraint file  d:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/YARR_rx/YARR_rx.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 7).
 Applied set_property KEEP_HIERARCHY = SOFT for u_pll. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1478.074 ; gain = 228.949
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'sync_cnt_reg' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd:453]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1478.074 ; gain = 228.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    8 Bit       Adders := 3     
-	   2 Input    7 Bit       Adders := 32    
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    7 Bit       Adders := 3     
 	   2 Input    6 Bit       Adders := 3     
-	   2 Input    5 Bit       Adders := 39    
+	   2 Input    5 Bit       Adders := 9     
 	   3 Input    5 Bit       Adders := 2     
 	   2 Input    4 Bit       Adders := 2     
 	   2 Input    3 Bit       Adders := 2     
@@ -520,25 +196,25 @@ Detailed RTL Component Info :
 	                2 Bit    Wide XORs := 1     
 +---Registers : 
 	              194 Bit    Registers := 1     
-	               67 Bit    Registers := 33    
+	               67 Bit    Registers := 1     
 	               66 Bit    Registers := 5     
 	               64 Bit    Registers := 2     
 	               58 Bit    Registers := 1     
 	               33 Bit    Registers := 1     
 	               32 Bit    Registers := 5     
 	                8 Bit    Registers := 10    
-	                7 Bit    Registers := 66    
+	                7 Bit    Registers := 7     
 	                6 Bit    Registers := 3     
-	                5 Bit    Registers := 40    
+	                5 Bit    Registers := 10    
 	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 8     
-	                1 Bit    Registers := 93    
+	                1 Bit    Registers := 34    
 +---Muxes : 
 	   2 Input   66 Bit        Muxes := 2     
 	   2 Input   32 Bit        Muxes := 4     
-	   2 Input    8 Bit        Muxes := 3     
 	   3 Input    8 Bit        Muxes := 2     
-	   2 Input    7 Bit        Muxes := 33    
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 3     
 	   2 Input    6 Bit        Muxes := 1     
 	   2 Input    5 Bit        Muxes := 14    
 	   3 Input    5 Bit        Muxes := 1     
@@ -547,7 +223,7 @@ Detailed RTL Component Info :
 	  12 Input    2 Bit        Muxes := 4     
 	   3 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 95    
+	   2 Input    1 Bit        Muxes := 36    
 	   3 Input    1 Bit        Muxes := 2     
 	   6 Input    1 Bit        Muxes := 8     
 	   5 Input    1 Bit        Muxes := 1     
@@ -566,147 +242,26 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'seekerR/buffer_reg[66:0]' into 'seekerL/buffer_reg[66:0]' [D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/src/hdl/version2-hongjiang/fpga/unit_seeker.sv:24]
-WARNING: [Synth 8-7129] Port gbox_buffer[63] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[62] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[61] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[60] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[59] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[58] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[57] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[56] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[55] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[54] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[53] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[52] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[51] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[50] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[49] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[48] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[47] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[46] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[45] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[44] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[43] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[42] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[41] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[40] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[39] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[38] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[37] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[36] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[35] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[34] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[33] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[32] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[31] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[30] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[29] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[28] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[27] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[26] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[25] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[24] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[23] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[22] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[21] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[20] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[19] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[18] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[17] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[16] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[15] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[14] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[13] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[12] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[11] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[10] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[9] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[8] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[7] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[6] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[5] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[4] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[3] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[2] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[1] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[0] in module unit_seeker__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[63] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[62] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[61] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[60] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[59] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[58] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[57] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[56] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[55] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[54] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[53] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[52] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[51] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[50] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[49] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[48] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[47] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[46] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[45] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[44] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[43] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[42] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[41] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[40] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[39] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[38] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[37] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[36] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[35] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[34] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[33] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[32] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[31] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[30] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[29] in module unit_seeker__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port gbox_buffer[28] in module unit_seeker__parameterized2 is either unconnected or has no load
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/seeker_pos_idx_c_reg[0]' (FDRE) to 'seekerL/seekerL/seeker_pos_idx_c_reg[1]'
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/seeker_pos_idx_c_reg[1]' (FDRE) to 'seekerL/seekerL/seeker_pos_idx_c_reg[2]'
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/seeker_pos_idx_c_reg[2]' (FDRE) to 'seekerL/seekerL/seeker_pos_idx_c_reg[3]'
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/seeker_pos_idx_c_reg[3]' (FDRE) to 'seekerL/seekerL/seeker_pos_idx_c_reg[4]'
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/seeker_pos_idx_c_reg[4]' (FDRE) to 'seekerL/seekerL/seeker_pos_idx_c_reg[5]'
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/seeker_pos_idx_c_reg[5]' (FDRE) to 'seekerL/seekerL/seeker_pos_idx_c_reg[6]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seekerL/seekerL /\seeker_pos_idx_c_reg[6] )
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/offset_pos_reg[0]' (FDE) to 'seekerL/seekerL/offset_pos_reg[6]'
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/offset_pos_reg[1]' (FDE) to 'seekerL/seekerL/offset_pos_reg[6]'
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/offset_pos_reg[2]' (FDE) to 'seekerL/seekerL/offset_pos_reg[6]'
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/offset_pos_reg[3]' (FDE) to 'seekerL/seekerL/offset_pos_reg[6]'
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/offset_pos_reg[4]' (FDE) to 'seekerL/seekerL/offset_pos_reg[6]'
-INFO: [Synth 8-3886] merging instance 'seekerL/seekerL/offset_pos_reg[5]' (FDE) to 'seekerL/seekerL/offset_pos_reg[6]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\seekerL/seekerL /\offset_pos_reg[6] )
-INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (minusOp_inferred/\gearbox_cnt_reg[0] )
-INFO: [Synth 8-3886] merging instance 'i_2/data66_cnt_reg[6]' (FDCE) to 'i_2/data66_cnt_reg[7]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\data66_cnt_reg[7] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:07 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1478.074 ; gain = 228.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:13 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 1478.074 ; gain = 228.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:15 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1478.074 ; gain = 228.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:19 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1487.164 ; gain = 238.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -724,37 +279,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:22 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.164 ; gain = 238.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:22 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.164 ; gain = 238.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.164 ; gain = 238.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.164 ; gain = 238.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.164 ; gain = 238.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.164 ; gain = 238.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -776,43 +331,44 @@ Report Cell Usage:
 |3     |IDELAYCTRL |     1|
 |4     |IDELAYE2   |     2|
 |5     |ISERDESE2  |     2|
-|6     |LUT1       |    83|
-|7     |LUT2       |   146|
-|8     |LUT3       |   452|
-|9     |LUT4       |   139|
-|10    |LUT5       |   899|
-|11    |LUT6       |  1157|
-|12    |MUXF7      |   196|
-|13    |FDCE       |   690|
-|14    |FDPE       |     3|
-|15    |FDRE       |   812|
-|16    |FDSE       |   157|
-|17    |IBUF       |     3|
-|18    |OBUF       |     5|
-|19    |OBUFT      |     3|
+|6     |LUT1       |    24|
+|7     |LUT2       |    44|
+|8     |LUT3       |   262|
+|9     |LUT4       |    34|
+|10    |LUT5       |   256|
+|11    |LUT6       |   533|
+|12    |MUXF7      |    21|
+|13    |MUXF8      |     3|
+|14    |FDCE       |   690|
+|15    |FDPE       |     3|
+|16    |FDRE       |   296|
+|17    |FDSE       |    63|
+|18    |IBUF       |     3|
+|19    |OBUF       |     5|
+|20    |OBUFT      |     3|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1487.164 ; gain = 238.039
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 201 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:17 . Memory (MB): peak = 1524.801 ; gain = 146.316
-Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:23 . Memory (MB): peak = 1524.801 ; gain = 276.133
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:32 . Memory (MB): peak = 1487.164 ; gain = 95.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1487.164 ; gain = 238.039
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1524.801 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 202 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1487.164 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1524.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1510.531 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: b2280337
+Synth Design complete, checksum: cad939df
 INFO: [Common 17-83] Releasing license: Synthesis
-193 Infos, 104 Warnings, 1 Critical Warnings and 0 Errors encountered.
+54 Infos, 4 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:32 . Memory (MB): peak = 1524.801 ; gain = 276.133
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1510.531 ; gain = 261.406
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/UW/A-MasterResearch-LHC/CERN_RD53B_SEE/CERN_RD53B_SEE/tools/fpga/SEE_HeadSeeker/SEE_HeadSeeker.runs/synth_1/vc709_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file vc709_top_utilization_synth.rpt -pb vc709_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct  4 01:16:28 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  4 02:24:31 2022...

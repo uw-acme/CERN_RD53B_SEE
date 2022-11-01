@@ -28,7 +28,7 @@ end gearbox32to66;
 
 architecture rtl of gearbox32to66 is
 
-    component HSn_buffer_fix_top
+    component HSn_step_n
     port (
         -- Sys connect
         rst_i           : in std_logic;
@@ -43,7 +43,7 @@ architecture rtl of gearbox32to66 is
         offset_pos      : out unsigned(6 downto 0);
 		is_synced		: out std_logic
     );
-end component HSn_buffer_fix_top;
+end component HSn_step_n;
 
     signal gearbox_cnt      : unsigned(7 downto 0);
     signal data66_cnt       : unsigned(7 downto 0);
@@ -69,7 +69,7 @@ end component HSn_buffer_fix_top;
 
 begin
 
-    u_aligner : HSn_buffer_fix_top  port map (
+    u_aligner : HSn_step_n  port map (
         -- Sys connect
         rst_i           => rst_i,
         clk_i           => clk_i,

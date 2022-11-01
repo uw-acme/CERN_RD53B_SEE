@@ -1,4 +1,4 @@
-module HSn #(parameter N = 7'b0001011, parameter MIN_POS = 0, parameter MAX_POS = 65, parameter IS_TOP_ALIGNER = 1'b1, parameter STEP = N)
+module HSn_step_n #(parameter N = 7'b0000010, parameter MIN_POS = 0, parameter MAX_POS = 65, parameter IS_TOP_ALIGNER = 1'b1, parameter STEP = N)
 (
 	input logic rst_i, clk_i,				// system input
 	input logic [193:0] gbox_buffer,		// complete buffer		
@@ -22,13 +22,13 @@ module HSn #(parameter N = 7'b0001011, parameter MIN_POS = 0, parameter MAX_POS 
 		//when N = 2, instantiate 2 unit_seeker modules
 		//where the range of each unit_seeker is half of the full range
 		if (N == 7'b0000010) begin
-			unit_seeker #(.INIT_POS(MIN_POS), .END_POS(MAX_POS), .POS_STEP(STEP_PASSED))
+			unit_seeker_step_n #(.INIT_POS(MIN_POS), .END_POS(MAX_POS), .POS_STEP(STEP_PASSED))
 							seekerL (.rst_i, .clk_i,
 									 .gbox_buffer, .gbox_cnt, .buffer_dv,
 									 .is_synced(is_sync_temp[0]),
 									 .offset_pos(offset_pos_temp[0]));
 																			 
-			unit_seeker #(.INIT_POS(MIN_POS+1), .END_POS(MAX_POS), .POS_STEP(STEP_PASSED))
+			unit_seeker_step_n #(.INIT_POS(MIN_POS+1), .END_POS(MAX_POS), .POS_STEP(STEP_PASSED))
 							seekerR (.rst_i, .clk_i,
 									 .gbox_buffer, .gbox_cnt, .buffer_dv,
 									 .is_synced(is_sync_temp[1]),
@@ -37,13 +37,13 @@ module HSn #(parameter N = 7'b0001011, parameter MIN_POS = 0, parameter MAX_POS 
 		//when N = 3, instantiate 1 unit_seeker module and 1 HSn module with N' = N-1 = 2
 		//where the range of unit_seeker is 1 and range of HSn is 2
 		else if (N == 7'b0000011) begin
-			unit_seeker #(.INIT_POS(MIN_POS), .END_POS(MAX_POS), .POS_STEP(STEP_PASSED))
+			unit_seeker_step_n #(.INIT_POS(MIN_POS), .END_POS(MAX_POS), .POS_STEP(STEP_PASSED))
 							seekerL (.rst_i, .clk_i,
 									 .gbox_buffer, .gbox_cnt, .buffer_dv,
 									 .is_synced(is_sync_temp[0]),
 									 .offset_pos(offset_pos_temp[0]));
 																			 
-		    HSn #(.N(7'b0000010), .MIN_POS(MIN_POS+1), .MAX_POS(MAX_POS), .IS_TOP_ALIGNER(1'b0), .STEP(STEP_PASSED))
+		    HSn_step_n #(.N(7'b0000010), .MIN_POS(MIN_POS+1), .MAX_POS(MAX_POS), .IS_TOP_ALIGNER(1'b0), .STEP(STEP_PASSED))
 							seekerR (.rst_i, .clk_i,
 									 .gbox_buffer, .gbox_cnt, .buffer_dv,
 									 .is_synced(is_sync_temp[1]),
@@ -53,13 +53,13 @@ module HSn #(parameter N = 7'b0001011, parameter MIN_POS = 0, parameter MAX_POS 
 		//where one HSn has range of (MAX_POS-MIN_POS)/2 and another has range of (MAX_POS-MIN_POS)/2 + 1  
 		else if (N[0] == 1'b1) begin
 			//{N[6:1],1'b0}+1
-			HSn #(.N({1'b0, N[6:1]}+1), .MIN_POS(MIN_POS), .MAX_POS(MAX_POS), .IS_TOP_ALIGNER(1'b0), .STEP(STEP_PASSED))
+			HSn_step_n #(.N({1'b0, N[6:1]}+1), .MIN_POS(MIN_POS), .MAX_POS(MAX_POS), .IS_TOP_ALIGNER(1'b0), .STEP(STEP_PASSED))
 							seekerL (.rst_i, .clk_i,
 									 .gbox_buffer, .gbox_cnt, .buffer_dv,
 									 .is_synced(is_sync_temp[0]),
 									 .offset_pos(offset_pos_temp[0]));
 																			 
-		    HSn #(.N({1'b0, N[6:1]}), .MIN_POS(MID_SEEKER+1), .MAX_POS(MAX_POS), .IS_TOP_ALIGNER(1'b0), .STEP(STEP_PASSED))
+		    HSn_step_n #(.N({1'b0, N[6:1]}), .MIN_POS(MID_SEEKER+1), .MAX_POS(MAX_POS), .IS_TOP_ALIGNER(1'b0), .STEP(STEP_PASSED))
 							seekerR (.rst_i, .clk_i,
 									 .gbox_buffer, .gbox_cnt, .buffer_dv,
 									 .is_synced(is_sync_temp[1]),
@@ -68,13 +68,13 @@ module HSn #(parameter N = 7'b0001011, parameter MIN_POS = 0, parameter MAX_POS 
 		//when N is even, instantiate 2 HSn modules with N' = N / 2
 		//where each HSn has half of the full range
 		else begin
-			HSn #(.N({1'b0, N[6:1]}), .MIN_POS(MIN_POS), .MAX_POS(MAX_POS), .IS_TOP_ALIGNER(1'b0), .STEP(STEP_PASSED))
+			HSn_step_n #(.N({1'b0, N[6:1]}), .MIN_POS(MIN_POS), .MAX_POS(MAX_POS), .IS_TOP_ALIGNER(1'b0), .STEP(STEP_PASSED))
 							seekerL (.rst_i, .clk_i,
 									 .gbox_buffer, .gbox_cnt, .buffer_dv,
 									 .is_synced(is_sync_temp[0]),
 									 .offset_pos(offset_pos_temp[0]));
 																			 
-			HSn #(.N({1'b0, N[6:1]}), .MIN_POS(MID_SEEKER), .MAX_POS(MAX_POS), .IS_TOP_ALIGNER(1'b0), .STEP(STEP_PASSED))
+			HSn_step_n #(.N({1'b0, N[6:1]}), .MIN_POS(MID_SEEKER), .MAX_POS(MAX_POS), .IS_TOP_ALIGNER(1'b0), .STEP(STEP_PASSED))
 							seekerR (.rst_i, .clk_i,
 									 .gbox_buffer, .gbox_cnt, .buffer_dv,
 									 .is_synced(is_sync_temp[1]),

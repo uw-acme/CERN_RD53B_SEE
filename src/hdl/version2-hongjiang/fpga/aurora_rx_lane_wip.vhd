@@ -163,7 +163,7 @@ architecture behavioral of aurora_rx_lane is
     signal descrambled_data_valid   : std_logic;
     
     -- Block Sync
-    signal sync_cnt     : unsigned(7 downto 0);
+    --signal sync_cnt     : unsigned(7 downto 0);
     
     -- SERDES debug
     signal bit_time_value   : std_logic_vector(4 downto 0);
@@ -450,7 +450,7 @@ begin
     begin
         -- on a reset, clear all counters and set scrambler input to 0s
         if (rst_n_i = '0') then
-            sync_cnt                <= (others => '0');
+            --sync_cnt                <= (others => '0');
             scrambled_data66        <= (others => '0');
             scrambled_data_valid    <= '0';
 
@@ -543,7 +543,7 @@ begin
             rx_stat_o       <= (others => '0');
             rx_stat_o(0)    <= serdes_lock; -- SERDES Sync Out
 
-            if (sync_cnt = c_SYNC_MAX) then
+            if (is_synced = '1') then
                 rx_stat_o(1) <= '1'; -- Gearbox Sync Out
             end if;
         end if;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7vx690tffg1761-2" LaunchTime="1664875417">
+<GenRun Id="synth_1" LaunchPart="xc7vx690tffg1761-2" LaunchTime="1667275676">
   <File Type="PA-TCL" Name="vc709_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="vc709_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="vc709_top_reports.tcl"/>
@@ -18,21 +18,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../src/hdl/version2-hongjiang/fpga/HSn_buffer_fix.sv">
+    <File Path="$PPRDIR/../../../src/hdl/version2-hongjiang/fpga/HSn_step_n.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../../../src/hdl/version2-hongjiang/fpga/HSn_buffer_fix_top.sv">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../../../src/hdl/version2-hongjiang/fpga/unit_seeker_buffer_fix.sv">
+    <File Path="$PPRDIR/../../../src/hdl/version2-hongjiang/fpga/unit_seeker_step_n.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -83,6 +76,30 @@
     </File>
     <File Path="$PPRDIR/../YARR_rx/YARR_rx.srcs/sources_1/new/vc709_top.sv">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/version2-hongjiang/fpga/HSn_buffer_fix.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/version2-hongjiang/fpga/HSn_buffer_fix_top.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../src/hdl/version2-hongjiang/fpga/unit_seeker_buffer_fix.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

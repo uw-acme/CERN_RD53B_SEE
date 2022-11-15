@@ -19,12 +19,14 @@ vcom -work work ../../src/hdl/version2-hongjiang/fpga/cdr_serdes.vhd
 vlog -work work ../../src/hdl/version2-hongjiang/fpga/descrambler.v
 vlog -work work ../../src/hdl/version2-hongjiang/fpga/scrambler.v
 #vlog -work work ../../src/hdl/version2-hongjiang/fpga/unit_seeker.sv
-vlog -work work ../../src/hdl/version2-hongjiang/fpga/unit_seeker_buffer_fix.sv
-vlog -work work ../../src/hdl/version2-hongjiang/fpga/HS2.sv
-vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn_buffer_fix.sv
-vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn_buffer_fix_top.sv
+vlog -work work ../../src/hdl/version2-hongjiang/fpga/unit_seeker_step_n.sv
+#vlog -work work ../../src/hdl/version2-hongjiang/fpga/unit_seeker_buffer_fix.sv
+#vlog -work work ../../src/hdl/version2-hongjiang/fpga/HS2.sv
+#vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn_buffer_fix.sv
+#vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn_buffer_fix_top.sv
 #vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn.sv
 #vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn_balenced.sv
+vlog -work work ../../src/hdl/version2-hongjiang/fpga/HSn_step_n.sv
 vcom -work work ../../src/hdl/version2-hongjiang/fpga/gearbox32to66_wip.vhd
 vcom -work work ../../src/hdl/version2-hongjiang/fpga/aurora_rx_lane_wip.vhd
 #vcom -work work ../../src/hdl/version2-hongjiang/fpga/gearbox32to66.vhd
@@ -63,7 +65,8 @@ view wave
 #do HSn_wave.do
 #do balenced_wave.do
 #do equal_diff_11_wave.do
-do buffer_fix_wave.do
+#do buffer_fix_wave.do
+do HSn_step_n_wave.do
 
 
 #run -all

@@ -1,4 +1,4 @@
-module HSn_step_n #(parameter N = 7'b0000010, parameter MIN_POS = 0, parameter MAX_POS = 65, parameter IS_TOP_ALIGNER = 1'b1, parameter STEP = N)
+module HSn_step_n #(parameter N = 7'b0100000, parameter MIN_POS = 0, parameter MAX_POS = 65, parameter IS_TOP_ALIGNER = 1'b1, parameter STEP = N)
 (
 	input logic rst_i, clk_i,				// system input
 	input logic [193:0] gbox_buffer,		// complete buffer		

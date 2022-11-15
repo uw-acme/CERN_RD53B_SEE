@@ -95,9 +95,9 @@ architecture behavioral of aurora_rx_lane is
             slip_i          : in std_logic;
 
             -- Output
-            data66_o        	: out std_logic_vector(65 downto 0);
-            data66_valid_o  	: out std_logic;
-			is_synced_o			: out std_logic
+            data66_o        : out std_logic_vector(65 downto 0);
+            data66_valid_o  : out std_logic;
+			is_synced_o		: out std_logic
         );
     end component gearbox32to66;
     
@@ -435,14 +435,14 @@ begin
     end generate custom_serdes;
 
     gearbox32to66_cmp : gearbox32to66 port map (
-        rst_i           	=> rst,
-        clk_i           	=> clk_rx_i,
-        data32_i        	=> serdes_data32,
-        data32_valid_i  	=> serdes_data32_valid,
-        slip_i          	=> '0',
-        data66_o        	=> gearbox_data66,
-        data66_valid_o  	=> gearbox_data66_valid,
-		is_synced_o			=> is_synced
+        rst_i           => rst,
+        clk_i           => clk_rx_i,
+        data32_i        => serdes_data32,
+        data32_valid_i  => serdes_data32_valid,
+        slip_i          => '0',
+        data66_o        => gearbox_data66,
+        data66_valid_o  => gearbox_data66_valid,
+		is_synced_o		=> is_synced
     );
 
     -- tracks number of consecutive valid headers and determines when to pass on data to descramble
